@@ -1,8 +1,9 @@
 ---
-title: Thesis Title
+title: Computational Methods for Taxonomic Annotation and Genome Reconstruction of Metagenome Sequencing Data
 author:
 - name: Johannes Dröge
-  affiliation: Helmholtz Centre for Infection Research,  Braunschweig
+  affiliation: Heinrich-Heine-Universität Düsseldorf
+  affiliation: Helmholtz-Zentrum für Infektionsforschung,  Braunschweig
   email: science@fungs.de
 ...
 
