@@ -7,7 +7,7 @@
 | **Journal** |  Bioinformatics |
 | **Published** | 10 November 2014 |
 | **Authors** | Johannes Dröge, Ivan Gregor, Alice C. McHardy |
-| **DOI** | [10.1093/bioinformatics/btu745](http://dx.doi.org/10.1093/bioinformatics/btu745) |
+| **DOI** | [10.1093/bioinformatics/btu745](https://doi.org/10.1093/bioinformatics/btu745) |
 
 ![Taxator-tk Article Preview](figure/publication_taxator-tk_preview.png){#fig:publication_taxator-tk_preview}
 

@@ -6,6 +6,8 @@
 | **Journal** |  PeerJ |
 | **Published** | 2016 |
 | **Authors** | Johannes Dröge, Alexander Schönhuth, Alice C. McHardy |
-| **DOI** | [](http://dx.doi.org)
+| **DOI** | [10.7287/peerj.preprints.2626](https://doi.org/10.7287/peerj.preprints.2626)
 
-![MGLEX Article Preview](figure/placeholder.png){#fig:publication_mglex_preview}
+![MGLEX Article Preview](figure/publication_mglex_preview.png){#fig:publication_mglex_preview}
+
+#### Abstract
