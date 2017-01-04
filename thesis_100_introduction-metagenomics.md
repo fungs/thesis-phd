@@ -1,4 +1,4 @@
-# Introduction to Metagenomics
+# Introduction
 
 ## Metagenomics
 
