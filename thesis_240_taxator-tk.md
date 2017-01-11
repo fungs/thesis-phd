@@ -34,11 +34,11 @@ In metagenomics, we study microbial communities from natural environments withou
 
 The workflow for the taxonomic assignment of a query sequence consists of three parts ([@fig:taxatortk_workflow]): (a) a local alignment search for homologs, (b) the core assignment algorithm and (c) a post-processing step to merge subregion annotations. The initial search can be run by different aligners and using different reference sequence collections. Based on the resulting local alignments, each query sequence is split into distinct subregions (segments), omitting parts which have no similarity to any reference. This step reduces the overall number of positions for further alignments and accounts for genome arrangements. Each segment along with its homologous reference sequences is processed by the core algorithm to predict a taxon. The final merging step considers all segment predictions of a query sequence and determines the final taxon for assignment.
 
-![Figure: (flowchart) The taxator-tk workflow](figure/placeholder.png){#fig:taxatortk_workflow}
+![(flowchart) The taxator-tk workflow](figure/taxatortk_workflow.pdf){#fig:taxatortk_workflow}
 
 The core realignment placement algorithm (RPA) ([@fig:taxatortk_rpa]) assigns a taxon Q to a query segment *q* using a limited number of pairwise alignments among *q* and its homologous segments obtained by local alignment to reference sequences. It aims to identify a set of segments which form a monophyletic group or subtree in the corresponding phylogeny. First, the most similar segment *s* is aligned to the query *q* and all other segments in the set (pass 1). An outgroup segment *o* is determined as the first sequence with distance larger than $distance(s,q)$. The taxa of all segments with distance smaller or equal to $distance(s,o)$ are added to the neighborhood set M. Then, all segments are aligned to the outgroup segment *o* (pass 2), again adding taxa with distances smaller than $distance(o,q)$ to M. We assign the least common ancestor (LCA) of all taxa in M to segment *q*. The segments in M form a subtree among all available segment taxa. Sometimes, if no outgroup can be found or if the taxa in M are very diverse, the algorithm terminates and the predicted taxon is the taxonomy root, meaning unassigned. The RPA requires approximately $2n$ alignments, where $n$ is the number of reference segments.
 
-![Figure: The realignment placement algorithm (RPA).](figure/placeholder.png){#fig:taxatortk_rpa}
+![The realignment placement algorithm (RPA).](figure/taxatortk_rpa.pdf){#fig:taxatortk_rpa}
 
 ##### Results
 
