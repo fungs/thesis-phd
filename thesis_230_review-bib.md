@@ -1,6 +1,6 @@
 ### Taxonomic Binning of Metagenome Samples {#sec:publication_bib}
 
-![BiB Review Article Preview](figure/publication_bib_preview.png){#fig:publication_bib_preview}
+![BiB review article preview](figure/publication_bib_preview.png){#fig:publication_bib_preview}
 
 |  |  |
 | :---------- | ------------------------------------------------------------ |
