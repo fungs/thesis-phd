@@ -1,4 +1,4 @@
-## Summary of Methods and Results
+## Summary of methods and results
 
 The methods presented in this thesis extend the available software toolbox to analyze metagenomes of all flavors. They cover several algorithmic fields including sequence alignment, taxonomy, phylogenetics and probabilistic modeling. The binning review article (2012) gives an extensive introduction to the different metagenome binning and analysis approaches. In the second method article (2014), we presented the program *taxator-tk* which enables precise taxonomic annotation of entire metagenomes by fast calculation of phylogenetic neighborhoods. The third method article (2016) proposes a statistical classification framework for use in metagenome binning.
 

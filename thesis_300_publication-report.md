@@ -1,2 +1,1 @@
-# Report of Publications
-
+# Report of publications
