@@ -1,3 +1,3 @@
-# Computational Methods for Taxonomic Annotation and Genome Reconstruction of Metagenome Sequencing Data
+# PhD Thesis by Johannes Dröge
 
-Dissertation by Johannes Dröge
+written in Markdown
