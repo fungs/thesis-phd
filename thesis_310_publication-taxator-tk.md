@@ -1,8 +1,12 @@
 # *Taxator-tk*: Precise Taxonomic Assignment of Metagenomes by Fast Approximation of Evolutionary Neighborhoods
 
-J. Dröge1,2, I. Gregor1,2 and A. C. McHardy1,3*
-K.
-1Department for Algorithmic Bioinformatics, Heinrich Heine University, Universitätsstraße 1, 40225 Düsseldorf, Germany, 2Max-Planck Research Group for Computational Genomics and Epidemiology, Max-Planck Institute for Informatics, University Campus E1 4, 66123 Saarbrücken, Germany, 3Computational Biology of Infection Research, Helmholtz Center for Infection Research, Inhoffenstraße 7, 38124 Braunschweig, Germany
+**J. Dröge**^1,2^, **I. Gregor**^1,2^ and **A. C. McHardy**^1,3\*^
+
+^1^Department for Algorithmic Bioinformatics, Heinrich Heine University, Universitätsstraße 1, 40225 Düsseldorf, Germany
+
+^2^Max-Planck Research Group for Computational Genomics and Epidemiology, Max-Planck Institute for Informatics, University Campus E1 4, 66123 Saarbrücken, Germany
+
+^3^Computational Biology of Infection Research, Helmholtz Center for Infection Research, Inhoffenstraße 7, 38124 Braunschweig, Germany
 
 ## Abstract
 
