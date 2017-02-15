@@ -1,22 +1,14 @@
 # A Probabilistic Model to Recover Genomes in Shotgun Metagenomics
 
----
-title: A probabilistic model to recover individual genomes from metagenomes
-author:
-- name: Johannes Dröge
-  affiliation: Helmholtz Centre for Infection Research,  Braunschweig, Germany
-  email: science@fungs.de
-- name: Alexander Schönhuth
-  affiliation: Centrum Wiskunde & Informatica, Amsterdam, The Netherlands
-  email: a.schoenhuth@cwi.nl
-- name: Alice C. McHardy
-  affiliation: Helmholtz Centre for Infection Research, Braunschweig, Germany
-  email: alice.mchardy@helmholtz-hzi.de
-corrauthor:
-  name: Alice C. McHardy
-  affiliation: Helmholtz Centre for Infection Research, Braunschweig, Germany
-  email: alice.mchardy@helmholtz-hzi.de
-...
+**Johannes Dröge^1^, Alexander Schönhuth^2^, Alice C. McHardy^1\*^**
+
+^1^Helmholtz Centre for Infection Research,  Braunschweig, Germany
+
+^2^Centrum Wiskunde & Informatica, Amsterdam, The Netherlands
+
+----
+
+**This is an author-produced version of an article under revision in *Briefings in Bioinformatics*. This article version has been adapted to the thesis layout. The original open-access article is accessible by DOI [10.7287/peerj.preprints.2626](https://doi.org/10.7287/peerj.preprints.2626).**
 
 ## Abstract
 
@@ -28,7 +20,7 @@ Shotgun sequencing of DNA extracted from a microbial community recovers genomic 
 
 Recently, oftentimes multiple biological or technical samples of the same environment are sequenced to produce distinct genome copy numbers across samples, sometimes using different sequencing protocols and technologies, such as Illumina and PacBio sequencing [@HagenQuantitative2016]. Genome copies are reflected by corresponding read coverage variation in the assemblies which allows to resolve samples with many genomes. The combination of experimental techniques helps to overcome platform-specific shortcomings such as short reads or high error rates in the data analysis. However, reconstructing high-quality bins of individual strains remains difficult without very high numbers of replicates. Often, genome reconstruction may improve by manual intervention and iterative analysis ([@fig:binning_workflow]) or additional sequencing experiments.
 
-![Genome reconstruction workflow. To recover genomes from environmental sequencing data, the illustrated processes can be iterated. Different programs can be run for each process and iteration. MGLEX can be applied in all steps: (a) to classify contigs or to cluster by embedding the probabilistic model into an iterative procedure; (b) to enrich a metagenome for a target genome to reduce its size and to filter out irrelevant sequence data; (c) to select contigs of existing bins based on likelihoods and p-values and to repeat the binning process with a reduced data-set; (d) to refine existing bins, for instance to merge bins as suggested by bin analysis. ](figure/publication_mglex/main_mglex-scheme){#fig:binning_workflow}
+![Genome reconstruction workflow. To recover genomes from environmental sequencing data, the illustrated processes can be iterated. Different programs can be run for each process and iteration. MGLEX can be applied in all steps: (a) to classify contigs or to cluster by embedding the probabilistic model into an iterative procedure; (b) to enrich a metagenome for a target genome to reduce its size and to filter out irrelevant sequence data; (c) to select contigs of existing bins based on likelihoods and p-values and to repeat the binning process with a reduced data-set; (d) to refine existing bins, for instance to merge bins as suggested by bin analysis. ](figure/publication_mglex/main_mglex-scheme.pdf){#fig:binning_workflow}
 
 Genome bins can be constructed by consideration of genome-wide sequence properties. Currently, oftentimes the following types of information are considered:
 
@@ -163,7 +155,7 @@ We assume that distinct regions of a contig, such as genes, can be annotated wit
 
 Table: Calculating the contig features $\bm{t_i}$ for a simplified taxonomy. There are five original integer alignment scores for nodes (c), (e), (f), (g) and (h) which are summed up at higher levels to calculate the feature vectors $\bm{t_{i,l}}$. The corresponding tree structure is shown in [@fig:hnbayes_tree]. {#tbl:hnbayes}
 
-![Taxonomy for [@tbl:hnbayes] which is simplified to four levels and eight nodes. A full taxonomy may consist of thousands of nodes.](figure/publication_mglex/main_tree){#fig:hnbayes_tree}
+![Taxonomy for [@tbl:hnbayes] which is simplified to four levels and eight nodes. A full taxonomy may consist of thousands of nodes.](figure/publication_mglex/main_tree.pdf){#fig:hnbayes_tree}
 
 Each vector $\bm{t_{i,l}}$ contains the scores for all $T_l$ possible taxa at level $l$. A genome is represented by a similar set of vectors $\bm{\theta} = \{\bm{\theta_l} \mid 1 \le l \le L \}$ with identical dimensions, but here, entries represent level-specific relative frequencies. The corresponding likelihood model corresponds to a set of Naïve Bayes models, one for each layer. The full likelihood is a product of the level likelihoods.
 
@@ -191,13 +183,14 @@ For any modeled genome, each of the $M$ submodels produces a distinct log-likeli
 
 Because $\bm \alpha$ cannot be determined by likelihood maximization, the contributions are balanced in a robust way by setting $\bm \alpha$ to the inverse standard deviation of the genome (positive class) log-likelihood distributions. More precisely, we calculate the average standard deviation over all genomes weighted by the amount of contig data for each genome and calculate $\alpha_k$ as the inverse of this value. This scales down submodels with a high average variance. When we normalize the standard deviation of genome log-likelihood distributions in all submodels before summation, we assume that a high variance means uncertainty.
 
-![Procedure for determination of $\alpha_k$ for each submodel. The figure shows a schematic for a single genome and two submodels. The genome's contig log-likelihood distribution is scaled to a standard deviation of one before adding the term in  the aggregate model in [@eq:loglikelihood_aggregate].](figure/publication_mglex/main_alpha-inference){#fig:alpha_inference}
+![Procedure for determination of $\alpha_k$ for each submodel. The figure shows a schematic for a single genome and two submodels. The genome's contig log-likelihood distribution is scaled to a standard deviation of one before adding the term in  the aggregate model in [@eq:loglikelihood_aggregate].](figure/publication_mglex/main_alpha-inference.pdf){#fig:alpha_inference}
 
 Parameter $\beta$ in [@eq:loglikelihood_aggregate] is only relevant for soft classification but not in the context of ML classification or p-values. It can best be viewed as a sharpening or smoothing parameter of the bin posterior distribution (the probability of a genome or bin given the contig). $\beta$ is estimated by minimization of the training or test error, as in our simulation.
 
 ### Data simulation
 
 We simulated reads of a complex microbial community from 400 publicly available genomes (Supplementary Methods and Supplementary Table 1). These comprised 295 unique and 44 species with each two or three strain genomes to mimic strain heterogeneity. Our aim was to create a benchmark dataset under controlled settings, minimizing potential biases introduced by specific software. We sampled abundances from a lognormal distribution because it has been described as a realistic model [@SchlossCensus2006]. We then simulated a primary community which was then subject to environmental changes resulting in exponential growth of 25% of the community members at growth rates which where chosen uniformly at random between one and ten whereas the other genome abundances remained unchanged. We applied this procedure three times to the primary community which resulted in one primary and three secondary artificial community abundances profiles. With these, we generated 150 bp long Illumina HiSeq reads using the ART simulator [@HuangArt2012] and chose a yield of 15 Gb per sample. The exact amount of read data after simulation was 59.47 Gb. To avoid a bias caused by specific metagenome assembly software and to assure a constant contig length, we divided the original genome sequences into non-overlapping artificial contigs of 1 kb length and selected a random 500 kb of each genome to which we mapped the simulated reads using Bowtie2 [@LangmeadFast2012]. By the exclusion of some genome reference, we imitated incomplete genome assemblies when mapping reads, which affects the coverage values. Finally, we subsampled 300 kb contigs per genome with non-zero read coverage in at least one of the samples to form the demonstration dataset (120 Mb), which is both diverse and difficult to classify by the short contig length. For each contig we derived 5-mer frequencies, taxonomic annotation (simulating novel species) and average read coverage per sample, as described in the Supplementary Methods.
+
 # Results
 
 ### Maximum likelihood classification
@@ -230,7 +223,7 @@ The contig length of 1 kb in our simulation is considerably shorter, and therefo
 
 The free model parameter $\beta$ in [@eq:likelihood_aggregate], which is identical in all genome models, smoothens or sharpens the posterior distribution: $\beta = 0$ produces a uniform posterior and with very high $\beta$, the posterior approaches the sharp ML solution. We determined $\beta$ by optimizing the MSE on both training and test data, shown in [@fig:beta_fitting]. As expected, the classification training error was smaller than the test error because the submodel parameters were optimized with respect to the training data. Because the minima are close to each other, the full aggregate model seems robust to overfitting of $\beta$ on training data. The comparison of soft vs. hard assignment shows that the former has a smaller average test classification MSE of $\sim$ 0.28 (the illustrated minimum in [@fig:beta_fitting]) compared to the latter (ML) assignment MSE of $\sim$ 0.33 in [@tbl:classification_consistency]. Thus, soft assignment seems more suitable to classify 1 kb contigs, which tend to produce similar likelihoods under more than one genome model.
 
-![Model training (err) and test error (Err) as a function of $\beta$ for the complete aggregate model including all submodels and feature types. The solid curve shows the average and the colored shading the standard deviation of the three partitions in cross-validation. The corresponding optimal values for $\beta$ are marked by black dots and vertical lines. The minimum average training error is 0.238 ($\beta=2.85$) and test error is 0.279 at $\beta=1.65$.](figure/publication_mglex/main_beta-fitting){#fig:beta_fitting}
+![Model training (err) and test error (Err) as a function of $\beta$ for the complete aggregate model including all submodels and feature types. The solid curve shows the average and the colored shading the standard deviation of the three partitions in cross-validation. The corresponding optimal values for $\beta$ are marked by black dots and vertical lines. The minimum average training error is 0.238 ($\beta=2.85$) and test error is 0.279 at $\beta=1.65$.](figure/publication_mglex/main_beta-fitting.pdf){#fig:beta_fitting}
 
 ### Genome enrichment
 
@@ -238,7 +231,7 @@ Enrichment is commonly known as an experimental technique to increase the concen
 
 We enriched a metagenome by first training a genome model and then calculating the p-values of remaining contigs using this model. Contigs with higher p-values than the chosen critical value were discarded. The higher this cutoff is, the smaller the enriched sample becomes, but also the target genome will be less complete. We calculated the reduced sample size as a function of the p-value cutoff for our simulation ([@fig:genome_enrichment]). Selecting a p-value threshold of 2.5% shrinks the test data on average down to 5% of the original size. Instead of an empirical p-value, we could also use a parametrized distribution or select a critical log-likelihood value by manual inspection of the log-likelihood distribution (see [@fig:alpha_inference] for an example of such a distribution). This example shows that generally a large part of a metagenome dataset can be discarded while retaining most of the target genome sequence data.
 
-![Genome enrichment for 400 genomes with three-fold cross-validation. For each genome, we measured the test sample size relative to the full dataset after filtering by a p-value cutoff and summing over the three data partitions. The solid line shows the resulting average sample size over all 400 genomes. The variability between genomes is shown as quantiles in red. Both axes are logarithmic to show the relevant details for lower p-values cutoffs. The corresponding sensitivity, shown in Suppl. Figure 1, is approximately a linear function of the p-value.](figure/publication_mglex/main_genome-enrichment){#fig:genome_enrichment}
+![Genome enrichment for 400 genomes with three-fold cross-validation. For each genome, we measured the test sample size relative to the full dataset after filtering by a p-value cutoff and summing over the three data partitions. The solid line shows the resulting average sample size over all 400 genomes. The variability between genomes is shown as quantiles in red. Both axes are logarithmic to show the relevant details for lower p-values cutoffs. The corresponding sensitivity, shown in Suppl. Figure 1, is approximately a linear function of the p-value.](figure/publication_mglex/main_genome-enrichment.pdf){#fig:genome_enrichment}
 
 ### Bin analysis
 
@@ -280,7 +273,7 @@ The quantity in [@eq:mixture_likelihood_similarity] ranges from zero to one, rea
 
 To demonstrate the application, we trained the model on our simulated genomes, assuming they were bins, and created trees ([@fig:tree_bin_comparison]) for a randomly drawn subset of 50 of the 400 genomes using the probabilistic bin distances $-log(S)$ ([@eq:mixture_likelihood_similarity]). We computed the distances twice, first with only nucleotide composition and taxonomic annotation submodels and second with the full feature set to compare the bin resolution. The submodel parameters were inferred using the full dataset and $\beta$ using three-fold crossvalidation. We then applied average linkage clustering to build balanced and rooted trees with equal distance from leave to root for visual inspection. The first tree loosely reflects phylogenetic structure corresponding to the input features. However, many similarities over 50% (outermost ring) show that model and data lack the support for separating these bins. In contrast, the fully informed tree, which additionally includes information about contig coverages, separates the genomes bins, such that only closely related strains remain ambiguous. This analysis shows again that the use of additional features improves the resolution of individual genomes and, specifically, that abundance separates similar genomes. Most importantly, we show that our model provides a measure of support for a genome binning. We know the taxa of the genome bins in this example but for real metagenomes, such an analysis can reveal binning problems and help to refine the bins as in [@fig:binning_workflow]d.
 
-![Average linkage clustering of a random subset of 50 out of 400 genomes using probabilistic distances $-log(S)$ ([@eq:mixture_likelihood_similarity]) to demonstrate the ability of the model to measure bin resolution. This example compares the left (blue) tree, which was constructed only with nucleotide composition and taxonomic annotations, with the right (red) tree, which uses all available features. The tip labels were shortened to fit into the figure. The similarity axis is scaled as *log(1-log(S))* to focus on values near one. Bins which are more than 50% similar branch in the outermost ring whereas highly dissimilar bins branch close to the center. We created the trees by applying the R function *hclust*(method="average") to MGLEX output. ](figure/publication_mglex/main_bin-similarity){#fig:tree_bin_comparison}
+![Average linkage clustering of a random subset of 50 out of 400 genomes using probabilistic distances $-log(S)$ ([@eq:mixture_likelihood_similarity]) to demonstrate the ability of the model to measure bin resolution. This example compares the left (blue) tree, which was constructed only with nucleotide composition and taxonomic annotations, with the right (red) tree, which uses all available features. The tip labels were shortened to fit into the figure. The similarity axis is scaled as *log(1-log(S))* to focus on values near one. Bins which are more than 50% similar branch in the outermost ring whereas highly dissimilar bins branch close to the center. We created the trees by applying the R function *hclust*(method="average") to MGLEX output. ](figure/publication_mglex/main_bin-similarity.pdf){#fig:tree_bin_comparison}
 
 ### Implementation
 

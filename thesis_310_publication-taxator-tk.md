@@ -8,6 +8,10 @@
 
 ^3^Computational Biology of Infection Research, Helmholtz Center for Infection Research, Inhoffenstraße 7, 38124 Braunschweig, Germany
 
+----
+
+**This is an author-produced version of an article accepted for publication in *Bioinformatics* following peer review. This version has been adapted to the thesis layout. The original open-access article is accessible by DOI [10.1093/bioinformatics/btu745](https://doi.org/10.1093/bioinformatics/btu745).**
+
 ## Abstract
 
 ### Motivation
@@ -20,7 +24,7 @@ Taxator-tk was precise in its taxonomic assignment across all ranks and taxa for
 
 ### Availability
 
-Taxator-tk source and binary program files are publicly available at http://algbio.cs.uni-duesseldorf.de/software/.
+Taxator-tk source and binary program files are publicly available at [http://algbio.cs.uni-duesseldorf.de/software/](http://algbio.cs.uni-duesseldorf.de/software/).
 
 ## Introduction
 
