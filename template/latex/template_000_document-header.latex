@@ -1,0 +1,222 @@
+%-------------------------------------
+%
+%	Dissertation A. Weimann
+%
+%	main file
+%
+%-------------------------------------
+
+\documentclass[
+	a4paper,
+	twoside,
+	12pt
+]{book}
+
+%---- packages ----
+
+% nice figure captions
+\usepackage[hyphens]{url}
+\usepackage[margin=10pt,font=small,labelfont=bf]{caption}
+% fancy page layout
+%\usepackage[utf8]{inputenc}
+
+\usepackage{fancyhdr}
+% toc formating
+\usepackage[nottoc]{tocbibind}
+\usepackage[titles]{tocloft}
+\renewcommand{\cftchapfont}{%
+	\fontsize{11}{13}\usefont{OT1}{phv}{bx}{n}\selectfont
+}
+% references
+% author-year
+%\usepackage[round, authoryear]{natbib}
+%\bibliographystyle{references/bibstyle}
+% numbered (doesn't work for \citeauthor
+% \usepackage[sort&compress, numbers]{natbib}
+% \bibliographystyle{references/bibstyle_numbered}
+%\usepackage[
+%citestyle=authoryear, 
+%bibstyle=authoryear,
+%maxcitenames = 1,
+%maxbibnames = 100,
+%firstinits=true,
+%uniquename=init,
+%doi = true,
+%url = false,
+%eprint= false,
+%sortlocale = en_US,
+%backend=biber,  
+%hyperref=true, 
+%backref=true,
+%bibencoding=utf8
+%]{biblatex}
+
+%omit undesired keys
+%\AtEveryCitekey{\UseBibitemHook}
+%\AtEveryBibitem{%
+%  \ifentrytype{Article}{%
+%  }{%
+ %   \clearlist{language}%
+ %   \clearfield{issn}%
+ %   \clearfield{isnb}%
+ %   %\clearfield{url}%
+ %   %\clearfield{urlyear}%
+ %   }%
+%}
+
+%\renewbibmacro{in:}{}
+% \usepackage[backend=biber, style = science, babel=other,%
+% bibencoding=inputenc]{biblatex}
+% \usepackage[
+% backend=biber,
+% style=alphabetic,
+% citestyle=authoryear 
+% ]{biblatex}
+%use maxbibnames for fullcite rather than maxauthornames
+%\preto\fullcite{\AtNextCite{\defcounter{maxnames}{99}}}
+
+%\DeclareBibliographyCategory{fullcited}
+%\newcommand{\mybibexclude}[1]{\addtocategory{fullcited}{#1}}
+%\addbibresource{references/thesis_updated.bib}
+%\addbibresource{references/images.bib}
+
+% language
+\usepackage[english]{babel}
+\usepackage{csquotes}
+%\usepackage{ngerman}
+% ams-latex
+\usepackage{amssymb}
+\usepackage{amsmath}
+% graphics
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage[usenames,dvipsnames]{color}
+% tables
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{arydshln}
+\usepackage{lscape}
+\usepackage{array}
+\usepackage{subscript}
+\usepackage{booktabs}
+% links
+\usepackage{pdflscape}
+\usepackage{tabu}
+%\usepackage[bookmarks,
+		%bookmarksopen = true,
+		%bookmarksnumbered = true,
+		%breaklinks = true,
+		%linktocpage = false,
+		%pagebackref,
+		%colorlinks = true,
+		%linkcolor = blue,
+		%urlcolor  = blue,
+		%citecolor = red,
+		%anchorcolor = green,
+		%hyperindex = true,
+		%hyperfigures
+		%]{hyperref}
+
+% formating of urls
+\usepackage{url}
+% chapter headers
+% \usepackage{sectsty}
+% \allsectionsfont{\usefont{OT1}{phv}{bx}{n}\selectfont}
+\usepackage[Sonny]{fncychap}
+\ChNameVar{\large\sf}
+\ChNumVar{\huge}
+\ChTitleVar{\Huge\sf}
+\ChRuleWidth{0.5pt}
+\ChNameUpperCase
+
+% line spacing
+\usepackage{setspace}
+
+% abbreviations
+\usepackage[intoc]{nomencl}
+\renewcommand{\nomname}{List of Abbreviations}
+\setlength{\nomitemsep}{-\parsep}
+\makenomenclature
+% run additionally: makeindex main.nlo -s nomencl.ist -o main.nls
+% 4 markers used: 1_v (virus), 2_s (viral strains), 3_m (methodology), 4_o (others)
+% additionally structure the computed tex file into sections manually
+
+% include whole pdfs
+\usepackage{pdfpages}
+\usepackage{textcomp}
+
+
+%\usepackage{hyperref}
+
+%---- page layout ----
+
+\setlength{\paperheight}{297mm}
+\setlength{\paperwidth}{210mm}
+
+\setlength{\hoffset}{0.00cm}
+\setlength{\voffset}{0.00cm}
+
+\setlength{\oddsidemargin}{1.5cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\topmargin}{1mm}
+\setlength{\headheight}{1.36cm}
+\setlength{\headsep}{1.00cm}
+\setlength{\textheight}{20.84cm}
+\setlength{\textwidth}{14.5cm}
+\setlength{\marginparsep}{1mm}
+\setlength{\marginparwidth}{3cm}
+\setlength{\footskip}{2.36cm}
+
+
+%---- fancy page layout ----
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{Chapter \thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[RO]{\rightmark \hspace{0.5cm} \textbf{\thepage}}
+\fancyhead[LE]{\textbf{\thepage} \hspace{0.5cm} \leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+  \fancyhead{}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+%---- toc ----
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+%---- references ----
+%\renewcommand{\refname}{References}
+%\renewcommand{\bibname}{References}
+
+%---- own command definitions ----
+%\input{config/definitions.own}
+
+% turn of those nasty overfull and underfull hboxes and vboxes
+\hbadness=10000
+\hfuzz=1pt
+\vbadness=10000
+\vfuzz=1pt
+
+\newcommand{\smhd}[1]{{\Large\bf\usefont{OT1}{phv}{bx}{n}\selectfont #1}}
+
+% suppress pdf inclusion warnings
+%\pdfminorversion=6
+
+% remove afterwards!
+% \usepackage{todonotes}
+%hyphenation
+\hyphenation{Mul-ti--Drug-Re--sis-tance}
+
+
+\usepackage{glossaries}
+%\input{content/glossary.tex}
+\makeglossary
+\usepackage{subcaption}
+\usepackage{footnote}
+

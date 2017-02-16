@@ -1,0 +1,68 @@
+\begin{document}
+
+\frontmatter
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1.00}\normalsize
+\onehalfspacing
+
+%-------------------------------------
+%	Title page
+%-------------------------------------
+
+\pagestyle{empty}
+\vspace*{1cm}
+$if(title)$
+\begin{center}
+{\huge $title$}
+$endif$
+\vspace*{3cm}
+
+\large 
+Inaugural-Dissertation
+
+\vspace*{2cm}
+
+zur \\
+Erlangung des Doktorgrades \\
+der Mathematisch-Naturwissenschaftlichen Fakultät \\
+der Heinrich-Heine-Universität Düsseldorf \\
+
+
+\vspace*{0.5cm}
+
+vorgelegt von \\
+
+\vspace*{0.5cm}
+
+$if(author)$
+\textbf{$author.name$} \\
+aus $author.city$
+$endif$
+
+\vspace*{3cm}
+
+$if(city)$$city$$endif$, $if(date)$ $date$ $else$ \date{\yyyymmdddate \today} $endif$
+
+
+\end{center}
+
+\newpage
+
+aus dem Institut für Informatik \\
+der Heinrich-Heine-Universität Düsseldorf
+
+\vspace*{10cm}
+
+Gedruckt mit der Genehmigung der \\
+Mathemathisch-Naturwissenschaftlichen Fakultät der \\
+Heinrich-Heine-Universität Düsseldorf
+
+\vspace*{3cm}
+
+\begin{tabularx}{\textwidth}{ X X }
+Referent: & Prof. Dr. Alice C. McHardy \\
+Koreferent: & Prof. Dr. Martin J. Lercher \\
+ & \\
+Tag der mündlichen Prüfung: &  \\
+\end{tabularx}
+
