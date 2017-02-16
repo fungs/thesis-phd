@@ -1,5 +1,9 @@
 ---
-title: Computational Methods for Taxonomic Annotation and Genome Reconstruction in Metagenomics
+title: |
+ | Computational Methods
+ | for Taxonomic Annotation
+ | and Genome Reconstruction
+ | in Metagenomics
 author:
   name: Johannes Dröge
   city: Halle (Westf.)
