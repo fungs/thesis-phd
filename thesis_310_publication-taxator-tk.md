@@ -10,7 +10,7 @@
 
 ----
 
-**This is an author-produced version of an article accepted for publication in *Bioinformatics* following peer review. This version has been adapted to the thesis layout. The original open-access article is accessible by DOI [10.1093/bioinformatics/btu745](https://doi.org/10.1093/bioinformatics/btu745).**
+**This is an author-produced version of an article accepted for publication in *[Bioinformatics](https://bioinformatics.oxfordjournals.org)* following peer review. This version has been adapted to the thesis layout. The original open-access article is accessible by DOI [10.1093/bioinformatics/btu745](https://doi.org/10.1093/bioinformatics/btu745).**
 
 ## Abstract
 
