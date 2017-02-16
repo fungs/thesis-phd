@@ -1,16 +1,11 @@
 %-------------------------------------
 %
-%	Dissertation A. Weimann
-%
-%	main file
+%	Dissertation
 %
 %-------------------------------------
 
-\documentclass[
-	a4paper,
-	twoside,
-	12pt
-]{book}
+\documentclass[a4paper,twoside,12pt,openright]{book}
+\usepackage[lmargin=142pt,rmargin=95pt,tmargin=127pt,bmargin=123pt]{geometry}
 
 %---- packages ----
 
@@ -27,58 +22,6 @@
 \renewcommand{\cftchapfont}{%
 	\fontsize{11}{13}\usefont{OT1}{phv}{bx}{n}\selectfont
 }
-% references
-% author-year
-%\usepackage[round, authoryear]{natbib}
-%\bibliographystyle{references/bibstyle}
-% numbered (doesn't work for \citeauthor
-% \usepackage[sort&compress, numbers]{natbib}
-% \bibliographystyle{references/bibstyle_numbered}
-%\usepackage[
-%citestyle=authoryear, 
-%bibstyle=authoryear,
-%maxcitenames = 1,
-%maxbibnames = 100,
-%firstinits=true,
-%uniquename=init,
-%doi = true,
-%url = false,
-%eprint= false,
-%sortlocale = en_US,
-%backend=biber,  
-%hyperref=true, 
-%backref=true,
-%bibencoding=utf8
-%]{biblatex}
-
-%omit undesired keys
-%\AtEveryCitekey{\UseBibitemHook}
-%\AtEveryBibitem{%
-%  \ifentrytype{Article}{%
-%  }{%
- %   \clearlist{language}%
- %   \clearfield{issn}%
- %   \clearfield{isnb}%
- %   %\clearfield{url}%
- %   %\clearfield{urlyear}%
- %   }%
-%}
-
-%\renewbibmacro{in:}{}
-% \usepackage[backend=biber, style = science, babel=other,%
-% bibencoding=inputenc]{biblatex}
-% \usepackage[
-% backend=biber,
-% style=alphabetic,
-% citestyle=authoryear 
-% ]{biblatex}
-%use maxbibnames for fullcite rather than maxauthornames
-%\preto\fullcite{\AtNextCite{\defcounter{maxnames}{99}}}
-
-%\DeclareBibliographyCategory{fullcited}
-%\newcommand{\mybibexclude}[1]{\addtocategory{fullcited}{#1}}
-%\addbibresource{references/thesis_updated.bib}
-%\addbibresource{references/images.bib}
 
 % language
 \usepackage[english]{babel}
@@ -185,10 +128,6 @@
   \fancyhead{}
   \renewcommand{\headrulewidth}{0pt}
 }
-
-%---- toc ----
-\setcounter{secnumdepth}{2}
-\setcounter{tocdepth}{2}
 
 %---- references ----
 %\renewcommand{\refname}{References}

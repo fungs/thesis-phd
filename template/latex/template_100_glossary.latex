@@ -1,9 +1,3 @@
-%\renewcommand{\refname}{References}
-%\renewcommand{\bibname}{References}
-
-%\newacronym{MIC}{MIC}{minium inhibitory concentration}
-
 \sloppy
 \printglossary[nonumberlist]
-%\printbibliography
 

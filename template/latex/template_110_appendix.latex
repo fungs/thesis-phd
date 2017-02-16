@@ -1,19 +1,15 @@
-\begin{appendix}\label{appendix}
-
-\end{appendix}
-
 %-------------------------------------
 %	PDFs of the articles (journal versions)
 %-------------------------------------
+\begin{appendix}\label{appendix}
 
-\chapter{Appendix}
+%\chapter{Appendix}
 
 \cleardoublepage
 
-%\includepdf[pages=1-7,offset=0 0]{appendix/article_1.pdf}
-%\includepdf[pages=8, angle=90, offset=0 0]{appendix/article_1.pdf}
-%\includepdf[pages=9-13, offset=0 0]{appendix/article_1.pdf}
-%\includepdf[page={-},offset=0 0]{appendix/Traitar_v2a.pdf}
+%\includepdf[pages=1-7, angle=0, offset=0 0]{appendix/appendix_01_xyz.pdf}
+
+\end{appendix}
 
 \end{document}
 
