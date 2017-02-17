@@ -1,3 +1,6 @@
 # compiled files
 thesis.pdf
 template.latex
+language.json
+*~
+*TODO.md
