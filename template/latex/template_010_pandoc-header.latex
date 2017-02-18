@@ -1,49 +1,10 @@
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
-\usepackage[affil-it,noblocks]{authblk}
 \usepackage[iso]{datetime}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{bm}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
-
-%Begin---- Lars' template modifications ----
-
-%---- toc formating ----
-\usepackage[nottoc]{tocbibind}
-\usepackage[titles]{tocloft}
-\setcounter{secnumdepth}{2}
-\setcounter{tocdepth}{2}
-
-%---- fancy page layout ----
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{Chapter \thechapter. #1 }}{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-\fancyhf{}
-\fancyhead[RO]{\rightmark \hspace{0.5cm} \textbf{\thepage}}
-\fancyhead[LE]{\textbf{\thepage} \hspace{0.5cm} \leftmark}
-\renewcommand{\headrulewidth}{0.5pt}
-\renewcommand{\footrulewidth}{0pt}
-\addtolength{\headheight}{0.5pt}
-\fancypagestyle{plain}{
-  \fancyhead{}
-  \renewcommand{\headrulewidth}{0pt}
-}
-\renewcommand{\cftchapfont}{%
-	\fontsize{11}{13}\usefont{OT1}{phv}{bx}{n}\selectfont
-}
-
-%---- predefined chapter heading style ----
-\usepackage[Sonny]{fncychap}
-\ChNameVar{\large\sf}
-\ChNumVar{\huge}
-\ChTitleVar{\Huge\sf}
-\ChRuleWidth{0.5pt}
-\ChNameUpperCase
-
-%End---- Lars' template modifications ----
-
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -75,9 +36,6 @@ $endif$
 \fi
 % use microtype if available
 \IfFileExists{microtype.sty}{\usepackage{microtype}}{}
-$if(geometry)$
-\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
-$endif$
 $if(natbib)$
 \usepackage{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
@@ -170,41 +128,73 @@ $if(lang)$
 \fi
 $endif$
 
-%redefine figure to appear where they are inserted
+%redefine figure placement rules
 \usepackage{float}
 \let\origfigure=\figure
 \let\endorigfigure=\endfigure
 \renewenvironment{figure}[1][]{%
-  \origfigure[H]
+  \origfigure[!htb] % use H for direct placement
 }{%
   \endorigfigure
+}
+
+% set longtable content to monospace font
+%\let\origlongtable=\longtable
+%\let\endoriglongtable=\endlongtable
+%\renewenvironment{longtable}[1][]{%
+%  \begingroup
+%  \ttfamily
+%  \origlongtable
+%}{%
+%  \endoriglongtable
+%  \endgroup
+%}
+
+% place figures and tables in the same sections/subsections
+\usepackage{placeins}
+\let\origsection=\section
+\let\endorigsection=\endsection
+\renewenvironment{section}[1][]{%
+  \origsection
+}{%
+  \endorigsection
+  \FloatBarrier
+}
+\let\origsubsection=\subsection
+\let\endorigsubsection=\endsubsection
+\renewenvironment{subsection}[1][]{%
+  \origsubsection
+}{%
+  \endorigsubsection
+  \FloatBarrier
+}
+\let\origsubsubsection=\subsubsection
+\let\endorigsubsubsection=\endsubsubsection
+\renewenvironment{subsubsection}[1][]{%
+  \origsubsubsection
+}{%
+  \endorigsubsubsection
+  \FloatBarrier
+}
+\let\origparagraph=\paragraph
+\let\endorigparagraph=\endparagraph
+\renewenvironment{paragraph}[1][]{%
+  \origparagraph
+}{%
+  \endorigparagraph
+  \FloatBarrier
+}
+\let\origsubparagraph=\subparagraph
+\let\endorigsubparagraph=\endsubparagraph
+\renewenvironment{subparagraph}[1][]{%
+  \origsubparagraph
+}{%
+  \endorigsubparagraph
+  \FloatBarrier
 }
 
 % define tightlist
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
-$if(title)$
-\title{$title$}
-$endif$
-
-$if(subtitle)$
-\subtitle{$subtitle$}
-$endif$
-
-$for(author)$
-\author{$author.name$}
-\affil{$author.affiliation$, $author.email$}
-$endfor$
-
-$if(date)$
-\date{\small $date$}
-$else$
-\date{\small \yyyymmdddate \today}
-$endif$
-
-$for(header-includes)$
-$header-includes$
-$endfor$
 
 

@@ -1,0 +1,30 @@
+%-------------------------------------
+%	Selbstaendigkeitserklaerung
+%-------------------------------------
+
+\newpage
+\pagestyle{plain}
+
+% \vspace*{2cm} 
+
+\smhd{Selbstständigkeitserklärung}
+
+\vspace*{1cm} {\parindent=0pt
+Hiermit erkläre ich, dass ich die vorliegende Dissertation eigenständig und ohne fremde Hilfe angefertig habe. Arbeiten Dritter wurden entsprechend zitiert. Diese Dissertation wurde bisher in dieser oder ähnlicher Form noch bei keiner anderen Institution eingereicht. Ich habe bisher keine erfolglosen Promotionsversuche unternommen.
+
+\vspace{1cm}
+
+$if(city)$ $city$ $endif$, den ~ \dotfill...\dotfill \hfill\hfill\hfill \dotfill...\dotfill...\dotfill
+	\\
+\small\rule{0pt}{0pt} $if(author)$\hfill($author.name$)$endif$
+}
+
+\vspace*{8cm}
+
+\smhd{Statement of authorship}
+
+\vspace*{1cm} {\parindent=0pt
+I hereby certify that this dissertation is the result of my own work. No other person's work has been used without due acknowledgement. This dissertation has not been submitted in the same or similar form to other institutions. I have not previously failed a doctoral examination procedure.}
+
+\cleardoublepage
+

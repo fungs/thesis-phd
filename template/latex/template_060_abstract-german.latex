@@ -1,0 +1,16 @@
+%-------------------------------------
+%	Abstract German
+%-------------------------------------
+
+\selectlanguage{english} {
+	\smhd{Zusammenfassung}
+
+%	\cleardoublepage
+
+%	\vspace*{0.5cm}
+$if(abstractgerman)$
+$abstractgerman$
+$endif$
+	\vspace*{0.5cm}
+}
+

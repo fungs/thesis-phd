@@ -1,0 +1,17 @@
+\frenchspacing
+
+%-------------------------------------
+%	Abstract English
+%-------------------------------------
+
+\selectlanguage{english}{
+	\smhd{Summary}
+	\vspace*{0.5cm}
+
+$if(abstractenglish)$
+$abstractenglish$
+$endif$
+}
+
+\newpage
+
