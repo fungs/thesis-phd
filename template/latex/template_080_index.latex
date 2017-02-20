@@ -20,18 +20,20 @@
 }
 
 %---- table of contents ----
+%\cleardoublepage
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
 \tableofcontents
 
 %---- figure index ----
+%\cleardoublepage
 \listoffigures
 
 %---- list index ----
+%\cleardoublepage
 \listoftables
 
 \cleardoublepage
-
 \markboth{\MakeUppercase{\nomname}}{\nomname}
 %define acronyms
 

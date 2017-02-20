@@ -7,7 +7,7 @@ bibtex_file = bibliography.bib
 all: thesis.pdf
 
 thesis.pdf: $(thesis_config) $(thesis_files) $(thesis_figures) $(bibtex_file) template.latex
-	@pandoc --filter pandoc-crossref --filter pandoc-citeproc --bibliography $(bibtex_file) --csl template/citationstyle.csl --template template.latex --latex-engine xelatex -o thesis.pdf $(thesis_config) $(thesis_files)
+	@pandoc --filter pandoc-shortcaption --filter pandoc-crossref --filter pandoc-citeproc --bibliography $(bibtex_file) --csl template/citationstyle.csl --template template.latex --latex-engine xelatex -o thesis.pdf $(thesis_config) $(thesis_files)
 
 template.latex: $(latex_template_files)
 	@cat $(latex_template_files) > template.latex
