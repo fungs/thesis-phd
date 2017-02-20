@@ -19,23 +19,29 @@
   \renewcommand{\headrulewidth}{0pt}
 }
 
-%---- table of contents ----
-%\cleardoublepage
-\setcounter{secnumdepth}{2}
-\setcounter{tocdepth}{2}
-\tableofcontents
+$if(toc)$
+{
+  %---- table of contents ----
+  %\cleardoublepage
+  \setcounter{secnumdepth}{2}
+  \setcounter{tocdepth}{2}
+  \tableofcontents
 
-%---- figure index ----
-%\cleardoublepage
-\listoffigures
+  %---- figure index ----
+  %\cleardoublepage
+  \listoffigures
 
-%---- list index ----
-%\cleardoublepage
-\listoftables
+  %---- list index ----
+  %\cleardoublepage
+  \listoftables
 
-\cleardoublepage
-\markboth{\MakeUppercase{\nomname}}{\nomname}
-%define acronyms
-
-\glsaddall
+  \cleardoublepage
+  \markboth{\MakeUppercase{\nomname}}{\nomname}
+  %define acronyms
+  %\glsaddall
+  %\hypersetup{linkcolor=black}
+  %\setcounter{tocdepth}{$toc-depth$}
+  %\tableofcontents
+}
+$endif$
 
