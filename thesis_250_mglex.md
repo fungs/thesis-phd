@@ -37,9 +37,9 @@ $$ {#eq:mglex_likelihood_aggregate}
 
 The model assumes statistical independence of the submodel features. All model parameters are determined from training data, $\mathbf{\Theta}$ using submodel ML estimation, $\bm \alpha$ using the inverse standard deviations of the class log-likelihood distributions ([@fig:mglex_alpha_inference]) and $\beta$ by mean squared error (MSE) minimization ([@fig:mglex_beta_fitting]).
 
-![Procedure for determination of $\alpha_k$ for each submodel. The figure shows a schematic for a single genome and two submodels. The genome's contig log-likelihood distribution is scaled to a standard deviation of one before adding the term in the aggregate model.](figure/mglex_alpha.pdf){#fig:mglex_alpha_inference}
+![Procedure for determination of $\alpha_k$ for each submodel. The figure shows a schematic for a single genome and two submodels. The genome's contig log-likelihood distribution is scaled to a standard deviation of one before adding the term in the aggregate model.](figure/mglex_alpha.pdf "Submodel weighting using $\alpha_k$"){#fig:mglex_alpha_inference}
 
-![Model training (err) and test error (Err) as a function of $\beta$ for the complete aggregate model including all submodels and feature types. The solid curve shows the average and the colored shading the standard deviation of the three partitions in cross-validation. The corresponding optimal values for $\beta$ are marked by black dots and vertical lines. The minimum average training error is 0.238 ($\beta=2.85$) and test error is 0.279 at $\beta=1.65$.](figure/mglex_beta.pdf){#fig:mglex_beta_fitting}
+![Model training (err) and test error (Err) as a function of $\beta$ for the complete aggregate model including all submodels and feature types. The solid curve shows the average and the colored shading the standard deviation of the three partitions in cross-validation. The corresponding optimal values for $\beta$ are marked by black dots and vertical lines. The minimum average training error is 0.238 ($\beta=2.85$) and test error is 0.279 at $\beta=1.65$.](figure/mglex_beta.pdf "Training and test error as a function of $\beta$"){#fig:mglex_beta_fitting}
 
 We integrate different submodels $\mathcal{L}(\bm{\mathit{\Theta_k}} \mid \bm{F_{i,k}})$ according to distinct input feature types:
 
