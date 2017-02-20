@@ -1,4 +1,4 @@
-### Taxonomic binning of metagenome samples {#sec:publication_bib}
+### Taxonomic binning of metagenome samples {#sec:short_bib}
 
 ![Review article preview](figure/publication_bib_preview.png){#fig:publication_bib_preview}
 

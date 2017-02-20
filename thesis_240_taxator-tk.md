@@ -1,4 +1,4 @@
-### *Taxator-tk*: Taxonomic annotation of metagenomes {#sec:publication_taxator-tk}
+### *Taxator-tk*: Taxonomic annotation of metagenomes {#sec:short_taxator-tk}
 
 ![*Taxator-tk* article preview](figure/publication_taxator-tk_preview.png){#fig:publication_taxator-tk_preview}
 
