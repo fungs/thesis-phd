@@ -1,4 +1,4 @@
-### A probabilistic model for genome recovery {#sec:publication_mglex}
+### *MGLEX*: A probabilistic model for genome recovery {#sec:publication_mglex}
 
 ![*MGLEX* article preview](figure/publication_mglex_preview.png){#fig:publication_mglex_preview}
 
