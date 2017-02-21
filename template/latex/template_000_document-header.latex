@@ -165,3 +165,6 @@
 % add appendix
 \usepackage[titletoc]{appendix}
 
+% set paragraph spacing
+%\usepackage{parskip}
+
