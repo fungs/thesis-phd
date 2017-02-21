@@ -55,6 +55,22 @@
   pages = {59--60}
 }
 
+@article{AmannPhylogenetic1995,
+  title = {Phylogenetic Identification and in Situ Detection of Individual Microbial Cells without Cultivation.},
+  volume = {59},
+  issn = {0146-0749},
+  abstract = {The frequent discrepancy between direct microscopic counts and numbers of culturable bacteria from environmental samples is just one of several indications that we currently know only a minor part of the diversity of microorganisms in nature. A combination of direct retrieval of rRNA sequences and whole-cell oligonucleotide probing can be used to detect specific rRNA sequences of uncultured bacteria in natural samples and to microscopically identify individual cells. Studies have been performed with microbial assemblages of various complexities ranging from simple two-component bacterial endosymbiotic associations to multispecies enrichments containing magnetotactic bacteria to highly complex marine and soil communities. Phylogenetic analysis of the retrieved rRNA sequence of an uncultured microorganism reveals its closest culturable relatives and may, together with information on the physicochemical conditions of its natural habitat, facilitate more directed cultivation attempts. For the analysis of complex communities such as multispecies biofilms and activated-sludge flocs, a different approach has proven advantageous. Sets of probes specific to different taxonomic levels are applied consecutively beginning with the more general and ending with the more specific (a hierarchical top-to-bottom approach), thereby generating increasingly precise information on the structure of the community. Not only do rRNA-targeted whole-cell hybridizations yield data on cell morphology, specific cell counts, and in situ distributions of defined phylogenetic groups, but also the strength of the hybridization signal reflects the cellular rRNA content of individual cells. From the signal strength conferred by a specific probe, in situ growth rates and activities of individual cells might be estimated for known species. In many ecosystems, low cellular rRNA content and/or limited cell permeability, combined with background fluorescence, hinders in situ identification of autochthonous populations. Approaches to circumvent these problems are discussed in detail.},
+  timestamp = {2016-06-16T16:07:15Z},
+  number = {1},
+  journaltitle = {Microbiological reviews},
+  author = {Amann, R I and Ludwig, W and Schleifer, K H},
+  date = {1995-03},
+  pages = {143--69},
+  keywords = {16S,16S: analysis,16S: genetics,23S,23S: analysis,23S: genetics,Bacteria,Bacteria: genetics,Bacteria: isolation & purification,Bacterial,Bacterial: genetics,Bacterial: isolation & purification,Base Sequence,Genetic Variation,In Situ Hybridization,In Situ Hybridization: methods,Molecular Sequence Data,Ribosomal,RNA},
+  eprinttype = {pmid},
+  eprint = {7535888}
+}
+
 @article{BaranJoint2012,
   title = {Joint Analysis of Multiple Metagenomic Samples.},
   volume = {8},
@@ -70,6 +86,39 @@
   keywords = {Crohn's disease,DNA sequencing,Genome-wide association studies,Genomic databases,Genomic medicine,Metagenomics,Principal component analysis,Sequence alignment},
   eprinttype = {pmid},
   eprint = {22359490}
+}
+
+@article{BergerPerformance2011,
+  title = {Performance, Accuracy, and Web Server for Evolutionary Placement of Short Sequence Reads under Maximum Likelihood.},
+  volume = {60},
+  issn = {1076-836X},
+  doi = {10.1093/sysbio/syr010},
+  abstract = {We present an evolutionary placement algorithm (EPA) and a Web server for the rapid assignment of sequence fragments (short reads) to edges of a given phylogenetic tree under the maximum-likelihood model. The accuracy of the algorithm is evaluated on several real-world data sets and compared with placement by pair-wise sequence comparison, using edit distances and BLAST. We introduce a slow and accurate as well as a fast and less accurate placement algorithm. For the slow algorithm, we develop additional heuristic techniques that yield almost the same run times as the fast version with only a small loss of accuracy. When those additional heuristics are employed, the run time of the more accurate algorithm is comparable with that of a simple BLAST search for data sets with a high number of short query sequences. Moreover, the accuracy of the EPA is significantly higher, in particular when the sample of taxa in the reference topology is sparse or inadequate. Our algorithm, which has been integrated into RAxML, therefore provides an equally fast but more accurate alternative to BLAST for tree-based inference of the evolutionary origin and composition of short sequence reads. We are also actively developing a Web server that offers a freely available service for computing read placements on trees using the EPA.},
+  timestamp = {2016-06-16T16:07:17Z},
+  number = {3},
+  journaltitle = {Systematic biology},
+  author = {Berger, Simon A and Krompass, Denis and Stamatakis, Alexandros},
+  date = {2011-05},
+  pages = {291--302},
+  keywords = {Algorithms,Amino Acid Sequence,Base Sequence,Computer Simulation,DNA,DNA: methods,Evolution,Internet,Likelihood Functions,Molecular,phylogenetic placement algorithm,Phylogeny,Protein,Protein: methods,RNA,RNA: methods,Sequence Alignment,Sequence Alignment: methods,Sequence Analysis,Software,taxonomic binning},
+  eprinttype = {pmid},
+  eprint = {21436105}
+}
+
+@article{BradyPhymmbl2011,
+  title = {{{PhymmBL}} Expanded: Confidence Scores, Custom Databases, Parallelization and More.},
+  volume = {8},
+  issn = {1548-7105},
+  doi = {10.1038/nmeth0511-367},
+  timestamp = {2016-06-16T16:07:18Z},
+  number = {5},
+  journaltitle = {Nature methods},
+  author = {Brady, Arthur and Salzberg, Steven},
+  date = {2011-05},
+  pages = {367},
+  keywords = {Animals,Classification,Classification: methods,Databases,Elephants,Elephants: classification,Elephants: genetics,Mammoths,Mammoths: classification,Mammoths: genetics,metagenomics,Metagenomics: statistics & numerical data,Nucleic Acid,Phylogeny,Sequence Alignment,Sequence Alignment: statistics & numerical data,Software},
+  eprinttype = {pmid},
+  eprint = {21527926}
 }
 
 @article{BradyPhymm2009,
@@ -89,20 +138,101 @@
   eprint = {19648916}
 }
 
-@book{ChatterjiResearch2008,
-  location = {{Berlin, Heidelberg}},
-  title = {Research in {{Computational Molecular Biology}}},
-  volume = {4955},
-  isbn = {978-3-540-78838-6},
-  abstract = {A major hindrance to studies of microbial diversity has been that the vast majority of microbes cannot be cultured in the laboratory and thus are not amenable to traditional methods of characterization. Environmental shotgun sequencing (ESS) overcomes this hurdle by se- quencing the DNA from the organisms present in amicrobial community. The interpretation of this metagenomic data can be greatly facilitated by associating every sequence read with its source organism. We report the development of CompostBin, a DNA composition-based algorithm for analyzing metagenomic sequence reads and distributing them into taxon-specific bins. Unlike previous methods that seek to bin assembled contigs and often require training on known reference genomes, Com- postBin has the ability to accurately bin raw sequence reads without need for assembly or training. CompostBin uses a novel weighted PCA algorithm to project the high dimensional DNA composition data into an informative lower-dimensional space, and then uses the normalized cut clustering algorithm on this filtered data set to classify sequences into taxon-specific bins. We demonstrate the algorithm's accuracy on a variety of low to medium complexity data sets.},
-  pagetotal = {17–28},
-  timestamp = {2016-06-16T16:07:20Z},
-  series = {Lecture Notes in Computer Science},
-  publisher = {{Springer Berlin Heidelberg}},
-  author = {Chatterji, Sourav and Yamazaki, Ichitaro and Bai, Zhaojun and Eisen, Jonathan A},
-  editor = {Vingron, Martin and Wong, Limsoon},
-  date = {2008},
-  keywords = {binning,cut,dna composition metrics,feature extraction,genome signatures,metagenomics,normalized,taxonomic binning,unsupervised taxonomic binning,weighted pca}
+@article{CamachoBlast2009,
+  title = {{{BLAST}}+: Architecture and Applications.},
+  volume = {10},
+  issn = {1471-2105},
+  doi = {10.1186/1471-2105-10-421},
+  abstract = {BACKGROUND: Sequence similarity searching is a very important bioinformatics task. While Basic Local Alignment Search Tool (BLAST) outperforms exact methods through its use of heuristics, the speed of the current BLAST software is suboptimal for very long queries or database sequences. There are also some shortcomings in the user-interface of the current command-line applications. RESULTS: We describe features and improvements of rewritten BLAST software and introduce new command-line applications. Long query sequences are broken into chunks for processing, in some cases leading to dramatically shorter run times. For long database sequences, it is possible to retrieve only the relevant parts of the sequence, reducing CPU time and memory usage for searches of short queries against databases of contigs or chromosomes. The program can now retrieve masking information for database sequences from the BLAST databases. A new modular software library can now access subject sequence data from arbitrary data sources. We introduce several new features, including strategy files that allow a user to save and reuse their favorite set of options. The strategy files can be uploaded to and downloaded from the NCBI BLAST web site. CONCLUSION: The new BLAST command-line applications, compared to the current BLAST tools, demonstrate substantial speed improvements for long queries as well as chromosome length database sequences. We have also improved the user interface of the command-line applications.},
+  timestamp = {2016-06-16T16:07:19Z},
+  journaltitle = {BMC bioinformatics},
+  author = {Camacho, Christiam and Coulouris, George and Avagyan, Vahram and Ma, Ning and Papadopoulos, Jason and Bealer, Kevin and Madden, Thomas L},
+  date = {2009-01},
+  pages = {421},
+  keywords = {Computational Biology,Computational Biology: methods,Databases,Genetic,Sequence Alignment,Software},
+  eprinttype = {pmid},
+  eprint = {20003500}
+}
+
+@article{CarrReconstructing2013,
+  title = {Reconstructing the Genomic Content of Microbiome Taxa through Shotgun Metagenomic Deconvolution.},
+  volume = {9},
+  issn = {1553-7358},
+  doi = {10.1371/journal.pcbi.1003292},
+  abstract = {Metagenomics has transformed our understanding of the microbial world, allowing researchers to bypass the need to isolate and culture individual taxa and to directly characterize both the taxonomic and gene compositions of environmental samples. However, associating the genes found in a metagenomic sample with the specific taxa of origin remains a critical challenge. Existing binning methods, based on nucleotide composition or alignment to reference genomes allow only a coarse-grained classification and rely heavily on the availability of sequenced genomes from closely related taxa. Here, we introduce a novel computational framework, integrating variation in gene abundances across multiple samples with taxonomic abundance data to deconvolve metagenomic samples into taxa-specific gene profiles and to reconstruct the genomic content of community members. This assembly-free method is not bounded by various factors limiting previously described methods of metagenomic binning or metagenomic assembly and represents a fundamentally different approach to metagenomic-based genome reconstruction. An implementation of this framework is available at http://elbo.gs.washington.edu/software.html. We first describe the mathematical foundations of our framework and discuss considerations for implementing its various components. We demonstrate the ability of this framework to accurately deconvolve a set of metagenomic samples and to recover the gene content of individual taxa using synthetic metagenomic samples. We specifically characterize determinants of prediction accuracy and examine the impact of annotation errors on the reconstructed genomes. We finally apply metagenomic deconvolution to samples from the Human Microbiome Project, successfully reconstructing genus-level genomic content of various microbial genera, based solely on variation in gene count. These reconstructed genera are shown to correctly capture genus-specific properties. With the accumulation of metagenomic data, this deconvolution framework provides an essential tool for characterizing microbial taxa never before seen, laying the foundation for addressing fundamental questions concerning the taxa comprising diverse microbial communities.},
+  timestamp = {2016-06-16T16:07:19Z},
+  number = {10},
+  journaltitle = {PLoS computational biology},
+  author = {Carr, Rogan and Shen-Orr, Shai S and Borenstein, Elhanan},
+  date = {2013-01},
+  pages = {e1003292},
+  eprinttype = {pmid},
+  eprint = {24146609}
+}
+
+@article{DarlingPhylosift2014,
+  title = {{{PhyloSift}}: Phylogenetic Analysis of Genomes and Metagenomes.},
+  volume = {2},
+  issn = {2167-8359},
+  doi = {10.7717/peerj.243},
+  abstract = {Like all organisms on the planet, environmental microbes are subject to the forces of molecular evolution. Metagenomic sequencing provides a means to access the DNA sequence of uncultured microbes. By combining DNA sequencing of microbial communities with evolutionary modeling and phylogenetic analysis we might obtain new insights into microbiology and also provide a basis for practical tools such as forensic pathogen detection. In this work we present an approach to leverage phylogenetic analysis of metagenomic sequence data to conduct several types of analysis. First, we present a method to conduct phylogeny-driven Bayesian hypothesis tests for the presence of an organism in a sample. Second, we present a means to compare community structure across a collection of many samples and develop direct associations between the abundance of certain organisms and sample metadata. Third, we apply new tools to analyze the phylogenetic diversity of microbial communities and again demonstrate how this can be associated to sample metadata. These analyses are implemented in an open source software pipeline called PhyloSift. As a pipeline, PhyloSift incorporates several other programs including LAST, HMMER, and pplacer to automate phylogenetic analysis of protein coding and RNA sequences in metagenomic datasets generated by modern sequencing platforms (e.g., Illumina, 454).},
+  timestamp = {2016-06-16T16:07:22Z},
+  journaltitle = {PeerJ},
+  author = {Darling, Aaron E. and Jospin, Guillaume and Lowe, Eric and a. Matsen, Frederick and Bik, Holly M. and a. Eisen, Jonathan},
+  date = {2014-01},
+  pages = {e243},
+  keywords = {accepted 19 december 2013,bayes factor,community,forensics,metagenomics,microbial diversity,phylogenetics,published 9 january 2014,submitted 21 march 2013},
+  eprinttype = {pmid},
+  eprint = {24482762}
+}
+
+@article{DesantisGreengenes2006,
+  title = {Greengenes, a Chimera-Checked {{16S rRNA}} Gene Database and Workbench Compatible with {{ARB}}.},
+  volume = {72},
+  issn = {0099-2240},
+  doi = {10.1128/AEM.03006-05},
+  abstract = {A 16S rRNA gene database (http://greengenes.lbl.gov) addresses limitations of public repositories by providing chimera screening, standard alignment, and taxonomic classification using multiple published taxonomies. It was found that there is incongruent taxonomic nomenclature among curators even at the phylum level. Putative chimeras were identified in 3\% of environmental sequences and in 0.2\% of records derived from isolates. Environmental sequences were classified into 100 phylum-level lineages in the Archaea and Bacteria.},
+  timestamp = {2016-06-16T16:07:23Z},
+  number = {7},
+  journaltitle = {Applied and environmental microbiology},
+  author = {DeSantis, T Z and Hugenholtz, P and Larsen, N and Rojas, M and Brodie, E L and Keller, K and Huber, T and Dalevi, D and Hu, P and Andersen, G L},
+  date = {2006-07},
+  pages = {5069--72},
+  keywords = {16S,16S: genetics,Archaea,Archaea: classification,Archaea: genetics,Bacteria,Bacteria: classification,Bacteria: genetics,Databases,Genes,Genetic,Nucleic Acid,Nucleic Acid: standards,Polymerase Chain Reaction,Recombination,Reproducibility of Results,Ribosomal,RNA,rRNA,Sequence Alignment,Software},
+  eprinttype = {pmid},
+  eprint = {16820507}
+}
+
+@article{DeschavanneGenomic1999,
+  title = {Genomic Signature: Characterization and Classification of Species Assessed by Chaos Game Representation of Sequences.},
+  volume = {16},
+  issn = {0737-4038},
+  abstract = {We explored DNA structures of genomes by means of a new tool derived from the "chaotic dynamical systems" theory (the so-called chaos game representation [CGR]), which allows the depiction of frequencies of oligonucleotides in the form of images. Using CGR, we observe that subsequences of a genome exhibit the main characteristics of the whole genome, attesting to the validity of the genomic signature concept. Base concentrations, stretches (runs of complementary bases or purines/pyrimidines), and patches (over- or underexpressed words of various lengths) are the main factors explaining the variability observed among sequences. The distance between images may be considered a measure of phylogenetic proximity. Eukaryotes and prokaryotes can be identified merely on the basis of their DNA structures.},
+  timestamp = {2016-06-16T16:07:23Z},
+  number = {10},
+  journaltitle = {Molecular biology and evolution},
+  author = {Deschavanne, P J and Giron, a and Vilain, J and Fagot, G and Fertil, B},
+  date = {1999-10},
+  pages = {1391--9},
+  keywords = {Algorithms,Animals,Classification,Computer-Assisted,Computer Simulation,DNA,DNA: analysis,DNA: genetics,Evolution,Genome,Humans,Image Processing,Molecular,Phylogeny,Species Specificity},
+  eprinttype = {pmid},
+  eprint = {10563018}
+}
+
+@article{DiazTacoa2009,
+  title = {{{TACOA}}: Taxonomic Classification of Environmental Genomic Fragments Using a Kernelized Nearest Neighbor Approach.},
+  volume = {10},
+  issn = {1471-2105},
+  doi = {10.1186/1471-2105-10-56},
+  abstract = {BACKGROUND: Metagenomics, or the sequencing and analysis of collective genomes (metagenomes) of microorganisms isolated from an environment, promises direct access to the "unculturable majority". This emerging field offers the potential to lay solid basis on our understanding of the entire living world. However, the taxonomic classification is an essential task in the analysis of metagenomics data sets that it is still far from being solved. We present a novel strategy to predict the taxonomic origin of environmental genomic fragments. The proposed classifier combines the idea of the k-nearest neighbor with strategies from kernel-based learning. RESULTS: Our novel strategy was extensively evaluated using the leave-one-out cross validation strategy on fragments of variable length (800 bp - 50 Kbp) from 373 completely sequenced genomes. TACOA is able to classify genomic fragments of length 800 bp and 1 Kbp with high accuracy until rank class. For longer fragments $\backslash$textgreater or = 3 Kbp accurate predictions are made at even deeper taxonomic ranks (order and genus). Remarkably, TACOA also produces reliable results when the taxonomic origin of a fragment is not represented in the reference set, thus classifying such fragments to its known broader taxonomic class or simply as "unknown". We compared the classification accuracy of TACOA with the latest intrinsic classifier PhyloPythia using 63 recently published complete genomes. For fragments of length 800 bp and 1 Kbp the overall accuracy of TACOA is higher than that obtained by PhyloPythia at all taxonomic ranks. For all fragment lengths, both methods achieved comparable high specificity results up to rank class and low false negative rates are also obtained. CONCLUSION: An accurate multi-class taxonomic classifier was developed for environmental genomic fragments. TACOA can predict with high reliability the taxonomic origin of genomic fragments as short as 800 bp. The proposed method is transparent, fast, accurate and the reference set can be easily updated as newly sequenced genomes become available. Moreover, the method demonstrated to be competitive when compared to the most current classifier PhyloPythia and has the advantage that it can be locally installed and the reference set can be kept up-to-date.},
+  timestamp = {2016-06-16T16:07:24Z},
+  journaltitle = {BMC bioinformatics},
+  author = {Diaz, Naryttza N and Krause, Lutz and Goesmann, Alexander and Niehaus, Karsten and Nattkemper, Tim W},
+  date = {2009-01},
+  pages = {56},
+  keywords = {Algorithms,Archaea,Archaea: classification,Archaea: genetics,Bacteria,Bacteria: classification,Bacteria: genetics,Classification,Classification: methods,Cluster Analysis,Environmental Microbiology,Genome,Genomics,Genomics: methods,metagenomics,Software,Software Validation,taxonomic binning},
+  eprinttype = {pmid},
+  eprint = {19210774}
 }
 
 @article{DrogeTaxatortk2014,
@@ -118,6 +248,79 @@
   author = {Dröge, Johannes and Gregor, Ivan and McHardy, Alice C.},
   date = {2014},
   pages = {1--8}
+}
+
+@article{FinnHmmer2011,
+  title = {{{HMMER}} Web Server: Interactive Sequence Similarity Searching.},
+  volume = {39 Suppl 2},
+  issn = {1362-4962},
+  doi = {10.1093/nar/gkr367},
+  abstract = {HMMER is a software suite for protein sequence similarity searches using probabilistic methods. Previously, HMMER has mainly been available only as a computationally intensive UNIX command-line tool, restricting its use. Recent advances in the software, HMMER3, have resulted in a 100-fold speed gain relative to previous versions. It is now feasible to make efficient profile hidden Markov model (profile HMM) searches via the web. A HMMER web server (http://hmmer.janelia.org) has been designed and implemented such that most protein database searches return within a few seconds. Methods are available for searching either a single protein sequence, multiple protein sequence alignment or profile HMM against a target sequence database, and for searching a protein sequence against Pfam. The web server is designed to cater to a range of different user expertise and accepts batch uploading of multiple queries at once. All search methods are also available as RESTful web services, thereby allowing them to be readily integrated as remotely executed tasks in locally scripted workflows. We have focused on minimizing search times and the ability to rapidly display tabular results, regardless of the number of matches found, developing graphical summaries of the search results to provide quick, intuitive appraisement of them.},
+  timestamp = {2016-06-16T16:07:29Z},
+  issue = {May},
+  journaltitle = {Nucleic acids research},
+  author = {Finn, Robert D and Clements, Jody and Eddy, Sean R},
+  date = {2011-07},
+  pages = {W29--37},
+  eprinttype = {pmid},
+  eprint = {21593126}
+}
+
+@article{FrithParameters2010,
+  title = {Parameters for Accurate Genome Alignment.},
+  volume = {11},
+  issn = {1471-2105},
+  doi = {10.1186/1471-2105-11-80},
+  abstract = {BACKGROUND: Genome sequence alignments form the basis of much research. Genome alignment depends on various mundane but critical choices, such as how to mask repeats and which score parameters to use. Surprisingly, there has been no large-scale assessment of these choices using real genomic data. Moreover, rigorous procedures to control the rate of spurious alignment have not been employed. RESULTS: We have assessed 495 combinations of score parameters for alignment of animal, plant, and fungal genomes. As our gold-standard of accuracy, we used genome alignments implied by multiple alignments of proteins and of structural RNAs. We found the HOXD scoring schemes underlying alignments in the UCSC genome database to be far from optimal, and suggest better parameters. Higher values of the X-drop parameter are not always better. E-values accurately indicate the rate of spurious alignment, but only if tandem repeats are masked in a non-standard way. Finally, we show that gamma-centroid (probabilistic) alignment can find highly reliable subsets of aligned bases. CONCLUSIONS: These results enable more accurate genome alignment, with reliability measures for local alignments and for individual aligned bases. This study was made possible by our new software, LAST, which can align vertebrate genomes in a few hours http://last.cbrc.jp/.},
+  timestamp = {2016-06-16T16:07:30Z},
+  journaltitle = {BMC bioinformatics},
+  author = {Frith, Martin C and Hamada, Michiaki and Horton, Paul},
+  date = {2010-01},
+  pages = {80},
+  keywords = {Base Sequence,Computational Biology,Computational Biology: methods,Genome,Molecular Sequence Data,Proteins,Proteins: chemistry,RNA,RNA: chemistry,Sequence Alignment,Sequence Alignment: methods,Sequence Analysis},
+  eprinttype = {pmid},
+  eprint = {20144198}
+}
+
+@article{FuhrmanMicrobial2009,
+  title = {Microbial Community Structure and Its Functional Implications.},
+  volume = {459},
+  issn = {1476-4687},
+  doi = {10.1038/nature08058},
+  abstract = {Marine microbial communities are engines of globally important processes, such as the marine carbon, nitrogen and sulphur cycles. Recent data on the structures of these communities show that they adhere to universal biological rules. Co-occurrence patterns can help define species identities, and systems-biology tools are revealing networks of interacting microorganisms. Some microbial systems are found to change predictably, helping us to anticipate how microbial communities and their activities will shift in a changing world.},
+  timestamp = {2016-06-16T16:07:31Z},
+  number = {7244},
+  journaltitle = {Nature},
+  author = {a Fuhrman, Jed},
+  date = {2009-05},
+  pages = {193--9},
+  keywords = {Animals,Ecosystem,Genomics,Genomics: methods,Genomics: trends,Greenhouse Effect,Marine Biology,Water Microbiology},
+  eprinttype = {pmid},
+  eprint = {19444205}
+}
+
+@article{GerlachTaxonomic2011,
+  title = {Taxonomic Classification of Metagenomic Shotgun Sequences with {{CARMA3}}.},
+  issn = {1362-4962},
+  doi = {10.1093/nar/gkr225},
+  abstract = {The vast majority of microbes are unculturable and thus cannot be sequenced by means of traditional methods. High-throughput sequencing techniques like 454 or Solexa-Illumina make it possible to explore those microbes by studying whole natural microbial communities and analysing their biological diversity as well as the underlying metabolic pathways. Over the past few years, different methods have been developed for the taxonomic and functional characterization of metagenomic shotgun sequences. However, the taxonomic classification of metagenomic sequences from novel species without close homologue in the biological sequence databases poses a challenge due to the high number of wrong taxonomic predictions on lower taxonomic ranks. Here we present CARMA3, a new method for the taxonomic classification of assembled and unassembled metagenomic sequences that has been adapted to work with both BLAST and HMMER3 homology searches. We show that our method makes fewer wrong taxonomic predictions (at the same sensitivity) than other BLAST-based methods. CARMA3 is freely accessible via the web application WebCARMA from http://webcarma.cebitec.uni-bielefeld.de.},
+  timestamp = {2016-06-16T16:07:33Z},
+  journaltitle = {Nucleic acids research},
+  author = {Gerlach, Wolfgang and Stoye, Jens},
+  date = {2011-05},
+  pages = {1--11},
+  eprinttype = {pmid},
+  eprint = {21586583}
+}
+
+@article{GregorPhylopythias2014,
+  title = {{{PhyloPythiaS}}+: {{A}} Self-Training Method for the Rapid Reconstruction of Low-Ranking Taxonomic Bins from Metagenomes},
+  abstract = {Metagenomics is an approach for characterizing environmental microbial communities in situ, it allows their functional and taxonomic characterization and to recover sequences from uncultured taxa. For communities of up to medium diversity, e.g. excluding environments such as soil, this is often achieved by a combination of sequence assembly and binning, where sequences are grouped into 'bins' representing taxa of the underlying microbial community from which they originate. Assignment to low-ranking taxonomic bins is an important challenge for binning methods as is scalability to Gb-sized datasets generated with deep sequencing techniques. One of the best available methods for the recovery of species bins from an individual metagenome sample is the expert-trained PhyloPythiaS package, where a human expert decides on the taxa to incorporate in a composition-based taxonomic metagenome classifier and identifies the 'training' sequences using marker genes directly from the sample. Due to the manual effort involved, this approach does not scale to multiple metagenome samples and requires substantial expertise, which researchers who are new to the area may not have. With these challenges in mind, we have developed PhyloPythiaS+, a successor to our previously described method PhyloPythia(S). The newly developed + component performs the work previously done by the human expert. PhyloPythiaS+ also includes a new k-mer counting algorithm, which accelerated k-mer counting 100-fold and reduced the overall execution time of the software by a factor of three. Our software allows to analyze Gb-sized metagenomes with inexpensive hardware, and to recover species or genera-level bins with low error rates in a fully automated fashion.},
+  timestamp = {2016-06-16T16:07:38Z},
+  journaltitle = {arxiv.org},
+  author = {Gregor, I and Dröge, J. and Schirmer, M and Quince, C and McHardy, A. C.},
+  date = {2014-06},
+  pages = {1--67}
 }
 
 @article{HandelsmanMetagenomics2004,
@@ -167,6 +370,22 @@
   eprint = {21273488}
 }
 
+@article{HuPirs2012,
+  title = {{{pIRS}}: {{Profile}}-Based {{Illumina}} Pair-End Reads Simulator.},
+  volume = {28},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/bts187},
+  abstract = {The next-generation high-throughput sequencing technologies, especially from Illumina, have been widely used in re-sequencing and de novo assembly studies. However, there is no existing software that can simulate Illumina reads with real error and quality distributions and coverage bias yet, which is very useful in relevant software development and study designing of sequencing projects.},
+  timestamp = {2016-06-16T16:07:40Z},
+  number = {11},
+  journaltitle = {Bioinformatics (Oxford, England)},
+  author = {Hu, Xuesong and Yuan, Jianying and Shi, Yujian and Lu, Jianliang and Liu, Binghang and Li, Zhenyu and Chen, Yanxiang and Mu, Desheng and Zhang, Hao and Li, Nan and Yue, Zhen and Bai, Fan and Li, Heng and Fan, Wei},
+  date = {2012-06},
+  pages = {1533--5},
+  eprinttype = {pmid},
+  eprint = {22508794}
+}
+
 @article{HuangArt2012,
   title = {{{ART}}: A next-Generation Sequencing Read Simulator.},
   volume = {28},
@@ -181,6 +400,56 @@
   pages = {593--4},
   eprinttype = {pmid},
   eprint = {22199392}
+}
+
+@article{HugenholtzExploring2002,
+  title = {Exploring Prokaryotic Diversity in the Genomic Era.},
+  volume = {3},
+  issn = {1465-6914},
+  abstract = {Our understanding of prokaryote biology from study of pure cultures and genome sequencing has been limited by a pronounced sampling bias towards four bacterial phyla - Proteobacteria, Firmicutes, Actinobacteria and Bacteroidetes - out of 35 bacterial and 18 archaeal phylum-level lineages. This bias is beginning to be rectified by the use of phylogenetically directed isolation strategies and by directly accessing microbial genomes from environmental samples.},
+  timestamp = {2016-06-16T16:07:40Z},
+  number = {2},
+  journaltitle = {Genome biology},
+  author = {Hugenholtz, Philip},
+  date = {2002-01},
+  pages = {REVIEWS0003},
+  keywords = {Actinobacteria,Actinobacteria: genetics,Actinobacteria: isolation & purification,Bacterial,Bacterial: genetics,Bacteroidaceae,Bacteroidaceae: genetics,Bacteroidaceae: isolation & purification,Genes,Genetic Variation,Genetic Variation: genetics,Genome,Gram-Positive Bacteria,Gram-Positive Bacteria: genetics,Gram-Positive Bacteria: isolation & purification,Phylogeny,Proteobacteria,Proteobacteria: genetics,Proteobacteria: isolation & purification},
+  eprinttype = {pmid},
+  eprint = {11864374}
+}
+
+@article{HuseExploring2008,
+  title = {Exploring Microbial Diversity and Taxonomy Using {{SSU rRNA}} Hypervariable Tag Sequencing.},
+  volume = {4},
+  issn = {1553-7404},
+  doi = {10.1371/journal.pgen.1000255},
+  abstract = {Massively parallel pyrosequencing of hypervariable regions from small subunit ribosomal RNA (SSU rRNA) genes can sample a microbial community two or three orders of magnitude more deeply per dollar and per hour than capillary sequencing of full-length SSU rRNA. As with full-length rRNA surveys, each sequence read is a tag surrogate for a single microbe. However, rather than assigning taxonomy by creating gene trees de novo that include all experimental sequences and certain reference taxa, we compare the hypervariable region tags to an extensive database of rRNA sequences and assign taxonomy based on the best match in a Global Alignment for Sequence Taxonomy (GAST) process. The resulting taxonomic census provides information on both composition and diversity of the microbial community. To determine the effectiveness of using only hypervariable region tags for assessing microbial community membership, we compared the taxonomy assigned to the V3 and V6 hypervariable regions with the taxonomy assigned to full-length SSU rRNA sequences isolated from both the human gut and a deep-sea hydrothermal vent. The hypervariable region tags and full-length rRNA sequences provided equivalent taxonomy and measures of relative abundance of microbial communities, even for tags up to 15\% divergent from their nearest reference match. The greater sampling depth per dollar afforded by massively parallel pyrosequencing reveals many more members of the "rare biosphere" than does capillary sequencing of the full-length gene. In addition, tag sequencing eliminates cloning bias and the sequences are short enough to be completely sequenced in a single read, maximizing the number of organisms sampled in a run while minimizing chimera formation. This technique allows the cost-effective exploration of changes in microbial community structure, including the rare biosphere, over space and time and can be applied immediately to initiatives, such as the Human Microbiome Project.},
+  timestamp = {2016-06-16T16:07:42Z},
+  number = {11},
+  journaltitle = {PLoS genetics},
+  author = {Huse, Susan M and Dethlefsen, Les and Huber, Julie A and Welch, David Mark and Relman, David A and Sogin, Mitchell L},
+  date = {2008-11},
+  pages = {e1000255},
+  keywords = {Bacteria,Bacteria: classification,Bacteria: genetics,Biodiversity,Classification,Classification: methods,DNA,Humans,Metagenome,Metagenome: genetics,Ribosomal,Ribosomal: genetics,RNA,Sequence Analysis,Sequence Tagged Sites},
+  eprinttype = {pmid},
+  eprint = {19023400}
+}
+
+@article{HusonIntegrative2011,
+  title = {Integrative Analysis of Environmental Sequences Using {{MEGAN4}}.},
+  volume = {21},
+  issn = {1549-5469},
+  doi = {10.1101/gr.120618.111},
+  abstract = {A major challenge in the analysis of environmental sequences is data integration. The question is how to analyze different types of data in a unified approach, addressing both the taxonomic and functional aspects. To facilitate such analyses, we have substantially extended MEGAN, a widely used taxonomic analysis program. The new program, MEGAN4, provides an integrated approach to the taxonomic and functional analysis of metagenomic, metatranscriptomic, metaproteomic, and rRNA data. While taxonomic analysis is performed based on the NCBI taxonomy, functional analysis is performed using the SEED classification of subsystems and functional roles or the KEGG classification of pathways and enzymes. A number of examples illustrate how such analyses can be performed, and show that one can also import and compare classification results obtained using others' tools. MEGAN4 is freely available for academic purposes, and installers for all three major operating systems can be downloaded from www-ab.informatik.uni-tuebingen.de/software/megan.},
+  timestamp = {2016-06-16T16:07:43Z},
+  number = {9},
+  journaltitle = {Genome research},
+  author = {Huson, Daniel H and Mitra, Suparna and Ruscheweyh, Hans-Joachim and Weber, Nico and Schuster, Stephan C},
+  date = {2011-09},
+  pages = {1552--60},
+  keywords = {16S,16S: genetics,Classification,Metagenome,Metagenome: genetics,metagenomics,Proteomics,Ribosomal,RNA,Software,Transcriptome},
+  eprinttype = {pmid},
+  eprint = {21690186}
 }
 
 @article{HusonPoor2014,
@@ -213,6 +482,45 @@
   keywords = {bioinformatics,metagenomics,microbial ecology,population genome binning}
 }
 
+@article{IversonUntangling2012,
+  title = {Untangling Genomes from Metagenomes: Revealing an Uncultured Class of Marine {{Euryarchaeota}}},
+  volume = {335},
+  issn = {0036-8075},
+  doi = {10.1126/science.1212665},
+  timestamp = {2016-06-16T16:07:43Z},
+  number = {6068},
+  journaltitle = {Science},
+  author = {Iverson, V. and Morris, R. M. and Frazar, C. D. and Berthiaume, C. T. and Morales, R. L. and Armbrust, E. V.},
+  date = {2012-02},
+  pages = {587--590}
+}
+
+@article{JeewonDetection2007,
+  title = {Detection and Diversity of Fungi from Environmental Samples: Traditional versus Molecular Approaches},
+  volume = {11},
+  timestamp = {2016-06-16T16:07:44Z},
+  journaltitle = {Advanced techniques in soil microbiology},
+  author = {Jeewon, R and Hyde, K. D.},
+  date = {2007},
+  pages = {1--15}
+}
+
+@article{KarlinDinucleotide1995,
+  title = {Dinucleotide Relative Abundance Extremes: A Genomic Signature.},
+  volume = {11},
+  issn = {0168-9525},
+  abstract = {Early biochemical experiments established that the set of dinucleotide odds ratios or 'general design' is a remarkably stable property of the DNA of an organism, which is essentially the same in protein-coding DNA, bulk genomic DNA, and in different renaturation rate and density gradient fractions of genomic DNA in many organisms. Analysis of currently available genomic sequence data has extended these earlier results, showing that the general designs of disjoint samples of a genome are substantially more similar to each other than to those of sequences from other organisms and that closely related organisms have similar general designs. From this perspective, the set of dinucleotide odds ratio (relative abundance) values constitute a signature of each DNA genome, which can discriminate between sequences from different organisms. Dinucleotide-odds ratio values appear to reflect not only the chemistry of dinucleotide stacking energies and base-step conformational preferences, but also the species-specific properties of DNA modification, replication and repair mechanisms.},
+  timestamp = {2016-06-16T16:07:44Z},
+  number = {7},
+  journaltitle = {Trends in genetics},
+  author = {Karlin, S and Burge, C},
+  date = {1995-07},
+  pages = {283--90},
+  keywords = {Animals,CpG Islands,Dinucleotide Repeats,DNA,DNA: genetics,Genome},
+  eprinttype = {pmid},
+  eprint = {7482779}
+}
+
 @article{KislyukUnsupervised2009,
   title = {Unsupervised Statistical Clustering of Environmental Shotgun Sequences.},
   volume = {10},
@@ -227,6 +535,185 @@
   keywords = {Algorithms,Cluster Analysis,DNA,DNA: methods,Genome,Genomics,Genomics: methods,metagenomics,Sequence Analysis,taxonomic binning,unsupervised taxonomic binning},
   eprinttype = {pmid},
   eprint = {19799776}
+}
+
+@article{KlumppNext2012,
+  title = {Next Generation Sequencing Technologies and the Changing Landscape of Phage Genomics.},
+  volume = {2},
+  issn = {2159-7073},
+  doi = {10.4161/bact.22111},
+  abstract = {The dawn of next generation sequencing technologies has opened up exciting possibilities for whole genome sequencing of a plethora of organisms. The 2nd and 3rd generation sequencing technologies, based on cloning-free, massively parallel sequencing, have enabled the generation of a deluge of genomic sequences of both prokaryotic and eukaryotic origin in the last seven years. However, whole genome sequencing of bacterial viruses has not kept pace with this revolution, despite the fact that their genomes are orders of magnitude smaller in size compared with bacteria and other organisms. Sequencing phage genomes poses several challenges; (1) obtaining pure phage genomic material, (2) PCR amplification biases and (3) complex nature of their genetic material due to features such as methylated bases and repeats that are inherently difficult to sequence and assemble. Here we describe conclusions drawn from our efforts in sequencing hundreds of bacteriophage genomes from a variety of Gram-positive and Gram-negative bacteria using Sanger, 454, Illumina and PacBio technologies. Based on our experience we propose several general considerations regarding sample quality, the choice of technology and a "blended approach" for generating reliable whole genome sequences of phages.},
+  timestamp = {2016-06-16T16:07:47Z},
+  number = {3},
+  journaltitle = {Bacteriophage},
+  author = {Klumpp, Jochen and Fouts, Derrick E and Sozhamannan, Shanmuga},
+  date = {2012-07},
+  pages = {190--199},
+  keywords = {assembly,bacteriophage genome,hybrid genome,illumina hiseq,PacBio,roche 454,sanger sequencing,scaffolding,sispa},
+  eprinttype = {pmid},
+  eprint = {23275870}
+}
+
+@article{KorenBambus2011,
+  title = {Bambus 2: {{Scaffolding}} Metagenomes},
+  volume = {27},
+  issn = {1367-4803},
+  doi = {10.1093/bioinformatics/btr520},
+  timestamp = {2016-06-16T16:07:47Z},
+  number = {21},
+  journaltitle = {Bioinformatics},
+  author = {Koren, S. and Treangen, T. J. and Pop, M.},
+  date = {2011-09},
+  pages = {2964--2971}
+}
+
+@article{KoslickiQuikr2013,
+  title = {Quikr: A Method for Rapid Reconstruction of Bacterial Communities via Compressive Sensing.},
+  volume = {29},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/btt336},
+  abstract = {MOTIVATION: Many metagenomic studies compare hundreds to thousands of environmental and health-related samples by extracting and sequencing their 16S rRNA amplicons and measuring their similarity using beta-diversity metrics. However, one of the first steps–to classify the operational taxonomic units within the sample–can be a computationally time-consuming task because most methods rely on computing the taxonomic assignment of each individual read out of tens to hundreds of thousands of reads. RESULTS: We introduce Quikr: a QUadratic, K-mer-based, Iterative, Reconstruction method, which computes a vector of taxonomic assignments and their proportions in the sample using an optimization technique motivated from the mathematical theory of compressive sensing. On both simulated and actual biological data, we demonstrate that Quikr typically has less error and is typically orders of magnitude faster than the most commonly used taxonomic assignment technique (the Ribosomal Database Project's Naïve Bayesian Classifier). Furthermore, the technique is shown to be unaffected by the presence of chimeras, thereby allowing for the circumvention of the time-intensive step of chimera filtering. AVAILABILITY: The Quikr computational package (in MATLAB, Octave, Python and C) for the Linux and Mac platforms is available at http://sourceforge.net/projects/quikr/.},
+  timestamp = {2016-06-16T16:07:48Z},
+  number = {17},
+  journaltitle = {Bioinformatics (Oxford, England)},
+  author = {Koslicki, David and Foucart, Simon and Rosen, Gail},
+  date = {2013-09},
+  pages = {2096--102},
+  keywords = {16S,16S: genetics,Algorithms,Bacteria,Bacteria: classification,Bacteria: genetics,Bacteria: isolation & purification,Bayes Theorem,Classification,Classification: methods,DNA,DNA: methods,metagenomics,Microbiota,Phylogeny,Ribosomal,RNA,Sequence Analysis,Software},
+  eprinttype = {pmid},
+  eprint = {23786768}
+}
+
+@article{LasersonGenovo2011,
+  title = {Genovo: De Novo Assembly for Metagenomes.},
+  volume = {18},
+  issn = {1557-8666},
+  doi = {10.1089/cmb.2010.0244},
+  abstract = {Next-generation sequencing technologies produce a large number of noisy reads from the DNA in a sample. Metagenomics and population sequencing aim to recover the genomic sequences of the species in the sample, which could be of high diversity. Methods geared towards single sequence reconstruction are not sensitive enough when applied in this setting. We introduce a generative probabilistic model of read generation from environmental samples and present Genovo, a novel de novo sequence assembler that discovers likely sequence reconstructions under the model. A nonparametric prior accounts for the unknown number of genomes in the sample. Inference is performed by applying a series of hill-climbing steps iteratively until convergence. We compare the performance of Genovo to three other short read assembly programs in a series of synthetic experiments and across nine metagenomic datasets created using the 454 platform, the largest of which has 311k reads. Genovo's reconstructions cover more bases and recover more genes than the other methods, even for low-abundance sequences, and yield a higher assembly score. Supplementary Material is available at www.liebertoinline.com/cmb .},
+  timestamp = {2016-06-16T16:07:51Z},
+  number = {3},
+  journaltitle = {Journal of computational biology},
+  author = {Laserson, Jonathan and Jojic, Vladimir and Koller, Daphne},
+  date = {2011-03},
+  pages = {429--43},
+  keywords = {Algorithms,Animals,DNA,DNA: methods,Humans,Metagenome,metagenomics,Metagenomics: methods,Models,Sequence Analysis,Statistical},
+  eprinttype = {pmid},
+  eprint = {21385045}
+}
+
+@article{LindnerMetagenomic2013,
+  title = {Metagenomic Abundance Estimation and Diagnostic Testing on Species Level.},
+  volume = {41},
+  issn = {1362-4962},
+  doi = {10.1093/nar/gks803},
+  abstract = {One goal of sequencing-based metagenomic community analysis is the quantitative taxonomic assessment of microbial community compositions. In particular, relative quantification of taxons is of high relevance for metagenomic diagnostics or microbial community comparison. However, the majority of existing approaches quantify at low resolution (e.g. at phylum level), rely on the existence of special genes (e.g. 16S), or have severe problems discerning species with highly similar genome sequences. Yet, problems as metagenomic diagnostics require accurate quantification on species level. We developed Genome Abundance Similarity Correction (GASiC), a method to estimate true genome abundances via read alignment by considering reference genome similarities in a non-negative LASSO approach. We demonstrate GASiC's superior performance over existing methods on simulated benchmark data as well as on real data. In addition, we present applications to datasets of both bacterial DNA and viral RNA source. We further discuss our approach as an alternative to PCR-based DNA quantification.},
+  timestamp = {2016-06-16T16:07:51Z},
+  number = {1},
+  journaltitle = {Nucleic acids research},
+  author = {Lindner, Martin S and Renard, Bernhard Y},
+  date = {2013-01},
+  pages = {e10},
+  keywords = {Algorithms,Bacterial,Bacterial: analysis,Bacterial: chemistry,Classification,Classification: methods,DNA,Escherichia coli,Escherichia coli: genetics,metagenomics,Metagenomics: methods,RNA,Sequence Alignment,Viral,Viral: analysis,Viral: chemistry},
+  eprinttype = {pmid},
+  eprint = {22941661}
+}
+
+@article{LucksGenome2008,
+  title = {Genome Landscapes and Bacteriophage Codon Usage.},
+  volume = {4},
+  issn = {1553-7358},
+  doi = {10.1371/journal.pcbi.1000001},
+  abstract = {Across all kingdoms of biological life, protein-coding genes exhibit unequal usage of synonymous codons. Although alternative theories abound, translational selection has been accepted as an important mechanism that shapes the patterns of codon usage in prokaryotes and simple eukaryotes. Here we analyze patterns of codon usage across 74 diverse bacteriophages that infect E. coli, P. aeruginosa, and L. lactis as their primary host. We use the concept of a "genome landscape," which helps reveal non-trivial, long-range patterns in codon usage across a genome. We develop a series of randomization tests that allow us to interrogate the significance of one aspect of codon usage, such as GC content, while controlling for another aspect, such as adaptation to host-preferred codons. We find that 33 phage genomes exhibit highly non-random patterns in their GC3-content, use of host-preferred codons, or both. We show that the head and tail proteins of these phages exhibit significant bias towards host-preferred codons, relative to the non-structural phage proteins. Our results support the hypothesis of translational selection on viral genes for host-preferred codons, over a broad range of bacteriophages.},
+  timestamp = {2016-06-16T16:07:53Z},
+  number = {2},
+  journaltitle = {PLoS computational biology},
+  author = {Lucks, Julius B and Nelson, David R and Kudla, Grzegorz R and Plotkin, Joshua B},
+  date = {2008-02},
+  pages = {e1000001},
+  keywords = {Bacteriophages,Bacteriophages: genetics,Biological Evolution,Chromosome Mapping,Chromosome Mapping: methods,Computer Simulation,Evolution,Genes,Genetic,Genetic Variation,Genetic Variation: genetics,Genome,Models,Molecular,Species Specificity,Viral,Viral: genetics},
+  eprinttype = {pmid},
+  eprint = {18463708}
+}
+
+@article{LuoSoapdenovo22012,
+  title = {{{SOAPdenovo2}}: An Empirically Improved Memory-Efficient Short-Read de Novo Assembler.},
+  volume = {1},
+  issn = {2047-217X},
+  doi = {10.1186/2047-217X-1-18},
+  abstract = {BACKGROUND: There is a rapidly increasing amount of de novo genome assembly using next-generation sequencing (NGS) short reads; however, several big challenges remain to be overcome in order for this to be efficient and accurate. SOAPdenovo has been successfully applied to assemble many published genomes, but it still needs improvement in continuity, accuracy and coverage, especially in repeat regions. FINDINGS: To overcome these challenges, we have developed its successor, SOAPdenovo2, which has the advantage of a new algorithm design that reduces memory consumption in graph construction, resolves more repeat regions in contig assembly, increases coverage and length in scaffold construction, improves gap closing, and optimizes for large genome. CONCLUSIONS: Benchmark using the Assemblathon1 and GAGE datasets showed that SOAPdenovo2 greatly surpasses its predecessor SOAPdenovo and is competitive to other assemblers on both assembly length and accuracy. We also provide an updated assembly version of the 2008 Asian (YH) genome using SOAPdenovo2. Here, the contig and scaffold N50 of the YH genome were ∼20.9 kbp and ∼22 Mbp, respectively, which is 3-fold and 50-fold longer than the first published version. The genome coverage increased from 81.16\% to 93.91\%, and memory consumption was ∼2/3 lower during the point of largest memory consumption.},
+  timestamp = {2016-06-16T16:07:53Z},
+  number = {1},
+  journaltitle = {GigaScience},
+  author = {Luo, Ruibang and Liu, Binghang and Xie, Yinlong and Li, Zhenyu and Huang, Weihua and Yuan, Jianying and He, Guangzhu and Chen, Yanxiang and Pan, Qi and Liu, Yunjie and Tang, Jingbo and Wu, Gengxiong and Zhang, Hao and Shi, Yujian and Liu, Yong and Yu, Chang and Wang, Bo and Lu, Yao and Han, Changlei and Cheung, David W and Yiu, Siu-Ming and Peng, Shaoliang and Xiaoqian, Zhu and Liu, Guangming and Liao, Xiangke and Li, Yingrui and Yang, Huanming and Wang, Jian and Lam, Tak-Wah and Wang, Jun},
+  date = {2012-01},
+  pages = {18},
+  keywords = {assembly,contig,error correction,gap-filling,Genome,scaffold},
+  eprinttype = {pmid},
+  eprint = {23587118}
+}
+
+@article{MackelprangMetagenomic2011,
+  title = {Metagenomic Analysis of a Permafrost Microbial Community Reveals a Rapid Response to Thaw},
+  volume = {480},
+  issn = {0028-0836},
+  doi = {10.1038/nature10576},
+  timestamp = {2016-06-16T16:07:56Z},
+  number = {7377},
+  journaltitle = {Nature},
+  author = {Mackelprang, Rachel and Waldrop, Mark P. and DeAngelis, Kristen M. and David, Maude M. and Chavarria, Krystle L. and Blazewicz, Steven J. and Rubin, Edward M. and Jansson, Janet K.},
+  date = {2011-11},
+  pages = {368--371}
+}
+
+@article{MardisImpact2008,
+  title = {The Impact of next-Generation Sequencing Technology on Genetics.},
+  volume = {24},
+  issn = {0168-9525},
+  doi = {10.1016/j.tig.2007.12.007},
+  abstract = {If one accepts that the fundamental pursuit of genetics is to determine the genotypes that explain phenotypes, the meteoric increase of DNA sequence information applied toward that pursuit has nowhere to go but up. The recent introduction of instruments capable of producing millions of DNA sequence reads in a single run is rapidly changing the landscape of genetics, providing the ability to answer questions with heretofore unimaginable speed. These technologies will provide an inexpensive, genome-wide sequence readout as an endpoint to applications ranging from chromatin immunoprecipitation, mutation mapping and polymorphism discovery to noncoding RNA discovery. Here I survey next-generation sequencing technologies and consider how they can provide a more complete picture of how the genome shapes the organism.},
+  timestamp = {2016-06-16T16:07:57Z},
+  number = {3},
+  journaltitle = {Trends in genetics : TIG},
+  author = {Mardis, Elaine R},
+  date = {2008-03},
+  pages = {133--41},
+  keywords = {Animals,DNA,Forecasting,Genetics,Genetics: trends,Humans,Sequence Analysis},
+  eprinttype = {pmid},
+  eprint = {18262675}
+}
+
+@article{MatsenPplacer2010,
+  title = {Pplacer: Linear Time Maximum-Likelihood and {{Bayesian}} Phylogenetic Placement of Sequences onto a Fixed Reference Tree.},
+  volume = {11},
+  issn = {1471-2105},
+  doi = {10.1186/1471-2105-11-538},
+  abstract = {Likelihood-based phylogenetic inference is generally considered to be the most reliable classification method for unknown sequences. However, traditional likelihood-based phylogenetic methods cannot be applied to large volumes of short reads from next-generation sequencing due to computational complexity issues and lack of phylogenetic signal. "Phylogenetic placement," where a reference tree is fixed and the unknown query sequences are placed onto the tree via a reference alignment, is a way to bring the inferential power offered by likelihood-based approaches to large data sets.},
+  timestamp = {2016-06-16T16:07:58Z},
+  number = {1},
+  journaltitle = {BMC bioinformatics},
+  author = {Matsen, Frederick A and Kodner, Robin B and Armbrust, E Virginia},
+  date = {2010-01},
+  pages = {538},
+  keywords = {Base Sequence,Bayes Theorem,Computational Biology,Computational Biology: methods,Likelihood Functions,metagenomics,phylogenetics,Phylogeny,Sequence Alignment,Sequence Alignment: methods,Software},
+  eprinttype = {pmid},
+  eprint = {21034504}
+}
+
+@article{MavromatisUse2007,
+  title = {Use of Simulated Data Sets to Evaluate the Fidelity of Metagenomic Processing Methods.},
+  volume = {4},
+  issn = {1548-7091},
+  doi = {10.1038/nmeth1043},
+  abstract = {Metagenomics is a rapidly emerging field of research for studying microbial communities. To evaluate methods presently used to process metagenomic sequences, we constructed three simulated data sets of varying complexity by combining sequencing reads randomly selected from 113 isolate genomes. These data sets were designed to model real metagenomes in terms of complexity and phylogenetic composition. We assembled sampled reads using three commonly used genome assemblers (Phrap, Arachne and JAZZ), and predicted genes using two popular gene-finding pipelines (fgenesb and CRITICA/GLIMMER). The phylogenetic origins of the assembled contigs were predicted using one sequence similarity-based (blast hit distribution) and two sequence composition-based (PhyloPythia, oligonucleotide frequencies) binning methods. We explored the effects of the simulated community structure and method combinations on the fidelity of each processing step by comparison to the corresponding isolate genomes. The simulated data sets are available online to facilitate standardized benchmarking of tools for metagenomic analysis.},
+  timestamp = {2016-06-16T16:07:59Z},
+  number = {6},
+  journaltitle = {Nature methods},
+  author = {Mavromatis, Konstantinos and Ivanova, Natalia and Barry, Kerrie and Shapiro, Harris and Goltsman, Eugene and McHardy, Alice Carolyn and Rigoutsos, Isidore and Salamov, Asaf and Korzeniewski, Frank and Land, Miriam and Lapidus, Alla and Grigoriev, Igor and Richardson, Paul and Hugenholtz, Philip and Kyrpides, Nikos C},
+  date = {2007-06},
+  pages = {495--500},
+  keywords = {Bacterial,Bacterial: genetics,Cluster Analysis,Computational Biology,Computational Biology: methods,Computational Biology: standards,Computer Simulation,Databases,Genetic,Genome,Genomics,Genomics: methods,Genomics: standards,Phylogeny,Software},
+  eprinttype = {pmid},
+  eprint = {17468765}
 }
 
 @article{MchardyAccurate2007,
@@ -246,6 +733,100 @@
   eprint = {17179938}
 }
 
+@article{MetzkerSequencing2009,
+  title = {Sequencing Technologies — the next Generation},
+  volume = {11},
+  issn = {1471-0056},
+  doi = {10.1038/nrg2626},
+  timestamp = {2016-06-16T16:08:00Z},
+  number = {1},
+  journaltitle = {Nature reviews genetics},
+  author = {Metzker, Michael L.},
+  date = {2009-12},
+  pages = {31--46}
+}
+
+@article{MeyerMetagenomics2008,
+  title = {The Metagenomics {{RAST}} Server - a Public Resource for the Automatic Phylogenetic and Functional Analysis of Metagenomes.},
+  volume = {9},
+  issn = {1471-2105},
+  doi = {10.1186/1471-2105-9-386},
+  abstract = {BACKGROUND: Random community genomes (metagenomes) are now commonly used to study microbes in different environments. Over the past few years, the major challenge associated with metagenomics shifted from generating to analyzing sequences. High-throughput, low-cost next-generation sequencing has provided access to metagenomics to a wide range of researchers. RESULTS: A high-throughput pipeline has been constructed to provide high-performance computing to all researchers interested in using metagenomics. The pipeline produces automated functional assignments of sequences in the metagenome by comparing both protein and nucleotide databases. Phylogenetic and functional summaries of the metagenomes are generated, and tools for comparative metagenomics are incorporated into the standard views. User access is controlled to ensure data privacy, but the collaborative environment underpinning the service provides a framework for sharing datasets between multiple users. In the metagenomics RAST, all users retain full control of their data, and everything is available for download in a variety of formats. CONCLUSION: The open-source metagenomics RAST service provides a new paradigm for the annotation and analysis of metagenomes. With built-in support for multiple data sources and a back end that houses abstract data types, the metagenomics RAST is stable, extensible, and freely available to all researchers. This service has removed one of the primary bottlenecks in metagenome sequence analysis - the availability of high-performance computing for annotating the data. http://metagenomics.nmpdr.org.},
+  timestamp = {2016-06-16T16:08:02Z},
+  journaltitle = {BMC bioinformatics},
+  author = {Meyer, Folker and Paarmann, D and D'Souza, M and Olson, R and Glass, E M and Kubal, M and Paczian, T and Rodriguez, A and Stevens, R and Wilke, A and Wilkening, J and a Edwards, R},
+  date = {2008-01},
+  pages = {386},
+  keywords = {Algorithms,Database Management Systems,Databases,Genetic,Information Storage and Retrieval,Information Storage and Retrieval: methods,Internet,Phylogeny,Proteome,Proteome: genetics,Software,User-Computer Interface},
+  eprinttype = {pmid},
+  eprint = {18803844}
+}
+
+@article{MillerAssembly2010,
+  title = {Assembly Algorithms for next-Generation Sequencing Data.},
+  volume = {95},
+  issn = {1089-8646},
+  doi = {10.1016/j.ygeno.2010.03.001},
+  abstract = {The emergence of next-generation sequencing platforms led to resurgence of research in whole-genome shotgun assembly algorithms and software. DNA sequencing data from the Roche 454, Illumina/Solexa, and ABI SOLiD platforms typically present shorter read lengths, higher coverage, and different error profiles compared with Sanger sequencing data. Since 2005, several assembly software packages have been created or revised specifically for de novo assembly of next-generation sequencing data. This review summarizes and compares the published descriptions of packages named SSAKE, SHARCGS, VCAKE, Newbler, Celera Assembler, Euler, Velvet, ABySS, AllPaths, and SOAPdenovo. More generally, it compares the two standard methods known as the de Bruijn graph approach and the overlap/layout/consensus approach to assembly.},
+  timestamp = {2016-06-16T16:08:02Z},
+  number = {6},
+  journaltitle = {Genomics},
+  author = {Miller, Jason R and Koren, Sergey and Sutton, Granger},
+  date = {2010-06},
+  pages = {315--27},
+  keywords = {Algorithms,DNA,DNA: methods,DNA: trends,Forecasting,Sequence Analysis,Software},
+  eprinttype = {pmid},
+  eprint = {20211242}
+}
+
+@article{MirarabSepp2012,
+  title = {{{SEPP}}: {{SATé}}-{{Enabled Phylogenetic Placement}}.},
+  issn = {1793-5091},
+  abstract = {We address the problem of Phylogenetic Placement, in which the objective is to insert short molecular sequences (called query sequences) into an existing phylogenetic tree and alignment on full-length sequences for the same gene. Phylogenetic placement has the potential to provide information beyond pure "species identification" (i.e., the association of metagenomic reads to existing species), because it can also give information about the evolutionary relationships between these query sequences and to known species. Approaches for phylogenetic placement have been developed that operate in two steps: first, an alignment is estimated for each query sequence to the alignment of the full-length sequences, and then that alignment is used to find the optimal location in the phylogenetic tree for the query sequence. Recent methods of this type include HMMALIGN+EPA, HMMALIGN+pplacer, and PaPaRa+EPA.We report on a study evaluating phylogenetic placement methods on biological and simulated data. This study shows that these methods have extremely good accuracy and computational tractability under conditions where the input contains a highly accurate alignment and tree for the full-length sequences, and the set of full-length sequences is sufficiently small and not too evolutionarily diverse; however, we also show that under other conditions accuracy declines and the computational requirements for memory and time exceed acceptable limits. We present SEPP, a general "boosting" technique to improve the accuracy and/or speed of phylogenetic placement techniques. The key algorithmic aspect of this booster is a dataset decomposition technique in SATé, a method that utilizes an iterative divide-and-conquer technique to co-estimate alignments and trees on large molecular sequence datasets. We show that SATé-boosting improves HMMALIGN+pplacer, placing short sequences more accurately when the set of input sequences has a large evolutionary diameter and produces placements of comparable accuracy in a fraction of the time for easier cases. SEPP software and the datasets used in this study are all available for free at http://www.cs.utexas.edu/users/phylo/software/sepp/submission.},
+  timestamp = {2016-06-16T16:08:02Z},
+  journaltitle = {Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing},
+  author = {Mirarab, S and Nguyen, N and Warnow, T},
+  date = {2012-01},
+  pages = {247--58},
+  keywords = {metagenomic analysis,phylogenetic placement},
+  eprinttype = {pmid},
+  eprint = {22174280}
+}
+
+@article{MonzoorulhaqueSortitems2009,
+  title = {{{SOrt}}-{{ITEMS}}: {{Sequence}} Orthology Based Approach for Improved Taxonomic Estimation of Metagenomic Sequences.},
+  volume = {25},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/btp317},
+  abstract = {MOTIVATION: One of the first steps in metagenomic analysis is the assignment of reads/contigs obtained from various sequencing technologies to their correct taxonomic bins. Similarity-based binning methods assign a read to a taxon/clade, based on the pattern of significant BLAST hits generated against sequence databases. Existing methods, which use bit-score as the sole parameter to ascertain the significance of BLAST hits, have limited specificity and accuracy of binning. A new binning algorithm, called SOrt-ITEMS is introduced, which addresses these limitations. The method uses alignment parameters besides the bit score to first identify an appropriate taxonomic level where the read can be assigned. An orthology-based approach is subsequently used by the method for the final assignment. RESULTS: The performance of SOrt-ITEMS has been validated with reads simulating sequences from 454 and Sanger sequencing technologies. In addition, the taxonomic composition of the Sargasso Sea data set has been analyzed using SOrt-ITEMS. SOrt-ITEMS shows improved specificity and accuracy of assignments especially in simulated scenarios, wherein sequences corresponding to the source organism of the reads are absent in the reference database. AVAILABILITY: SOrt-ITEMS software is available for download from: http://metagenomics.atc.tcs.com/binning/SOrt-ITEMS. No license is needed for academic and nonprofit use.},
+  timestamp = {2016-06-16T16:08:03Z},
+  number = {14},
+  journaltitle = {Bioinformatics (Oxford, England)},
+  author = {Monzoorul Haque, M and Ghosh, Tarini Shankar and Komanduri, Dinakar and Mande, Sharmila S},
+  date = {2009-07},
+  pages = {1722--30},
+  keywords = {Algorithms,Base Sequence,Classification,Classification: methods,Databases,Genetic,Genomics,Genomics: methods,Phylogeny,Sequence Alignment,Software},
+  eprinttype = {pmid},
+  eprint = {19439565}
+}
+
+@article{NelsonCatalog2010,
+  title = {A Catalog of Reference Genomes from the Human Microbiome.},
+  volume = {328},
+  issn = {1095-9203},
+  doi = {10.1126/science.1183605},
+  abstract = {The human microbiome refers to the community of microorganisms, including prokaryotes, viruses, and microbial eukaryotes, that populate the human body. The National Institutes of Health launched an initiative that focuses on describing the diversity of microbial species that are associated with health and disease. The first phase of this initiative includes the sequencing of hundreds of microbial reference genomes, coupled to metagenomic sequencing from multiple body sites. Here we present results from an initial reference genome sequencing of 178 microbial genomes. From 547,968 predicted polypeptides that correspond to the gene complement of these strains, previously unidentified ("novel") polypeptides that had both unmasked sequence length greater than 100 amino acids and no BLASTP match to any nonreference entry in the nonredundant subset were defined. This analysis resulted in a set of 30,867 polypeptides, of which 29,987 (approximately 97\%) were unique. In addition, this set of microbial genomes allows for approximately 40\% of random sequences from the microbiome of the gastrointestinal tract to be associated with organisms based on the match criteria used. Insights into pan-genome analysis suggest that we are still far from saturating microbial species genetic data sets. In addition, the associated metrics and standards used by our group for quality assurance are presented.},
+  timestamp = {2016-06-16T16:08:06Z},
+  number = {5981},
+  journaltitle = {Science (New York, N.Y.)},
+  author = {Nelson, Karen E and Weinstock, George M and Highlander, Sarah K and Worley, Kim C and Creasy, Heather Huot and Wortman, Jennifer Russo and Rusch, Douglas B and Mitreva, Makedonka and Sodergren, Erica and Chinwalla, Asif T and Feldgarden, Michael and Gevers, Dirk and Haas, Brian J and Madupu, Ramana and Ward, Doyle V and Birren, Bruce W and a Gibbs, Richard and Methe, Barbara and Petrosino, Joseph F and Strausberg, Robert L and Sutton, Granger G and White, Owen R and Wilson, Richard K and Durkin, Scott and Giglio, Michelle Gwinn and Gujja, Sharvari and Howarth, Clint and Kodira, Chinnappa D and Kyrpides, Nikos and Mehta, Teena and Muzny, Donna M and Pearson, Matthew and Pepin, Kymberlie and Pati, Amrita and Qin, Xiang and Yandava, Chandri and Zeng, Qiandong and Zhang, Lan and Berlin, Aaron M and Chen, Lei and a Hepburn, Theresa and Johnson, Justin and McCorrison, Jamison and Miller, Jason and Minx, Pat and Nusbaum, Chad and Russ, Carsten and Sykes, Sean M and Tomlinson, Chad M and Young, Sarah and Warren, Wesley C and Badger, Jonathan and Crabtree, Jonathan and Markowitz, Victor M and Orvis, Joshua and Cree, Andrew and Ferriera, Steve and Fulton, Lucinda L and Fulton, Robert S and Gillis, Marcus and Hemphill, Lisa D and Joshi, Vandita and Kovar, Christie and Torralba, Manolito and a Wetterstrand, Kris and Abouellleil, Amr and Wollam, Aye M and Buhay, Christian J and Ding, Yan and Dugan, Shannon and FitzGerald, Michael G and Holder, Mike and Hostetler, Jessica and Clifton, Sandra W and Allen-Vercoe, Emma and Earl, Ashlee M and Farmer, Candace N and Liolios, Konstantinos and Surette, Michael G and Xu, Qiang and Pohl, Craig and Wilczek-Boney, Katarzyna and Zhu, Dianhui},
+  date = {2010-05},
+  pages = {994--9},
+  keywords = {Archaeal,Bacteria,Bacteria: classification,Bacteria: genetics,Bacterial,Bacterial Proteins,Bacterial Proteins: chemistry,Bacterial Proteins: genetics,Biodiversity,Computational Biology,Databases,DNA,DNA: standards,Gastrointestinal Tract,Gastrointestinal Tract: microbiology,Genes,Genetic,Genetic Variation,Genome,Humans,Metagenome,Metagenome: genetics,metagenomics,Metagenomics: methods,Metagenomics: standards,Mouth,Mouth: microbiology,Peptides,Peptides: chemistry,Peptides: genetics,Phylogeny,Respiratory System,Respiratory System: microbiology,Sequence Analysis,Skin,Skin: microbiology,Urogenital System,Urogenital System: microbiology},
+  eprinttype = {pmid},
+  eprint = {20489017}
+}
+
 @article{PatilTaxonomic2011,
   title = {Taxonomic Metagenome Sequence Assignment with Structured Output Models},
   volume = {8},
@@ -257,6 +838,102 @@
   author = {Patil, Kaustubh R and Haider, Peter and Pope, Phillip B and Turnbaugh, Peter J and Morrison, Mark and Scheffer, Tobias and McHardy, Alice Carolyn},
   date = {2011-03},
   pages = {191--192}
+}
+
+@article{PellScaling2012a,
+  title = {Scaling Metagenome Sequence Assembly with Probabilistic de {{Bruijn}} Graphs},
+  volume = {I},
+  doi = {10.1073/pnas.1121464109},
+  abstract = {The memory requirements for de novo assembly of short-read shotgun sequencing data from complex microbial populations are an increasingly large practical barrier to environmental studies. Here we introduce a memory-efficient graph representation with which we can analyze the k-mer connectivity of metagenomic samples, allowing us to reduce the size of the de novo assembly process for metagenomes with a "divide and conquer" algorithm. This graph representation is based on a probabilistic data structure, a Bloom filter, that allows us to store assembly graphs in as little as 4 bits per k-mer. We use this approach to achieve a 20-fold decrease in memory for the assembly of a soil metagenome sample.},
+  timestamp = {2017-02-21T14:57:39Z},
+  number = {1},
+  journaltitle = {Arxiv preprint arXiv:1112.4193},
+  author = {Pell, Jason and Hintze, Arend and Canino-Koning, Rosangela and Howe, Adina and Tiedje, J.M. and Brown, C.T.},
+  date = {2012-06-30},
+  pages = {1--11}
+}
+
+@article{PengMetaidba2011,
+  title = {Meta-{{IDBA}}: A de Novo Assembler for Metagenomic Data.},
+  volume = {27},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/btr216},
+  abstract = {Next-generation sequencing techniques allow us to generate reads from a microbial environment in order to analyze the microbial community. However, assembling of a set of mixed reads from different species to form contigs is a bottleneck of metagenomic research. Although there are many assemblers for assembling reads from a single genome, there are no assemblers for assembling reads in metagenomic data without reference genome sequences. Moreover, the performances of these assemblers on metagenomic data are far from satisfactory, because of the existence of common regions in the genomes of subspecies and species, which make the assembly problem much more complicated.},
+  timestamp = {2016-06-16T16:08:12Z},
+  number = {13},
+  journaltitle = {Bioinformatics (Oxford, England)},
+  author = {Peng, Yu and Leung, Henry C M and Yiu, S M and Chin, Francis Y L},
+  date = {2011-07},
+  pages = {i94--i101},
+  eprinttype = {pmid},
+  eprint = {21685107}
+}
+
+@article{PopeAdaptation2010,
+  title = {Adaptation to Herbivory by the {{Tammar}} Wallaby Includes Bacterial and Glycoside Hydrolase Profiles Different from Other Herbivores.},
+  volume = {107},
+  issn = {1091-6490},
+  doi = {10.1073/pnas.1005297107},
+  abstract = {Metagenomic and bioinformatic approaches were used to characterize plant biomass conversion within the foregut microbiome of Australia's "model" marsupial, the Tammar wallaby (Macropus eugenii). Like the termite hindgut and bovine rumen, key enzymes and modular structures characteristic of the "free enzyme" and "cellulosome" paradigms of cellulose solubilization remain either poorly represented or elusive to capture by shotgun sequencing methods. Instead, multigene polysaccharide utilization loci-like systems coupled with genes encoding beta-1,4-endoglucanases and beta-1,4-endoxylanases–which have not been previously encountered in metagenomic datasets–were identified, as were a diverse set of glycoside hydrolases targeting noncellulosic polysaccharides. Furthermore, both rrs gene and other phylogenetic analyses confirmed that unique clades of the Lachnospiraceae, Bacteroidales, and Gammaproteobacteria are predominant in the Tammar foregut microbiome. Nucleotide composition-based sequence binning facilitated the assemblage of more than two megabase pairs of genomic sequence for one of the novel Lachnospiraceae clades (WG-2). These analyses show that WG-2 possesses numerous glycoside hydrolases targeting noncellulosic polysaccharides. These collective data demonstrate that Australian macropods not only harbor unique bacterial lineages underpinning plant biomass conversion, but their repertoire of glycoside hydrolases is distinct from those of the microbiomes of higher termites and the bovine rumen.},
+  timestamp = {2016-06-16T16:08:13Z},
+  number = {33},
+  journaltitle = {Proceedings of the National Academy of Sciences of the United States of America},
+  author = {Pope, P B and Denman, S E and Jones, M and Tringe, S G and Barry, K and a Malfatti, S and McHardy, a C and Cheng, J-F and Hugenholtz, P and McSweeney, C S and Morrison, M},
+  date = {2010-08},
+  pages = {14793--8},
+  keywords = {16S,16S: genetics,Adaptation,Animals,Bacteria,Bacteria: classification,Bacteria: genetics,Bacteria: metabolism,Cellulosomes,Cellulosomes: metabolism,DNA,Gastrointestinal Tract,Gastrointestinal Tract: microbiology,Glycoside Hydrolases,Glycoside Hydrolases: classification,Glycoside Hydrolases: genetics,Glycoside Hydrolases: metabolism,Macropodidae,Macropodidae: genetics,Macropodidae: microbiology,Macropodidae: physiology,Metagenome,Metagenome: genetics,metagenomics,Metagenomics: methods,Molecular Sequence Data,Phylogeny,Physiological,Physiological: genetics,Physiological: physiology,Plants,Plants: metabolism,Ribosomal,RNA,Seasons,Sequence Analysis},
+  eprinttype = {pmid},
+  eprint = {20668243}
+}
+
+@article{PopeIsolation2011,
+  title = {Isolation of {{Succinivibrionaceae}} Implicated in Low Methane Emissions from {{Tammar}} Wallabies.},
+  volume = {333},
+  issn = {1095-9203},
+  doi = {10.1126/science.1205760},
+  abstract = {The Tammar wallaby (Macropus eugenii) harbors unique gut bacteria and produces only one-fifth the amount of methane produced by ruminants per unit of digestible energy intake. We have isolated a dominant bacterial species (WG-1) from the wallaby microbiota affiliated with the family Succinivibrionaceae and implicated in lower methane emissions from starch-containing diets. This was achieved by using a partial reconstruction of the bacterium's metabolism from binned metagenomic data (nitrogen and carbohydrate utilization pathways and antibiotic resistance) to devise cultivation-based strategies that produced axenic WG-1 cultures. Pure-culture studies confirm that the bacterium is capnophilic and produces succinate, further explaining a microbiological basis for lower methane emissions from macropodids. This knowledge also provides new strategic targets for redirecting fermentation and reducing methane production in livestock.},
+  timestamp = {2016-06-16T16:08:14Z},
+  number = {6042},
+  journaltitle = {Science (New York, N.Y.)},
+  author = {Pope, P B and Smith, W and Denman, S E and Tringe, S G and Barry, K and Hugenholtz, P and McSweeney, C S and McHardy, a C and Morrison, M},
+  date = {2011-07},
+  pages = {646--8},
+  keywords = {Animals,Bacterial,Carbohydrate Metabolism,Digestive System,Digestive System: microbiology,Female,Fermentation,Genome,Macropodidae,Macropodidae: microbiology,Metagenome,Methane,Methane: metabolism,Molecular Sequence Data,Starch,Starch: metabolism,Succinic Acid,Succinic Acid: metabolism,Succinivibrionaceae,Succinivibrionaceae: genetics,Succinivibrionaceae: growth & development,Succinivibrionaceae: isolation & purification,Succinivibrionaceae: metabolism},
+  eprinttype = {pmid},
+  eprint = {21719642}
+}
+
+@article{PrideGenome2008,
+  title = {Genome Signature Analysis of Thermal Virus Metagenomes Reveals {{Archaea}} and Thermophilic Signatures.},
+  volume = {9},
+  issn = {1471-2164},
+  doi = {10.1186/1471-2164-9-420},
+  abstract = {Metagenomic analysis provides a rich source of biological information for otherwise intractable viral communities. However, study of viral metagenomes has been hampered by its nearly complete reliance on BLAST algorithms for identification of DNA sequences. We sought to develop algorithms for examination of viral metagenomes to identify the origin of sequences independent of BLAST algorithms. We chose viral metagenomes obtained from two hot springs, Bear Paw and Octopus, in Yellowstone National Park, as they represent simple microbial populations where comparatively large contigs were obtained. Thermal spring metagenomes have high proportions of sequences without significant Genbank homology, which has hampered identification of viruses and their linkage with hosts. To analyze each metagenome, we developed a method to classify DNA fragments using genome signature-based phylogenetic classification (GSPC), where metagenomic fragments are compared to a database of oligonucleotide signatures for all previously sequenced Bacteria, Archaea, and viruses.},
+  timestamp = {2016-06-16T16:08:16Z},
+  journaltitle = {BMC genomics},
+  author = {Pride, David T and Schoenfeld, Thomas},
+  date = {2008-01},
+  pages = {420},
+  keywords = {Archaea,Archaeal Viruses,Archaeal Viruses: classification,Archaeal Viruses: genetics,Archaea: virology,Genomics,Genomics: methods,Hot Springs,Hot Springs: virology,Northwestern United States},
+  eprinttype = {pmid},
+  eprint = {18798991}
+}
+
+@article{PruesseSilva2007,
+  title = {{{SILVA}}: A Comprehensive Online Resource for Quality Checked and Aligned Ribosomal {{RNA}} Sequence Data Compatible with {{ARB}}.},
+  volume = {35},
+  issn = {1362-4962},
+  doi = {10.1093/nar/gkm864},
+  abstract = {Sequencing ribosomal RNA (rRNA) genes is currently the method of choice for phylogenetic reconstruction, nucleic acid based detection and quantification of microbial diversity. The ARB software suite with its corresponding rRNA datasets has been accepted by researchers worldwide as a standard tool for large scale rRNA analysis. However, the rapid increase of publicly available rRNA sequence data has recently hampered the maintenance of comprehensive and curated rRNA knowledge databases. A new system, SILVA (from Latin silva, forest), was implemented to provide a central comprehensive web resource for up to date, quality controlled databases of aligned rRNA sequences from the Bacteria, Archaea and Eukarya domains. All sequences are checked for anomalies, carry a rich set of sequence associated contextual information, have multiple taxonomic classifications, and the latest validly described nomenclature. Furthermore, two precompiled sequence datasets compatible with ARB are offered for download on the SILVA website: (i) the reference (Ref) datasets, comprising only high quality, nearly full length sequences suitable for in-depth phylogenetic analysis and probe design and (ii) the comprehensive Parc datasets with all publicly available rRNA sequences longer than 300 nucleotides suitable for biodiversity analyses. The latest publicly available database release 91 (August 2007) hosts 547 521 sequences split into 461 823 small subunit and 85 689 large subunit rRNAs.},
+  timestamp = {2016-06-16T16:08:16Z},
+  number = {21},
+  journaltitle = {Nucleic acids research},
+  author = {Pruesse, Elmar and Quast, Christian and Knittel, Katrin and Fuchs, Bernhard M and Ludwig, Wolfgang and Peplies, Jörg and Glöckner, Frank Oliver},
+  date = {2007-01},
+  pages = {7188--96},
+  keywords = {Base Sequence,Databases,Genes,Internet,Nucleic Acid,Nucleic Acid: standards,Phylogeny,Quality Control,Ribosomal,Ribosomal: genetics,RNA,rRNA,Sequence Alignment,Sequence Analysis,Software},
+  eprinttype = {pmid},
+  eprint = {17947321}
 }
 
 @article{QinHuman2010,
@@ -309,6 +986,74 @@
   eprint = {15568985}
 }
 
+@article{RosenNbc2011,
+  title = {{{NBC}}: The {{Naive Bayes Classification}} Tool Webserver for Taxonomic Classification of Metagenomic Reads.},
+  volume = {27},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/btq619},
+  abstract = {Datasets from high-throughput sequencing technologies have yielded a vast amount of data about organisms in environmental samples. Yet, it is still a challenge to assess the exact organism content in these samples because the task of taxonomic classification is too computationally complex to annotate all reads in a dataset. An easy-to-use webserver is needed to process these reads. While many methods exist, only a few are publicly available on webservers, and out of those, most do not annotate all reads.},
+  timestamp = {2016-06-16T16:08:21Z},
+  number = {1},
+  journaltitle = {Bioinformatics (Oxford, England)},
+  author = {Rosen, Gail L and Reichenberger, Erin R and Rosenfeld, Aaron M},
+  date = {2011-01},
+  pages = {127--9},
+  keywords = {Algorithms,Bayes Theorem,High-Throughput Nucleotide Sequencing,Internet,metagenomics,Metagenomics: methods,Phylogeny,Software},
+  eprinttype = {pmid},
+  eprint = {21062764}
+}
+
+@article{SayersDatabase2009,
+  title = {Database Resources of the {{National Center}} for {{Biotechnology Information}}.},
+  volume = {37},
+  issn = {1362-4962},
+  doi = {10.1093/nar/gkn741},
+  abstract = {In addition to maintaining the GenBank nucleic acid sequence database, the National Center for Biotechnology Information (NCBI) provides analysis and retrieval resources for the data in GenBank and other biological data made available through the NCBI web site. NCBI resources include Entrez, the Entrez Programming Utilities, MyNCBI, PubMed, PubMed Central, Entrez Gene, the NCBI Taxonomy Browser, BLAST, BLAST Link (BLink), Electronic PCR, OrfFinder, Spidey, Splign, RefSeq, UniGene, HomoloGene, ProtEST, dbMHC, dbSNP, Cancer Chromosomes, Entrez Genomes and related tools, the Map Viewer, Model Maker, Evidence Viewer, Clusters of Orthologous Groups (COGs), Retroviral Genotyping Tools, HIV-1/Human Protein Interaction Database, Gene Expression Omnibus (GEO), Entrez Probe, GENSAT, Online Mendelian Inheritance in Man (OMIM), Online Mendelian Inheritance in Animals (OMIA), the Molecular Modeling Database (MMDB), the Conserved Domain Database (CDD), the Conserved Domain Architecture Retrieval Tool (CDART) and the PubChem suite of small molecule databases. Augmenting many of the web applications is custom implementation of the BLAST program optimized to search specialized data sets. All of the resources can be accessed through the NCBI home page at www.ncbi.nlm.nih.gov.},
+  timestamp = {2016-06-16T16:08:23Z},
+  issue = {Database issue},
+  journaltitle = {Nucleic acids research},
+  author = {Sayers, Eric W and Barrett, Tanya and Benson, Dennis and Bryant, Stephen H and Canese, Kathi and Chetvernin, Vyacheslav and Church, Deanna M and DiCuccio, Michael and Edgar, Ron and Federhen, Scott and Feolo, Michael and Geer, Lewis Y and Helmberg, Wolfgang and Kapustin, Yuri and Landsman, David and Lipman, David J and Madden, Thomas L and Maglott, Donna R and Miller, Vadim and Mizrachi, Ilene and Ostell, James and Pruitt, Kim D and Schuler, Gregory D and Sequeira, Edwin and Sherry, Stephen T and Shumway, Martin and Sirotkin, Karl and Souvorov, Alexandre and Starchenko, Grigory and a Tatusova, Tatiana and Wagner, Lukas and Yaschenko, Eugene and Ye, Jian},
+  date = {2009-01},
+  pages = {D5--15},
+  keywords = {Databases,Gene Expression,Genes,Genetic,Genomics,Genotype,National Library of Medicine (U.S.),Phenotype,Protein Structure,Proteomics,PubMed,Sequence Homology,Systems Integration,Tertiary,United States},
+  eprinttype = {pmid},
+  eprint = {18940862}
+}
+
+@article{SchadtWindow2010,
+  title = {A Window into Third-Generation Sequencing.},
+  volume = {19},
+  issn = {1460-2083},
+  doi = {10.1093/hmg/ddq416},
+  abstract = {First- and second-generation sequencing technologies have led the way in revolutionizing the field of genomics and beyond, motivating an astonishing number of scientific advances, including enabling a more complete understanding of whole genome sequences and the information encoded therein, a more complete characterization of the methylome and transcriptome and a better understanding of interactions between proteins and DNA. Nevertheless, there are sequencing applications and aspects of genome biology that are presently beyond the reach of current sequencing technologies, leaving fertile ground for additional innovation in this space. In this review, we describe a new generation of single-molecule sequencing technologies (third-generation sequencing) that is emerging to fill this space, with the potential for dramatically longer read lengths, shorter time to result and lower overall cost.},
+  timestamp = {2016-06-16T16:08:23Z},
+  issue = {R2},
+  journaltitle = {Human molecular genetics},
+  author = {Schadt, Eric E and Turner, Steve and Kasarskis, Andrew},
+  date = {2010-10},
+  pages = {R227--40},
+  keywords = {Biological,DNA,DNA: methods,High-Throughput Nucleotide Sequencing,High-Throughput Nucleotide Sequencing: methods,Humans,Models,Sequence Analysis},
+  eprinttype = {pmid},
+  eprint = {20858600}
+}
+
+@article{SchloissnigGenomic2013,
+  title = {Genomic Variation Landscape of the Human Gut Microbiome.},
+  volume = {493},
+  issn = {1476-4687},
+  doi = {10.1038/nature11711},
+  abstract = {Whereas large-scale efforts have rapidly advanced the understanding and practical impact of human genomic variation, the practical impact of variation is largely unexplored in the human microbiome. We therefore developed a framework for metagenomic variation analysis and applied it to 252 faecal metagenomes of 207 individuals from Europe and North America. Using 7.4 billion reads aligned to 101 reference species, we detected 10.3 million single nucleotide polymorphisms (SNPs), 107,991 short insertions/deletions, and 1,051 structural variants. The average ratio of non-synonymous to synonymous polymorphism rates of 0.11 was more variable between gut microbial species than across human hosts. Subjects sampled at varying time intervals exhibited individuality and temporal stability of SNP variation patterns, despite considerable composition changes of their gut microbiota. This indicates that individual-specific strains are not easily replaced and that an individual might have a unique metagenomic genotype, which may be exploitable for personalized diet or drug intake.},
+  timestamp = {2016-06-16T16:08:24Z},
+  number = {7430},
+  journaltitle = {Nature},
+  author = {Schloissnig, Siegfried and Arumugam, Manimozhiyan and Sunagawa, Shinichi and Mitreva, Makedonka and Tap, Julien and Zhu, Ana and Waller, Alison and Mende, Daniel R and Kultima, Jens Roat and Martin, John and Kota, Karthik and Sunyaev, Shamil R and Weinstock, George M and Bork, Peer},
+  date = {2013-01},
+  pages = {45--50},
+  keywords = {Bacterial,Bacterial: genetics,Europe,Feces,Feces: microbiology,Genetic Variation,Genetic Variation: genetics,Genome,Genotype,Geographic Mapping,Humans,Intestines,Intestines: microbiology,Metagenome,Metagenome: genetics,North America,Polymorphism,Reference Standards,Single Nucleotide,Single Nucleotide: genetics,Time Factors},
+  eprinttype = {pmid},
+  eprint = {23222524}
+}
+
 @article{SchlossCensus2006,
   title = {Toward a Census of Bacteria in Soil.},
   volume = {2},
@@ -326,6 +1071,104 @@
   eprint = {16848637}
 }
 
+@article{SegataMetagenomic2012,
+  title = {Metagenomic Microbial Community Profiling Using Unique Clade-Specific Marker Genes.},
+  issn = {1548-7105},
+  doi = {10.1038/nmeth.2066},
+  abstract = {Metagenomic shotgun sequencing data can identify microbes populating a microbial community and their proportions, but existing taxonomic profiling methods are inefficient for increasingly large data sets. We present an approach that uses clade-specific marker genes to unambiguously assign reads to microbial clades more accurately and $\backslash$textgreater50× faster than current approaches. We validated our metagenomic phylogenetic analysis tool, MetaPhlAn, on terabases of short reads and provide the largest metagenomic profiling to date of the human gut. It can be accessed at http://huttenhower.sph.harvard.edu/metaphlan/.},
+  timestamp = {2016-06-16T16:08:27Z},
+  issue = {JuNe},
+  journaltitle = {Nature methods},
+  author = {Segata, Nicola and Waldron, Levi and Ballarini, Annalisa and Narasimhan, Vagheesh and Jousson, Olivier and Huttenhower, Curtis},
+  date = {2012-06},
+  pages = {1--7},
+  eprinttype = {pmid},
+  eprint = {22688413}
+}
+
+@article{SilvaFocus2014,
+  title = {{{FOCUS}}: An Alignment-Free Model to Identify Organisms in Metagenomes Using Non-Negative Least Squares.},
+  volume = {2},
+  issn = {2167-8359},
+  doi = {10.7717/peerj.425},
+  abstract = {One of the major goals in metagenomics is to identify the organisms present in a microbial community from unannotated shotgun sequencing reads. Taxonomic profiling has valuable applications in biological and medical research, including disease diagnostics. Most currently available approaches do not scale well with increasing data volumes, which is important because both the number and lengths of the reads provided by sequencing platforms keep increasing. Here we introduce FOCUS, an agile composition based approach using non-negative least squares (NNLS) to report the organisms present in metagenomic samples and profile their abundances. FOCUS was tested with simulated and real metagenomes, and the results show that our approach accurately predicts the organisms present in microbial communities. FOCUS was implemented in Python. The source code and web-sever are freely available at http://edwards.sdsu.edu/FOCUS.},
+  timestamp = {2016-06-16T16:08:30Z},
+  journaltitle = {PeerJ},
+  author = {Silva, Genivaldo Gueiros Z and a Cuevas, Daniel and Dutilh, Bas E and a Edwards, Robert},
+  date = {2014-01},
+  pages = {e425},
+  eprinttype = {pmid},
+  eprint = {24949242}
+}
+
+@article{StarkMltreemap2010,
+  title = {{{MLTreeMap}} - Accurate Maximum Likelihood Placement of Environmental {{DNA}} Sequences into Taxonomic and Functional Reference Phylogenies.},
+  volume = {11},
+  issn = {1471-2164},
+  doi = {10.1186/1471-2164-11-461},
+  abstract = {Shotgun sequencing of environmental DNA is an essential technique for characterizing uncultivated microbes in situ. However, the taxonomic and functional assignment of the obtained sequence fragments remains a pressing problem.},
+  timestamp = {2016-06-16T16:08:32Z},
+  journaltitle = {BMC genomics},
+  author = {Stark, Manuel and Berger, Simon and Stamatakis, Alexandros and von Mering, Christian},
+  date = {2010-01},
+  pages = {461},
+  keywords = {Algorithms,DNA,DNA: analysis,DNA: classification,DNA: genetics,DNA: methods,Internet,Likelihood Functions,phylogenetic placement algorithm,Phylogeny,Sequence Analysis,Software Design,taxonomic binning},
+  options = {useprefix=true},
+  eprinttype = {pmid},
+  eprint = {20687950}
+}
+
+@article{SuMetaabc2011,
+  title = {{{MetaABC}}–an Integrated Metagenomics Platform for Data Adjustment, Binning and Clustering.},
+  volume = {27},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/btr376},
+  abstract = {MetaABC is a metagenomic platform that integrates several binning tools coupled with methods for removing artifacts, analyzing unassigned reads and controlling sampling biases. It allows users to arrive at a better interpretation via series of distinct combinations of analysis tools. After execution, MetaABC provides outputs in various visual formats such as tables, pie and bar charts as well as clustering result diagrams.},
+  timestamp = {2016-06-16T16:08:34Z},
+  number = {16},
+  journaltitle = {Bioinformatics (Oxford, England)},
+  author = {Su, Chien-Hao and Hsu, Ming-Tsung and Wang, Tse-Yi and Chiang, Sufeng and Cheng, Jen-Hao and Weng, Francis C and Kao, Cheng-Yan and Wang, Daryi and Tsai, Huai-Kuang},
+  date = {2011-08},
+  pages = {2298--9},
+  keywords = {Cluster Analysis,metagenomics,Metagenomics: methods,Software,Systems Integration},
+  eprinttype = {pmid},
+  eprint = {21697124}
+}
+
+@article{SuenInsect2010,
+  title = {An Insect Herbivore Microbiome with High Plant Biomass-Degrading Capacity.},
+  volume = {6},
+  issn = {1553-7404},
+  doi = {10.1371/journal.pgen.1001129},
+  abstract = {Herbivores can gain indirect access to recalcitrant carbon present in plant cell walls through symbiotic associations with lignocellulolytic microbes. A paradigmatic example is the leaf-cutter ant (Tribe: Attini), which uses fresh leaves to cultivate a fungus for food in specialized gardens. Using a combination of sugar composition analyses, metagenomics, and whole-genome sequencing, we reveal that the fungus garden microbiome of leaf-cutter ants is composed of a diverse community of bacteria with high plant biomass-degrading capacity. Comparison of this microbiome's predicted carbohydrate-degrading enzyme profile with other metagenomes shows closest similarity to the bovine rumen, indicating evolutionary convergence of plant biomass degrading potential between two important herbivorous animals. Genomic and physiological characterization of two dominant bacteria in the fungus garden microbiome provides evidence of their capacity to degrade cellulose. Given the recent interest in cellulosic biofuels, understanding how large-scale and rapid plant biomass degradation occurs in a highly evolved insect herbivore is of particular relevance for bioenergy.},
+  timestamp = {2016-06-16T16:08:34Z},
+  number = {9},
+  journaltitle = {PLoS genetics},
+  author = {Suen, Garret and Scott, Jarrod J and Aylward, Frank O and Adams, Sandra M and Tringe, Susannah G and a Pinto-Tomás, Adrián and Foster, Clifton E and Pauly, Markus and Weimer, Paul J and Barry, Kerrie W and a Goodwin, Lynne and Bouffard, Pascal and Li, Lewyn and Osterberger, Jolene and Harkins, Timothy T and Slater, Steven C and Donohue, Timothy J and Currie, Cameron R},
+  date = {2010-09},
+  pages = {e1001129},
+  keywords = {Animals,Ants,Ants: microbiology,Biomass,Biopolymers,Biopolymers: metabolism,Carbohydrate Metabolism,Carbohydrate Metabolism: genetics,Cattle,Cluster Analysis,Feeding Behavior,Feeding Behavior: physiology,Fungi,Fungi: genetics,Metagenome,Metagenome: genetics,Molecular Sequence Data,Phylogeny,Plant Leaves,Plant Leaves: metabolism},
+  eprinttype = {pmid},
+  eprint = {20885794}
+}
+
+@article{SunagawaMetagenomic2013,
+  title = {Metagenomic Species Profiling Using Universal Phylogenetic Marker Genes.},
+  volume = {10},
+  issn = {1548-7105},
+  doi = {10.1038/nmeth.2693},
+  abstract = {To quantify known and unknown microorganisms at species-level resolution using shotgun sequencing data, we developed a method that establishes metagenomic operational taxonomic units (mOTUs) based on single-copy phylogenetic marker genes. Applied to 252 human fecal samples, the method revealed that on average 43\% of the species abundance and 58\% of the richness cannot be captured by current reference genome-based methods. An implementation of the method is available at http://www.bork.embl.de/software/mOTU/.},
+  timestamp = {2016-06-16T16:08:35Z},
+  number = {12},
+  journaltitle = {Nature methods},
+  author = {Sunagawa, Shinichi and Mende, Daniel R and Zeller, Georg and Izquierdo-Carrasco, Fernando and a Berger, Simon and Kultima, Jens Roat and Coelho, Luis Pedro and Arumugam, Manimozhiyan and Tap, Julien and Nielsen, Henrik Bjørn and Rasmussen, Simon and Brunak, Søren and Pedersen, Oluf and Guarner, Francisco and de Vos, Willem M and Wang, Jun and Li, Junhua and Doré, Joël and Ehrlich, S Dusko and Stamatakis, Alexandros and Bork, Peer},
+  date = {2013-12},
+  pages = {1196--9},
+  options = {useprefix=true},
+  eprinttype = {pmid},
+  eprint = {24141494}
+}
+
 @article{TeelingTetra2004,
   title = {{{TETRA}}: A Web-Service and a Stand-Alone Program for the Analysis and Comparison of Tetranucleotide Usage Patterns in {{DNA}} Sequences.},
   volume = {5},
@@ -340,6 +1183,58 @@
   keywords = {Bacterial,Bacterial: genetics,Base Composition,Base Composition: genetics,Bradyrhizobium,Bradyrhizobium: genetics,Chromosomes,DNA,DNA: methods,Escherichia,Escherichia: genetics,Genome,Internet,Microsatellite Repeats,Microsatellite Repeats: genetics,Prochlorococcus,Prochlorococcus: genetics,Sequence Analysis,Shigella,Shigella: genetics,Sinorhizobium,Sinorhizobium: genetics,Software,taxonomic binning,unsupervised taxonomic binning,Yersinia,Yersinia: genetics},
   eprinttype = {pmid},
   eprint = {15507136}
+}
+
+@article{ThompsonProperties2011,
+  title = {The Properties and Applications of Single-Molecule {{DNA}} Sequencing.},
+  volume = {12},
+  issn = {1465-6914},
+  doi = {10.1186/gb-2011-12-2-217},
+  abstract = {Single-molecule sequencing enables DNA or RNA to be sequenced directly from biological samples, making it well-suited for diagnostic and clinical applications. Here we review the properties and applications of this rapidly evolving and promising technology.},
+  timestamp = {2016-06-16T16:08:35Z},
+  number = {2},
+  journaltitle = {Genome biology},
+  author = {Thompson, John F and Milos, Patrice M},
+  date = {2011-01},
+  pages = {217},
+  keywords = {Animals,DNA,DNA: analysis,DNA-Directed DNA Polymerase,DNA-Directed DNA Polymerase: genetics,DNA-Directed DNA Polymerase: metabolism,DNA: genetics,DNA: instrumentation,DNA: methods,DNA Primers,DNA Primers: chemistry,DNA Primers: genetics,Fluorescence,Fluorescence Resonance Energy Transfer,Genomics,Genomics: instrumentation,Genomics: methods,High-Throughput Nucleotide Sequencing,High-Throughput Nucleotide Sequencing: instrumenta,High-Throughput Nucleotide Sequencing: methods,Humans,Molecular Probes,Molecular Probes: chemistry,Molecular Probes: metabolism,Nanotechnology,Nanotechnology: instrumentation,Nanotechnology: methods,Quantum Dots,RNA,RNA: analysis,RNA: genetics,Sequence Analysis},
+  eprinttype = {pmid},
+  eprint = {21349208}
+}
+
+@article{TringeComparative2005,
+  title = {Comparative Metagenomics of Microbial Communities.},
+  volume = {308},
+  issn = {1095-9203},
+  doi = {10.1126/science.1107851},
+  abstract = {The species complexity of microbial communities and challenges in culturing representative isolates make it difficult to obtain assembled genomes. Here we characterize and compare the metabolic capabilities of terrestrial and marine microbial communities using largely unassembled sequence data obtained by shotgun sequencing DNA isolated from the various environments. Quantitative gene content analysis reveals habitat-specific fingerprints that reflect known characteristics of the sampled environments. The identification of environment-specific genes through a gene-centric comparative analysis presents new opportunities for interpreting and diagnosing environments.},
+  timestamp = {2016-06-16T16:08:39Z},
+  number = {5721},
+  journaltitle = {Science (New York, N.Y.)},
+  author = {Tringe, Susannah Green and von Mering, Christian and Kobayashi, Arthur and a Salamov, Asaf and Chen, Kevin and Chang, Hwai W and Podar, Mircea and Short, Jay M and Mathur, Eric J and Detter, John C and Bork, Peer and Hugenholtz, Philip and Rubin, Edward M},
+  date = {2005-04},
+  pages = {554--7},
+  keywords = {Animals,Archaea,Archaea: classification,Archaea: genetics,Archaea: metabolism,Bacteria,Bacteria: classification,Bacteria: genetics,Bacterial,Bacterial Proteins,Bacterial Proteins: genetics,Bacterial Proteins: metabolism,Bacteria: metabolism,Biodiversity,Biofilms,Bone and Bones,Bone and Bones: microbiology,Computational Biology,DNA,Ecosystem,Energy Metabolism,Eukaryotic Cells,Eukaryotic Cells: metabolism,Gene Library,Genes,Genome,Genomics,Molecular Sequence Data,Operon,Phylogeny,Polymerase Chain Reaction,Proteins,Proteins: genetics,Proteins: metabolism,Proteome,Seawater,Seawater: microbiology,Sequence Analysis,Soil Microbiology,Whales,Whales: microbiology},
+  options = {useprefix=true},
+  eprinttype = {pmid},
+  eprint = {15845853}
+}
+
+@article{TurnbaughOrganismal2010,
+  title = {Organismal, Genetic, and Transcriptional Variation in the Deeply Sequenced Gut Microbiomes of Identical Twins.},
+  volume = {107},
+  issn = {1091-6490},
+  doi = {10.1073/pnas.1002355107},
+  abstract = {We deeply sampled the organismal, genetic, and transcriptional diversity in fecal samples collected from a monozygotic (MZ) twin pair and compared the results to 1,095 communities from the gut and other body habitats of related and unrelated individuals. Using a new scheme for noise reduction in pyrosequencing data, we estimated the total diversity of species-level bacterial phylotypes in the 1.2-1.5 million bacterial 16S rRNA reads obtained from each deeply sampled cotwin to be approximately 800 (35.9\%, 49.1\% detected in both). A combined 1.1 million read 16S rRNA dataset representing 281 shallowly sequenced fecal samples from 54 twin pairs and their mothers contained an estimated 4,018 species-level phylotypes, with each sample having a unique species assemblage (53.4 +/- 0.6\% and 50.3 +/- 0.5\% overlap with the deeply sampled cotwins). Of the 134 phylotypes with a relative abundance of $\backslash$textgreater0.1\% in the combined dataset, only 37 appeared in $\backslash$textgreater50\% of the samples, with one phylotype in the Lachnospiraceae family present in 99\%. Nongut communities had significantly reduced overlap with the deeply sequenced twins' fecal microbiota (18.3 +/- 0.3\%, 15.3 +/- 0.3\%). The MZ cotwins' fecal DNA was deeply sequenced (3.8-6.3 Gbp/sample) and assembled reads were assigned to 25 genus-level phylogenetic bins. Only 17\% of the genes in these bins were shared between the cotwins. Bins exhibited differences in their degree of sequence variation, gene content including the repertoire of carbohydrate active enzymes present within and between twins (e.g., predicted cellulases, dockerins), and transcriptional activities. These results provide an expanded perspective about features that make each of us unique life forms and directions for future characterization of our gut ecosystems.},
+  timestamp = {2016-06-16T16:08:41Z},
+  number = {16},
+  journaltitle = {Proceedings of the National Academy of Sciences of the United States of America},
+  author = {Turnbaugh, Peter J and Quince, Christopher and Faith, Jeremiah J and McHardy, Alice C and Yatsunenko, Tanya and Niazi, Faheem and Affourtit, Jason and Egholm, Michael and Henrissat, Bernard and Knight, Rob and Gordon, Jeffrey I},
+  date = {2010-04},
+  pages = {7503--8},
+  keywords = {16S,16S: metabolism,Adult,Algorithms,Bacteria,Bacteria: classification,Bacteria: genetics,Carbohydrates,Carbohydrates: chemistry,Feces,Female,Gastrointestinal Tract,Gastrointestinal Tract: microbiology,Genetic,Genetic Variation,Humans,Male,Models,Monozygotic,Obesity,Obesity: complications,Phylogeny,Ribosomal,RNA,Transcription,Twins},
+  eprinttype = {pmid},
+  eprint = {20363958}
 }
 
 @article{TysonCommunity2004,
@@ -393,6 +1288,52 @@
   eprint = {17586664}
 }
 
+@article{WarneckeMetagenomic2007,
+  title = {Metagenomic and Functional Analysis of Hindgut Microbiota of a Wood-Feeding Higher Termite.},
+  volume = {450},
+  issn = {1476-4687},
+  doi = {10.1038/nature06269},
+  abstract = {From the standpoints of both basic research and biotechnology, there is considerable interest in reaching a clearer understanding of the diversity of biological mechanisms employed during lignocellulose degradation. Globally, termites are an extremely successful group of wood-degrading organisms and are therefore important both for their roles in carbon turnover in the environment and as potential sources of biochemical catalysts for efforts aimed at converting wood into biofuels. Only recently have data supported any direct role for the symbiotic bacteria in the gut of the termite in cellulose and xylan hydrolysis. Here we use a metagenomic analysis of the bacterial community resident in the hindgut paunch of a wood-feeding 'higher' Nasutitermes species (which do not contain cellulose-fermenting protozoa) to show the presence of a large, diverse set of bacterial genes for cellulose and xylan hydrolysis. Many of these genes were expressed in vivo or had cellulase activity in vitro, and further analyses implicate spirochete and fibrobacter species in gut lignocellulose degradation. New insights into other important symbiotic functions including H2 metabolism, CO2-reductive acetogenesis and N2 fixation are also provided by this first system-wide gene analysis of a microbial community specialized towards plant lignocellulose degradation. Our results underscore how complex even a 1-microl environment can be.},
+  timestamp = {2016-06-16T16:08:46Z},
+  number = {7169},
+  journaltitle = {Nature},
+  author = {Warnecke, Falk and Luginbühl, Peter and Ivanova, Natalia and Ghassemian, Majid and Richardson, Toby H and Stege, Justin T and Cayouette, Michelle and McHardy, Alice C and Djordjevic, Gordana and Aboushadi, Nahla and Sorek, Rotem and Tringe, Susannah G and Podar, Mircea and Martin, Hector Garcia and Kunin, Victor and Dalevi, Daniel and Madejska, Julita and Kirton, Edward and Platt, Darren and Szeto, Ernest and Salamov, Asaf and Barry, Kerrie and Mikhailova, Natalia and Kyrpides, Nikos C and Matson, Eric G and a Ottesen, Elizabeth and Zhang, Xinning and Hernández, Myriam and Murillo, Catalina and Acosta, Luis G and Rigoutsos, Isidore and Tamayo, Giselle and Green, Brian D and Chang, Cathy and Rubin, Edward M and Mathur, Eric J and Robertson, Dan E and Hugenholtz, Philip and Leadbetter, Jared R},
+  date = {2007-11},
+  pages = {560--5},
+  keywords = {Animals,Bacteria,Bacteria: enzymology,Bacteria: genetics,Bacteria: isolation & purification,Bacterial,Bacterial: genetics,Bacteria: metabolism,Bioelectric Energy Sources,Biological,Carbon,Carbon: metabolism,Catalytic Domain,Cellulose,Cellulose: metabolism,Costa Rica,Genes,Genome,Genomics,Glycoside Hydrolases,Glycoside Hydrolases: chemistry,Glycoside Hydrolases: genetics,Glycoside Hydrolases: metabolism,Hydrolysis,Intestines,Intestines: microbiology,Isoptera,Isoptera: metabolism,Isoptera: microbiology,Lignin,Lignin: metabolism,Models,Molecular Sequence Data,Polymerase Chain Reaction,symbiosis,Wood,Wood: chemistry,Wood: metabolism,Xylans,Xylans: metabolism},
+  eprinttype = {pmid},
+  eprint = {18033299}
+}
+
+@article{WeberPractical2011,
+  title = {Practical Application of Self-Organizing Maps to Interrelate Biodiversity and Functional Data in {{NGS}}-Based Metagenomics.},
+  volume = {5},
+  issn = {1751-7370},
+  doi = {10.1038/ismej.2010.180},
+  abstract = {Next-generation sequencing (NGS) technologies have enabled the application of broad-scale sequencing in microbial biodiversity and metagenome studies. Biodiversity is usually targeted by classifying 16S ribosomal RNA genes, while metagenomic approaches target metabolic genes. However, both approaches remain isolated, as long as the taxonomic and functional information cannot be interrelated. Techniques like self-organizing maps (SOMs) have been applied to cluster metagenomes into taxon-specific bins in order to link biodiversity with functions, but have not been applied to broad-scale NGS-based metagenomics yet. Here, we provide a novel implementation, demonstrate its potential and practicability, and provide a web-based service for public usage. Evaluation with published data sets mimicking varyingly complex habitats resulted into classification specificities and sensitivities of close to 100\% to above 90\% from phylum to genus level for assemblies exceeding 8 kb for low and medium complexity data. When applied to five real-world metagenomes of medium complexity from direct pyrosequencing of marine subsurface waters, classifications of assemblies above 2.5 kb were in good agreement with fluorescence in situ hybridizations, indicating that biodiversity was mostly retained within the metagenomes, and confirming high classification specificities. This was validated by two protein-based classifications (PBCs) methods. SOMs were able to retrieve the relevant taxa down to the genus level, while surpassing PBCs in resolution. In order to make the approach accessible to a broad audience, we implemented a feature-rich web-based SOM application named TaxSOM, which is freely available at http://www.megx.net/toolbox/taxsom. TaxSOM can classify reads or assemblies exceeding 2.5 kb with high accuracy and thus assists in linking biodiversity and functions in metagenome studies, which is a precondition to study microbial ecology in a holistic fashion.},
+  timestamp = {2016-06-16T16:08:47Z},
+  number = {5},
+  journaltitle = {The ISME journal},
+  author = {Weber, Marc and Teeling, Hanno and Huang, Sixing and Waldmann, Jost and Kassabgy, Mariette and Fuchs, Bernhard M and Klindworth, Anna and Klockow, Christine and Wichels, Antje and Gerdts, Gunnar and Amann, Rudolf and Glöckner, Frank Oliver},
+  date = {2011-05},
+  pages = {918--28},
+  keywords = {binning,Classification,metagenomics,molecular ecology,self-organizing map,som,taxonomic,taxsom},
+  eprinttype = {pmid},
+  eprint = {21160538}
+}
+
+@inproceedings{WilkeningUsing2009,
+  title = {Using Clouds for Metagenomics: {{A}} Case Study},
+  isbn = {978-1-4244-5011-4},
+  doi = {10.1109/CLUSTR.2009.5289187},
+  timestamp = {2016-06-16T16:08:50Z},
+  booktitle = {2009 {{IEEE International Conference}} on {{Cluster Computing}} and {{Workshops}}},
+  publisher = {{IEEE}},
+  author = {Wilkening, Jared and Wilke, Andreas and Desai, Narayan and Meyer, Folker},
+  date = {2009},
+  pages = {1--6}
+}
+
 @article{WoodKraken2014,
   title = {Kraken: Ultrafast Metagenomic Sequence Classification Using Exact Alignments.},
   volume = {15},
@@ -408,6 +1349,23 @@
   keywords = {metagenomics,microbiome,next-generation sequencing,Sequence Alignment,sequence classification},
   eprinttype = {pmid},
   eprint = {24580807}
+}
+
+@article{WoykeSymbiosis2006,
+  title = {Symbiosis Insights through Metagenomic Analysis of a Microbial Consortium.},
+  volume = {443},
+  issn = {1476-4687},
+  doi = {10.1038/nature05192},
+  abstract = {Symbioses between bacteria and eukaryotes are ubiquitous, yet our understanding of the interactions driving these associations is hampered by our inability to cultivate most host-associated microbes. Here we use a metagenomic approach to describe four co-occurring symbionts from the marine oligochaete Olavius algarvensis, a worm lacking a mouth, gut and nephridia. Shotgun sequencing and metabolic pathway reconstruction revealed that the symbionts are sulphur-oxidizing and sulphate-reducing bacteria, all of which are capable of carbon fixation, thus providing the host with multiple sources of nutrition. Molecular evidence for the uptake and recycling of worm waste products by the symbionts suggests how the worm could eliminate its excretory system, an adaptation unique among annelid worms. We propose a model that describes how the versatile metabolism within this symbiotic consortium provides the host with an optimal energy supply as it shuttles between the upper oxic and lower anoxic coastal sediments that it inhabits.},
+  timestamp = {2016-06-16T16:08:52Z},
+  number = {7114},
+  journaltitle = {Nature},
+  author = {Woyke, Tanja and Teeling, Hanno and Ivanova, Natalia N and Huntemann, Marcel and Richter, Michael and Gloeckner, Frank Oliver and Boffelli, Dario and Anderson, Iain J and Barry, Kerrie W and Shapiro, Harris J and Szeto, Ernest and Kyrpides, Nikos C and Mussmann, Marc and Amann, Rudolf and Bergin, Claudia and Ruehland, Caroline and Rubin, Edward M and Dubilier, Nicole},
+  date = {2006-10},
+  pages = {950--5},
+  keywords = {Animals,Biological,Carbon,Carbon: metabolism,Digestion,Digestion: physiology,Energy Metabolism,Environment,Genomics,metagenomics,Microbiology,Models,Oligochaeta,Oligochaeta: microbiology,Oligochaeta: physiology,Proteobacteria,Proteobacteria: genetics,Proteobacteria: metabolism,symbiosis,Symbiosis: genetics,Symbiosis: physiology,taxonomic binning,unsupervised taxonomic binning},
+  eprinttype = {pmid},
+  eprint = {16980956}
 }
 
 @article{WoykeOne2010,
@@ -461,6 +1419,20 @@
   eprint = {20033048}
 }
 
+@article{WuPhylogenomic2012,
+  title = {Phylogenomic {{Analysis}} of {{Bacterial}} and {{Archaeal Sequences}} with {{AMPHORA2}}.},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/bts079},
+  abstract = {SUMMARY: With the explosive growth of bacterial and archaeal sequence data, large scale phylogenetic analyses present both opportunities and challenges. Here we describe AMPHORA2, an automated phylogenomic inference tool that can be used for high throughput, high quality genome tree reconstruction and metagenomic phylotyping. Compared to its predecessor, AMPHORA2 has several major enhancements and new functions: it has a greatly expanded phylogenetic marker database and can analyze both bacterial and archaeal sequences; it incorporates probability-based sequence alignment masks that improve the phylogenetic accuracy; it can analyze DNA as well as protein sequences and is more sensitive in marker identification; finally, it is over 100x faster in metagenomic phylotyping. AVAILABILITY: http://wolbachia.biology.virginia.edu/WuLab/Software.html. CONTACT: mw4yv@virginia.edu SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.},
+  timestamp = {2016-06-16T16:08:54Z},
+  journaltitle = {Bioinformatics (Oxford, England)},
+  author = {Wu, Martin and Scott, Alexandra J},
+  date = {2012-02},
+  pages = {1--2},
+  eprinttype = {pmid},
+  eprint = {22332237}
+}
+
 @article{WuNovel2011,
   title = {A {{Novel Abundance}}-{{Based Algorithm}} for {{Binning Metagenomic Sequences Using}} l-Tuples.},
   volume = {18},
@@ -476,6 +1448,23 @@
   keywords = {binning,em algorithm,metagenomics,Poisson Distribution,taxonomic binning,unsupervised taxonomic binning},
   eprinttype = {pmid},
   eprint = {21385052}
+}
+
+@article{XieCommunity2010,
+  title = {Community and Gene Composition of a Human Dental Plaque Microbiota Obtained by Metagenomic Sequencing.},
+  volume = {25},
+  issn = {2041-1014},
+  doi = {10.1111/j.2041-1014.2010.00587.x},
+  abstract = {Human dental plaque is a complex microbial community containing an estimated 700 to 19,000 species/phylotypes. Despite numerous studies analysing species richness in healthy and diseased human subjects, the true genomic composition of the human dental plaque microbiota remains unknown. Here we report a metagenomic analysis of a healthy human plaque sample using a combination of second-generation sequencing platforms. A total of 860 million base pairs of non-human sequences were generated. Various analysis tools revealed the presence of 12 well-characterized phyla, members of the TM-7 and BRC1 clade, and sequences that could not be classified. Both pathogens and opportunistic pathogens were identified, supporting the ecological plaque hypothesis for oral diseases. Mapping the metagenomic reads to sequenced reference genomes demonstrated that 4\% of the reads could be assigned to the sequenced species. Preliminary annotation identified genes belonging to all known functional categories. Interestingly, although 73\% of the total assembled contig sequences were predicted to code for proteins, only 51\% of them could be assigned a functional role. Furthermore, ∼2.8\% of the total predicted genes coded for proteins involved in resistance to antibiotics and toxic compounds, suggesting that the oral cavity is an important reservoir for antimicrobial resistance.},
+  timestamp = {2016-06-16T16:08:55Z},
+  number = {6},
+  journaltitle = {Molecular oral microbiology},
+  author = {Xie, G and Chain, P S G and Lo, C-C and Liu, K-L and Gans, J and Merritt, J and Qi, F},
+  date = {2010-12},
+  pages = {391--405},
+  keywords = {16S,16S: genetics,Actinobacteria,Actinobacteria: classification,Bacteria,Bacteria: classification,Bacterial,Bacterial: genetics,Bacterial Proteins,Bacterial Proteins: genetics,Bacteroidetes,Bacteroidetes: classification,Chromosome Mapping,Contig Mapping,Contig Mapping: methods,Cyanobacteria,Cyanobacteria: classification,Databases,Dental Plaque,Dental Plaque: microbiology,DNA,Drug Resistance,Ecosystem,Fibrobacter,Fibrobacter: classification,Fusobacteria,Fusobacteria: classification,Gastrointestinal Tract,Gastrointestinal Tract: microbiology,Genome,Humans,Metagenome,Metagenome: genetics,metagenomics,Metagenomics: methods,Nucleic Acid,Proteobacteria,Proteobacteria: classification,Ribosomal,RNA,Sequence Analysis,Spirochaetaceae,Spirochaetaceae: classification},
+  eprinttype = {pmid},
+  eprint = {21040513}
 }
 
 @article{ZhaoRapsearch22011,
@@ -1306,4 +2295,96 @@ View full text},
   keywords = {Binning,enrichment culture,Interpolated Markov Models,Metagenomics,Tetranucleotide frequencies}
 }
 
+@article{SimonMetagenomic2011,
+  title = {Metagenomic {{Analyses}}: {{Past}} and {{Future Trends}}},
+  volume = {77},
+  issn = {0099-2240},
+  doi = {10.1128/AEM.02345-10},
+  shorttitle = {Metagenomic {{Analyses}}},
+  timestamp = {2017-02-21T14:31:43Z},
+  langid = {english},
+  number = {4},
+  journaltitle = {Applied and Environmental Microbiology},
+  author = {Simon, C. and Daniel, R.},
+  urldate = {2017-02-21},
+  date = {2011-02-15},
+  pages = {1153--1161}
+}
+
+@article{KuninBioinformatician2008,
+  title = {A {{Bioinformatician}}'s {{Guide}} to {{Metagenomics}}},
+  volume = {72},
+  issn = {1092-2172},
+  doi = {10.1128/MMBR.00009-08},
+  timestamp = {2017-02-21T14:34:01Z},
+  langid = {english},
+  number = {4},
+  journaltitle = {Microbiology and Molecular Biology Reviews},
+  author = {Kunin, V. and Copeland, A. and Lapidus, A. and Mavromatis, K. and Hugenholtz, P.},
+  urldate = {2017-02-21},
+  date = {2008-12-01},
+  pages = {557--578}
+}
+
+@article{ColeRibosomal2009,
+  title = {The {{Ribosomal Database Project}}: Improved Alignments and New Tools for {{rRNA}} Analysis},
+  volume = {37},
+  issn = {0305-1048, 1362-4962},
+  doi = {10.1093/nar/gkn879},
+  shorttitle = {The {{Ribosomal Database Project}}},
+  timestamp = {2017-02-21T14:49:00Z},
+  langid = {english},
+  issue = {Database},
+  journaltitle = {Nucleic Acids Research},
+  author = {Cole, J. R. and Wang, Q. and Cardenas, E. and Fish, J. and Chai, B. and Farris, R. J. and Kulam-Syed-Mohideen, A. S. and McGarrell, D. M. and Marsh, T. and Garrity, G. M. and Tiedje, J. M.},
+  urldate = {2017-02-21},
+  date = {2009-01-01},
+  pages = {D141--D145}
+}
+
+@article{MarkowitzImg2012,
+  title = {{{IMG}}/{{M}}: The Integrated Metagenome Data Management and Comparative Analysis System},
+  volume = {40},
+  issn = {0305-1048, 1362-4962},
+  doi = {10.1093/nar/gkr975},
+  shorttitle = {{{IMG}}/{{M}}},
+  timestamp = {2017-02-21T15:03:37Z},
+  langid = {english},
+  issue = {D1},
+  journaltitle = {Nucleic Acids Research},
+  author = {Markowitz, V. M. and Chen, I.-M. A. and Chu, K. and Szeto, E. and Palaniappan, K. and Grechkin, Y. and Ratner, A. and Jacob, B. and Pati, A. and Huntemann, M. and Liolios, K. and Pagani, I. and Anderson, I. and Mavromatis, K. and Ivanova, N. N. and Kyrpides, N. C.},
+  urldate = {2017-02-21},
+  date = {2012-01-01},
+  pages = {D123--D129}
+}
+
+@article{SunCommunity2011,
+  title = {Community Cyberinfrastructure for {{Advanced Microbial Ecology Research}} and {{Analysis}}: The {{CAMERA}} Resource},
+  volume = {39},
+  issn = {0305-1048, 1362-4962},
+  doi = {10.1093/nar/gkq1102},
+  shorttitle = {Community Cyberinfrastructure for {{Advanced Microbial Ecology Research}} and {{Analysis}}},
+  timestamp = {2017-02-21T15:07:08Z},
+  langid = {english},
+  issue = {Database},
+  journaltitle = {Nucleic Acids Research},
+  author = {Sun, S. and Chen, J. and Li, W. and Altintas, I. and Lin, A. and Peltier, S. and Stocks, K. and Allen, E. E. and Ellisman, M. and Grethe, J. and Wooley, J.},
+  urldate = {2017-02-21},
+  date = {2011-01-01},
+  pages = {D546--D551}
+}
+
+@inproceedings{ChatterjiCompostbin2008,
+  title = {{{CompostBin}}: {{A DNA}} Composition-Based Algorithm for Binning Environmental Shotgun Reads},
+  shorttitle = {{{CompostBin}}},
+  timestamp = {2017-02-21T15:45:30Z},
+  booktitle = {Annual {{International Conference}} on {{Research}} in {{Computational Molecular Biology}}},
+  publisher = {{Springer}},
+  author = {Chatterji, Sourav and Yamazaki, Ichitaro and Bai, Zhaojun and Eisen, Jonathan A.},
+  urldate = {2017-02-21},
+  date = {2008},
+  pages = {17--28}
+}
+
+@preamble{ "\ifdefined\DeclarePrefChars\DeclarePrefChars{'’-}\else\fi " }
 
