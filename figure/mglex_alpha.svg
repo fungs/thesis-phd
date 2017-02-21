@@ -15,7 +15,7 @@
    viewBox="0 0 460.62993 257.35841"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.0 unknown"
+   inkscape:version="0.92.1 unknown"
    sodipodi:docname="mglex_alpha.svg">
   <defs
      id="defs4">
@@ -247,10 +247,10 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="291.19156"
-     inkscape:cy="225.95074"
+     inkscape:cx="218.27999"
+     inkscape:cy="121.14639"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g18074"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="994"
@@ -735,7 +735,7 @@
            id="tspan16179-9-0-9-0"
            sodipodi:role="line">0</tspan></text>
       <g
-         transform="matrix(0.5909119,0,0,0.68148691,184.25647,-95.050774)"
+         transform="matrix(0.5909119,0,0,0.68148691,184.25647,-94.864628)"
          style="fill:#e6e6e6;fill-opacity:1;stroke:#333333;stroke-width:1.7602694;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="g17610-1-1-6">
         <path
@@ -755,17 +755,17 @@
            id="tspan4396"
            x="572.54633"
            y="298.48962" /></text>
-    </g>
-    <g
-       transform="matrix(0.53848246,0,0,0.62102108,169.65788,-163.05845)"
-       style="fill:#e6e6e6;fill-opacity:1;stroke:#333333;stroke-width:1.7602694;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="g17610-1-1">
-      <path
-         inkscape:connector-curvature="0"
-         id="path16660-3-3"
-         d="m 219.42352,423.12404 v 7.1111 h -28.33181 v 12.54336 h 28.33181 v 7.1111 l 19.04246,-13.38143 z"
-         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:0.73762995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         sodipodi:nodetypes="cccccccc" />
+      <g
+         transform="matrix(0.59091189,0,0,0.68148691,184.25647,-210.20416)"
+         style="fill:#e6e6e6;fill-opacity:1;stroke:#333333;stroke-width:1.7602694;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="g17610-1-1-6-7">
+        <path
+           inkscape:connector-curvature="0"
+           id="path16660-3-3-5-6"
+           d="m 219.42352,423.12404 v 7.1111 h -28.33181 v 12.54336 h 28.33181 v 7.1111 l 19.04246,-13.38143 z"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:0.73762995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           sodipodi:nodetypes="cccccccc" />
+      </g>
     </g>
   </g>
 </svg>

@@ -1,4 +1,4 @@
-# A Probabilistic Model to Recover Genomes in Shotgun Metagenomics
+# A Probabilistic Model to Recover Genomes in Shotgun Metagenomics {#sec:full_mglex}
 
 **Johannes Dröge^1^, Alexander Schönhuth^2^, Alice C. McHardy^1\*^**
 

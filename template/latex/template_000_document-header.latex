@@ -159,3 +159,6 @@
 \usepackage{subcaption}
 \usepackage{footnote}
 
+% control hyphenation in titles
+\usepackage[raggedright]{titlesec}
+
