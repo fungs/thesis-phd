@@ -1,0 +1,2 @@
+% bold title used in abstract
+\newcommand{\smhd}[1]{{\Large\bf\usefont{OT1}{phv}{b}{n}\selectfont #1}}

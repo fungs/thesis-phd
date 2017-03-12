@@ -1,3 +1,3 @@
 \newpage
 
-## Works
+## Developed methods

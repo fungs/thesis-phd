@@ -24,16 +24,18 @@
 }
 
 % language
-\usepackage[english]{babel}
+\usepackage[shorthands=true,ngerman,english]{babel}  % use babel because polyglossia gives errors
 \usepackage{csquotes}
-%\usepackage{ngerman}
+
 % ams-latex
 \usepackage{amssymb}
 \usepackage{amsmath}
+
 % graphics
 \usepackage{graphics}
 \usepackage{epsfig}
 \usepackage[usenames,dvipsnames]{color}
+
 % tables
 \usepackage{longtable}
 \usepackage[table]{xcolor}
@@ -45,29 +47,15 @@
 \usepackage{array}
 \usepackage{subscript}
 \usepackage{booktabs}
+
 % links
 \usepackage{pdflscape}
 \usepackage{tabu}
-%\usepackage[bookmarks,
-		%bookmarksopen = true,
-		%bookmarksnumbered = true,
-		%breaklinks = true,
-		%linktocpage = false,
-		%pagebackref,
-		%colorlinks = true,
-		%linkcolor = blue,
-		%urlcolor  = blue,
-		%citecolor = red,
-		%anchorcolor = green,
-		%hyperindex = true,
-		%hyperfigures
-		%]{hyperref}
 
 % formating of urls
 \usepackage{url}
+
 % chapter headers
-% \usepackage{sectsty}
-% \allsectionsfont{\usefont{OT1}{phv}{bx}{n}\selectfont}
 \usepackage[Sonny]{fncychap}
 \ChNameVar{\large\sf}
 \ChNumVar{\huge}
@@ -90,9 +78,6 @@
 % include whole pdfs
 \usepackage{pdfpages}
 \usepackage{textcomp}
-
-
-%\usepackage{hyperref}
 
 %---- page layout ----
 
@@ -142,16 +127,8 @@
 \vbadness=10000
 \vfuzz=1pt
 
-\newcommand{\smhd}[1]{{\Large\bf\usefont{OT1}{phv}{bx}{n}\selectfont #1}}
-
 % suppress pdf inclusion warnings
 %\pdfminorversion=6
-
-% remove afterwards!
-% \usepackage{todonotes}
-%hyphenation
-%\hyphenation{Mul-ti--Drug-Re--sis-tance}
-
 
 \usepackage{glossaries}
 %\input{content/glossary.tex}
@@ -167,4 +144,3 @@
 
 % set paragraph spacing
 %\usepackage{parskip}
-

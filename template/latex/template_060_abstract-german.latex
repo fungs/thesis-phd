@@ -1,16 +1,17 @@
 %-------------------------------------
 %	Abstract German
 %-------------------------------------
+\cleardoublepage
 
-\selectlanguage{english} {
-	\smhd{Zusammenfassung}
-
-%	\cleardoublepage
-
-%	\vspace*{0.5cm}
 $if(abstractgerman)$
-$abstractgerman$
-$endif$
+{
+  \selectlanguage{ngerman}
+	\smhd{Zusammenfassung}
+	
 	\vspace*{0.5cm}
+	\frenchspacing
+	$abstractgerman$
 }
-
+\vspace*{0.5cm}
+\newpage
+$endif$

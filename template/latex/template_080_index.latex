@@ -1,4 +1,4 @@
-\selectlanguage{english}
+%\selectlanguage{english}
 
 %-------------------------------------
 %	Table of content
@@ -29,10 +29,12 @@ $if(toc)$
 
   %---- figure index ----
   %\cleardoublepage
+  \renewcommand\listfigurename{List of figures}
   \listoffigures
 
   %---- list index ----
   %\cleardoublepage
+  \renewcommand\listtablename{List of tables}
   \listoftables
 
   \cleardoublepage
@@ -44,4 +46,3 @@ $if(toc)$
   %\tableofcontents
 }
 $endif$
-

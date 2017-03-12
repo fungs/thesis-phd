@@ -1,28 +1,10 @@
 \newpage
 
-### *MGLEX*: A probabilistic model for genome recovery {#sec:short_mglex}
-
-![*MGLEX* article preview](figure/publication_mglex_preview.png){#fig:publication_mglex_preview}
-
-|  |  |
-| :---------- | ------------------------------------------------------------ |
-| **Title** |  A Probabilistic Model to Recover Genomes in Shotgun Metagenomics |
-| **Journal** |  PeerJ |
-| **Published** | 2016 (preprint), 2017 (under revision) |
-| **Authors** | Johannes Dröge, Alexander Schönhuth, Alice C. McHardy |
-| **DOI** | [10.7287/peerj.preprints.2626](https://doi.org/10.7287/peerj.preprints.2626)
+### A probabilistic model for genome recovery {#sec:short_mglex}
 
 #### Description
 
-This method article describes a probabilistic model for use in metagenome binning. Such likelihood models are at the core of many popular algorithms, including sequence classification and clustering. While some models existed as part of metagenome contig clustering programs, we developed a modular, stand-alone and reusable model using additional input features. This model is based on a set of parameterized submodels for which maximum likelihood (ML) parameter estimates can be inferred. Besides classification and clustering, we demonstrate alternative applications such as sample size reduction and visualization. The method is provided as an open source Python library and command line program.
-
-#### Full abstract
-
-Shotgun metagenomics of microbial communities reveals information about strains of relevance for applications in medicine, biotechnology and ecology. Recovering their genomes is a crucial, but very challenging step, due to the complexity of the underlying biological system and technical factors. Microbial communities are heterogeneous, with oftentimes hundreds of present genomes deriving from different species or strains, all at varying abundances and with different degrees of similarity to each other and reference data. We present a versatile probabilistic model for genome recovery and analysis, which aggregates three types of information that are commonly used for genome recovery from metagenomes. As potential applications we showcase metagenome contig classification, genome sample enrichment and genome bin comparisons. The open source implementation *MGLEX* is available via the [Python Package Index](https://pypi.python.org/pypi/mglex/) and on [GitHub](https://github.com/hzi-bifo/mglex/) and can be embedded into metagenome analysis workflows and programs.
-
-#### Article short version
-
-For the full version of this article, go to @sec:full_mglex.
+In the corresponding article in @sec:full_mglex, we describe a probabilistic model for use in metagenome binning. Such likelihood models are at the core of many popular algorithms, including sequence classification and clustering. While some models existed as part of metagenome contig clustering programs, we developed a modular, stand-alone and reusable model using additional input features. This model is based on a set of parameterized submodels for which maximum likelihood (ML) parameter estimates can be inferred. Besides classification and clustering, we demonstrate alternative applications such as sample size reduction and visualization. The method is provided as an open source Python library and command line program.
 
 ##### Introduction
 
@@ -71,3 +53,5 @@ We demonstrate alternative model applications besides classification. Using the 
 ##### Discussion
 
 We describe an aggregate likelihood model with possible applications in metagenome binning, for instance classification, genome enrichment and visualization. It builds on specific submodels, each responsible for different feature types. The modular design helps to improve the model and to compute and interpret the results. In comparison to previous methods, we added two new submodels. The first is a binomial for relative differential read coverage over multiple samples to account for systematic read mapping biases and the second is a layered Naïve Bayes model for taxonomic annotation, which allows considering external knowledge from reference sequences for sequence binning. We also propose a new weighting scheme to combine the information of several submodels. Although our reference implementation called *MGLEX* in its current state does not support parallel computations, that should be easily added later. As the runtime for all submodel ML parameter estimations and sequence classification is linear in the number of contigs, an embedding into clustering algorithms such as the Expectation Maximization (EM) or Markov Chain Monte Carlo (MCMC) algorithms are also feasible. We hope to continue developing the open-source package *MGLEX* as a flexible framework for metagenome analysis and binning, to be integrated into programs and workflows.
+
+\FloatBarrier
