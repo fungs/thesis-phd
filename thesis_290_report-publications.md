@@ -61,7 +61,7 @@ This is a list of publications which relate to metagenome binning or for which t
 |  |
 | :-------------- | ------------------------------------------------------------ |
 | **Title** | Reconstructing metabolic pathways of a member of the genus Pelotomaculum suggesting its potential to oxidize benzene to carbon dioxide with direct reduction of sulfate. |
-| **Journal** | FEMS Microbiol Ecol |
+| **Journal** | FEMS Microbiology Ecology |
 | **Published** | 23 December 2016 |
 | **Authors** | Xiyang Dong, Johannes Dröge, Christine von Toerne, Sviatlana Marozava, Alice C. McHardy, Rainer U. Meckenstock |
 | **DOI** | [10.1093/femsec/fiw254](https://doi.org/10.1093/femsec/fiw254) |

@@ -140,7 +140,7 @@
 \usepackage[raggedright]{titlesec}
 
 % add appendix
-\usepackage[titletoc]{appendix}
+\usepackage[toc,page]{appendix}
 
 % set paragraph spacing
 %\usepackage{parskip}

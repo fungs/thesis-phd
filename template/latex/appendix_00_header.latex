@@ -1,0 +1,5 @@
+%-------------------------------------
+%	Original PDFs (supplements)
+%-------------------------------------
+\begin{appendices}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
