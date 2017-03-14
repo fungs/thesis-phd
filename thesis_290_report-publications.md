@@ -1,4 +1,4 @@
-# Report of publications
+# Report of Publications
 
 ## Central publications
 

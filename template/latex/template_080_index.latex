@@ -29,12 +29,12 @@ $if(toc)$
 
   %---- figure index ----
   %\cleardoublepage
-  \renewcommand\listfigurename{List of figures}
+  \renewcommand\listfigurename{List of Figures}  % title can be changed here
   \listoffigures
 
   %---- list index ----
   %\cleardoublepage
-  \renewcommand\listtablename{List of tables}
+  \renewcommand\listtablename{List of Tables}  % title can be changed here
   \listoftables
 
   \cleardoublepage
