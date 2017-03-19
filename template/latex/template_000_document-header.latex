@@ -9,13 +9,12 @@
 
 %---- packages ----
 
-% nice figure captions
 \usepackage[hyphens]{url}
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption}
-% fancy page layout
-%\usepackage[utf8]{inputenc}
 
+% fancy page layout
 \usepackage{fancyhdr}
+
 % toc formating
 \usepackage{tocbibind}
 \usepackage[titles]{tocloft}
@@ -32,13 +31,11 @@
 \usepackage{amsmath}
 
 % graphics
-\usepackage{graphics}
-\usepackage{epsfig}
-\usepackage[usenames,dvipsnames]{color}
+%\usepackage[usenames,dvipsnames]{color}
 
 % tables
 \usepackage{longtable}
-\usepackage[table]{xcolor}
+%\usepackage[table]{xcolor}
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{booktabs}
