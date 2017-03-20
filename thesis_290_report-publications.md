@@ -12,7 +12,7 @@ The following are the publications of the developed methods on which this cumula
 | **Authors** | Johannes Dröge, Ivan Gregor, Alice C. McHardy |
 | **DOI** | [10.1093/bioinformatics/btu745](https://doi.org/10.1093/bioinformatics/btu745) |
 | **Contributions** | Designed method, developed software, designed experiments, conducted experiments, wrote manuscript |
-| **Attribution** | 80% to 90% |
+| **Attribution** | 70% to 80% |
 
 |  |  |
 | :-------------- | ------------------------------------------------------------ |

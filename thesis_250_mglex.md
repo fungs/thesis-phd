@@ -4,7 +4,7 @@
 
 #### Description
 
-The corresponding article in @sec:full_mglex describes a probabilistic model for use in metagenome binning. Such likelihood models are at the core of many popular algorithms, including sequence classification and clustering. While some models existed as fixed parts of contig clustering programs, we developed a modular, stand-alone and reusable model using additional input features. This model is based on a set of parameterized submodels for which maximum likelihood (ML) parameter estimates are inferred. Besides classification and clustering, we demonstrate alternative applications such as sample size reduction and visualization. The method is provided as an open source Python library and command line program.
+The corresponding article in @sec:full_mglex describes a probabilistic model for use in metagenome binning. Such likelihood models are at the core of many popular algorithms, including sequence classification and clustering. While some models exist as fixed parts of contig clustering programs, we developed a new modular, stand-alone and reusable model using a large set of input features. This model is based on parameterized submodels for which maximum likelihood (ML) parameter estimates can be inferred. Besides classification and clustering, we demonstrate alternative applications such as sample size reduction and visualization. The method is available as an open-source Python library and command line program called MLGEX.
 
 ##### Introduction
 
@@ -31,10 +31,10 @@ We integrate different submodels $\mathcal{L}(\bm{\mathit{\Theta_k}} \mid \bm{F_
 
 * a Poisson model for absolute read coverage considering multiple samples
 * a Binomial model for relative read coverage considering multiple samples
-* a Naïve Bayes model for $k$-mers
-* a set of layered Naïve Bayes model for taxonomic annotation of contigs
+* a frequency model for $k$-mers
+* a set of layered frequency models for taxonomic annotation of contigs
 
-The layered Naïve Bayes model is an adjustment of the standard Naïve Bayes model for hierarchical labels because the taxonomy represents a tree-like structure ([@fig:mglex_hnbayes_tree]). The listed submodels are kept simple and make independence assumptions to simplify calculations.
+The layered frequency model is an adjustment of the standard frequency model for hierarchical labels because the taxonomy represents a tree-like structure ([@fig:mglex_hnbayes_tree]). The listed submodels are kept simple and make independence assumptions to simplify calculations.
 
 ![Taxonomy stucture simplified to four levels and eight nodes. A full taxonomy may consist of thousands of nodes. Each taxonomy level uses a Naïve Bayes model which is assumed independent of the remaining levels.](figure/mglex_tree.pdf "Simplified taxonomy"){#fig:mglex_hnbayes_tree}
 
@@ -42,7 +42,7 @@ We simulated a metagenome (400 genomes with strain heterogeneity) and created sh
 
 ##### Results
 
-Using the simulated metagenome, we applied three-fold cross-validation and checked how well the model classified contigs to the most likely genome (ML) with different combinations of input features. Genome abundance turned out to be the weakest single feature type while taxonomic annotation from local alignment to reference genome sequences was the strongest. However, the aggregation of submodels according to [@eq:mglex_likelihood_aggregate] yielded better performance in all cases. In summary, about 68% of contigs pairs, which were not used for model training, were classified to the same genome using the full set of available submodels. Considering species-level bins, this value increased to 88%, which showed that the model had difficulties to distinguish strains of the same species using the differential abundance values stemming from only four samples in our simulation. The error decreased further when applying soft (not ML) classification, fitting the parameter $\beta$ ([@fig:mglex_beta_fitting]), because each contig could belong to several genomes with varying class posterior probability.
+Using the simulated metagenome, we applied three-fold cross-validation and checked how well the model classified contigs to the most likely genome (ML) with different combinations of input features. Genome abundance turned out to be the weakest single feature type while taxonomic annotation from local alignment to reference genome sequences was the strongest. However, the aggregation of submodels according to [@eq:mglex_likelihood_aggregate] yielded better performance in all cases. In summary, about 68% of contigs pairs, which were not used for model training, were classified to the same genome using the full set of available submodels. Considering species-level bins, this value increased to 79%, which showed that the model had difficulties to distinguish strains of the same species using the differential abundance values stemming from only four samples in our simulation. The error decreased further when applying soft (not ML) classification, fitting the parameter $\beta$ ([@fig:mglex_beta_fitting]), because each contig could then belong to several genomes with varying class posterior probability.
 
 We demonstrated alternative model applications besides classification. Using the likelihood distributions in the training data, we calculated *p*-values, which indicates how extreme a particular contig likelihood is with respect to the training data. With sufficient training data (100 kb in our example), we used the *p*-value to enrich a metagenome sample *in-silico* for a specific genome, so that irrelevant contigs were removed and the overall sample size reduced. On average, a critical *p*-value of 2.5% led to a sample size reduction of 95%. Such shrinkage may be useful for a more focused analysis or to apply a method with otherwise prohibitive runtime. As a second application example, we derived a probabilistic measure to quantify the similarity between any two genomes or genome bins. The quantity is based on a relative mixture likelihood and may be used to cluster bins hierarchically and to analyze the similarity structure of genome bins (@fig:mglex_tree_bin_comparison). In particular, the method indicates whether the resolution of individual bins is justified with respect to the model and contig data.
 
