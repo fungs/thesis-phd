@@ -79,6 +79,7 @@ $endif$
 \fi
 \hypersetup{breaklinks=true,
             bookmarks=true,
+            bookmarksdepth=3,
             pdfauthor={$author-meta$},
             pdftitle={$title-meta$},
             colorlinks=true,
