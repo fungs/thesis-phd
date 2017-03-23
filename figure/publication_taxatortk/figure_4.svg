@@ -11,9 +11,9 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="14cm"
-   height="14cm"
-   viewBox="0 0 396.8504 396.8504"
+   width="13cm"
+   height="13cm"
+   viewBox="0 0 368.50394 368.50394"
    id="svg2"
    sodipodi:docname="figure_4.svg"
    inkscape:version="0.92.1 unknown">
@@ -31,13 +31,13 @@
      id="namedview871"
      showgrid="false"
      units="cm"
-     fit-margin-top="0.5"
-     fit-margin-left="0.5"
-     fit-margin-right="0.5"
-     fit-margin-bottom="0.5"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
      inkscape:zoom="1.2291667"
-     inkscape:cx="215.45803"
-     inkscape:cy="255.79046"
+     inkscape:cx="179.06887"
+     inkscape:cy="236.89281"
      inkscape:window-x="0"
      inkscape:window-y="26"
      inkscape:window-maximized="1"
@@ -1303,7 +1303,7 @@
   </defs>
   <g
      id="surface4575"
-     transform="matrix(0.63976378,0,0,0.63976378,14.173228,14.173228)">
+     transform="scale(0.63976378)">
     <rect
        width="576"
        height="576"
@@ -2531,7 +2531,7 @@
          x="78.337708"
          y="29.531828"
          id="tspan3820"
-         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans, Bold Semi-Condensed';font-family:'DejaVu Sans';font-style:normal;font-stretch:semi-condensed;font-variant:normal;font-size:15.04539695px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">CARMA bin precision</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:15.0453968px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">CARMA bin precision</tspan></text>
     <path
        d="m 56.925781,218.65625 0.933594,-0.0117 0.433594,-0.008 1.160156,-0.0195 0.308594,-0.004 0.390625,-0.008 0.335937,-0.004 0.09375,-0.004 0.382813,-0.004 0.144531,-0.004 0.207031,-0.004 0.238282,-0.004 0.261718,-0.004 2.472656,-0.0469 0.390626,-0.008 h 0.0039 l 0.421875,-0.008 0.617187,-0.0117 0.941406,-0.0156 0.65625,-0.0156 0.882813,-0.0195 0.242187,-0.004 0.390626,-0.008 0.222656,-0.004 0.449218,-0.0117 0.59375,-0.0117 0.550782,-0.0117 0.261718,-0.008 0.359376,-0.008 0.222656,-0.004 2.375,-0.0586 0.421875,-0.0117 0.535156,-0.0117 0.75,-0.0195 0.09766,-0.004 0.08984,-0.004 1.558594,-0.0391 1.316406,-0.0391 0.226563,-0.008 0.277343,-0.008 1.398438,-0.0391 0.507812,-0.0195 2.332031,-0.0742 0.1875,-0.004 0.738282,-0.0273 0.675781,-0.0234 h 0.01172 l 1.097656,-0.0391 0.5625,-0.0234 1.347656,-0.0508 1,-0.0391 0.519532,-0.0195 0.136718,-0.008 0.332032,-0.0117 0.464843,-0.0234 h 0.0625 l 0.332031,-0.0156 0.05859,-0.004 0.742188,-0.0312 0.164062,-0.008 0.839844,-0.0391 0.320312,-0.0117 0.613282,-0.0312 0.292968,-0.0117 4.15625,-0.21875 0.07813,-0.004 0.503906,-0.0312 0.226562,-0.0117 0.472656,-0.0273 1.683603,-0.10547 1.0625,-0.0703 1.99218,-0.14063 0.57813,-0.043 4.63281,-0.39844 1.28516,-0.125 0.19531,-0.0234 1.98438,-0.21484 0.82421,-0.0977 0.67188,-0.0859 1.51172,-0.19922 2.1289,-0.3164 0.69922,-0.10938 0.625,-0.10547 0.27344,-0.0469 0.98828,-0.17969 0.76172,-0.14453 1.24609,-0.25391 0.25391,-0.0547 0.94141,-0.21094 1.14453,-0.27344 1.63672,-0.42969 1.50781,-0.44531 0.0195,-0.004 0.76952,-0.2461 0.84375,-0.28125 0.51172,-0.17969 2.20313,-0.85546 0.0312,-0.0156 0.67188,-0.28516 0.59375,-0.26953 0.61718,-0.28515 0.0859,-0.043 1.73047,-0.87891 1.21875,-0.68359 0.59375,-0.35547 0.20703,-0.125 0.57812,-0.35938 1.8086,-1.22265 0.13671,-0.0977 1.15236,-0.85156 0.98437,-0.77344 2.21484,-1.90625 0.0859,-0.0781 2.03516,-1.95313 0.83984,-0.86719 0.90235,-0.96484 0.45312,-0.49609 0.69141,-0.77735 0.92578,-1.07812 1.22656,-1.48047 0.66406,-0.83203 0.40625,-0.51563 0.73828,-0.95312 1.40235,-1.86328 3.43359,-4.83594 1.13281,-1.66016 0.62891,-0.92968 0.58203,-0.86719 1.51172,-2.25781 0.44531,-0.66407 0.15625,-0.23047 2.625,-3.90234 3.20703,-4.64844 3.15625,-4.42187 3.89063,-5.27344 0.80469,-1.08594 1.14453,-1.55078 0.26953,-0.37109 2.90625,-4.06641 1.41016,-2.07812 1.92968,-3.00391 2.38672,-4.08594 0.48828,-0.90234 2.85157,-5.73438 0.91406,-2.03125 0.0586,-0.13671 0.1875,-0.42579 1.10156,-2.57421 2.36329,-5.73438 0.0586,-0.14844 0.42187,-1.01953 0.625,-1.5 0.23047,-0.53906 0.92188,-2.11328 0.36719,-0.80078 0.0664,-0.14453 0.59375,-1.23828 1.76172,-3.21485 0.44922,-0.70312 0.45703,-0.66797 0.95313,-1.21875 8.78125,-3.45313 0.63671,-0.0742 1.46485,-0.32421 1.96094,-0.78907 2.16406,-1.29687 3.03125,-2.10938 0.41015,-0.24218 0.1875,-0.10157 0.56641,-0.28906 3.80859,-1.79297 8.58985,-3.3164 2.28125,-0.78516 7.46094,-1.60547 2.37109,0.195312 4.67969,0.117188"
        id="path880"
@@ -3572,7 +3572,7 @@
          x="367.013"
          y="29.531828"
          id="tspan3820-5"
-         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans, Bold Semi-Condensed';font-family:'DejaVu Sans';font-style:normal;font-stretch:semi-condensed;font-variant:normal;font-size:15.04539695px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">MEGAN bin precision</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:15.0453968px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">MEGAN bin precision</tspan></text>
     <path
        d="m 345.88672,218.55859 h 0.0351 l 0.0781,-0.004 0.26172,-0.004 0.73047,-0.0156 0.11328,-0.004 1.55078,-0.0391 3.23437,-0.082 1.38672,-0.0352 0.3711,-0.0117 1.47656,-0.043 0.69531,-0.0195 0.48047,-0.0156 0.9375,-0.0273 0.29297,-0.0117 0.18359,-0.004 0.4336,-0.0156 0.3164,-0.0117 0.23828,-0.008 0.84766,-0.0273 0.91797,-0.0312 h 0.0156 l 0.52735,-0.0195 0.28515,-0.008 1.23047,-0.0469 0.14844,-0.004 2.11328,-0.082 0.25781,-0.0117 1.26954,-0.0508 1.22265,-0.0547 2.72266,-0.125 0.375,-0.0195 0.14844,-0.008 1.33593,-0.0664 1.30078,-0.0703 0.76172,-0.043 0.35938,-0.0195 0.0273,-0.004 0.39844,-0.0234 0.13672,-0.008 2.75781,-0.17187 0.70313,-0.0508 0.28125,-0.0195 0.21093,-0.0156 0.78907,-0.0547 0.0976,-0.008 0.0274,-0.004 0.73828,-0.0547 0.95312,-0.0781 3.36328,-0.30078 0.75782,-0.0781 0.8789,-0.0937 0.85938,-0.0977 1.58593,-0.19141 1.20704,-0.16015 0.0742,-0.0117 0.0742,-0.008 0.66407,-0.0977 0.24609,-0.0352 1.15625,-0.17968 1.80859,-0.3086 0.27344,-0.0508 0.73828,-0.14062 0.24219,-0.0469 2.85156,-0.6289 1.08594,-0.27735 0.16406,-0.043 1.64453,-0.46875 1.44922,-0.46484 0.125,-0.043 0.043,-0.0156 2.79297,-1.05079 0.48828,-0.20312 0.41016,-0.17969 0.35937,-0.16015 1.22266,-0.57813 0.1289,-0.0664 1.55079,-0.80859 4.0664,-2.51172 0.33594,-0.23437 0.72656,-0.51953 0.0352,-0.0234 1.66406,-1.26172 0.24219,-0.1875 0.20703,-0.16797 2.60156,-2.1875 0.32813,-0.29297 2.22265,-2.05859 13.08203,-14.72266 1.10938,-1.39844 1.53125,-1.94921 0.42187,-0.53907 1.3711,-1.73047 6.05078,-7.40234 4.49219,-5.10937 3.9375,-4.2461 1.6289,-1.70703 3.72266,-3.82812 1.50781,-1.52344 3.06641,-3.06641 1.29297,-1.3164 5.01172,-5.70704 1.50781,-2.05468 0.625,-0.92188 3.24609,-5.72656 1.81641,-4.12109 0.0547,-0.14063 0.10156,-0.25781 2.52344,-6.98438 0.36718,-1.11718 2.64844,-8.66797 0.15234,-0.52344 2.22657,-7.99609 0.043,-0.15235 0.10156,-0.36328 0.0469,-0.16015 2.14453,-7.22657 1.47657,-4.222654 0.0117,-0.02734 0.13281,-0.332031 0.46484,-1.105469 0.0977,-0.214843 4.51953,-5.699219 0.125,-0.08984 4.8125,-3.21875 3.5625,-2.269531 0.20312,-0.08203 1.25391,-0.3125 4.96094,0.75 0.92187,0.101562 h 1.27344 l 0.16016,-0.0078 3.78515,-0.472656 6.22657,-0.351563 8.53515,0.363281 3.90625,-0.339844 8.37891,-0.535156"
        id="path1424"
@@ -3997,7 +3997,7 @@
          x="69.779938"
          y="317.53375"
          id="tspan3820-0"
-         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans, Bold Semi-Condensed';font-family:'DejaVu Sans';font-style:normal;font-stretch:semi-condensed;font-variant:normal;font-size:15.04539695px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">Taxator-tk bin precision</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:15.0453968px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">Taxator-tk bin precision</tspan></text>
     <path
        d="m 70.539062,470.18359 0.441407,-0.15625 0.394531,-0.14453 2.472656,-0.92969 1.0625,-0.41796 5.921875,-2.59766 1.910157,-0.93359 0.566406,-0.28907 1.980468,-1.04297 28.132818,-23.16796 11.48828,-15.86719 8.93359,-15.85938 0.42969,-0.83593 0.42578,-0.83985 12.80078,-27.64453 0.31641,-0.71094 0.84765,-1.89843 4.76953,-10.3125 5.11328,-9.56641 1.1836,-1.80859 0.58984,-0.82422 1.16016,-1.46485 2.10547,-2.09765 7.03515,-2.0625 3.45313,0.94531 0.25781,0.0898 4.12109,1.31641 0.11719,0.0273 0.0977,0.0234 2.125,0.32813 2.2539,-0.0156 0.38672,-0.043 3.6875,-0.99609 1.83203,-0.87891 1.05079,-0.57812 2.53515,-1.33985 3.98828,-1.40234 4.59766,-0.63281 1.6875,-0.15625 1.54297,-0.125 3.78906,-0.11328 7.6875,0.21093 10.76172,0.25 10.42578,0.28516"
        id="path1788"
@@ -4012,7 +4012,7 @@
          x="367.57135"
          y="317.53375"
          id="tspan3820-4"
-         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans, Bold Semi-Condensed';font-family:'DejaVu Sans';font-style:normal;font-stretch:semi-condensed;font-variant:normal;font-size:15.04539695px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">Absolute proportions</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:15.0453968px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">Absolute proportions</tspan></text>
     <g
        id="g3752">
       <g
@@ -4051,7 +4051,7 @@
                x="453.42804"
                y="420.87445"
                id="tspan3836"
-               style="-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-family:'DejaVu Sans';font-weight:normal;font-style:normal;font-stretch:semi-condensed;font-variant:normal;font-size:11.72182656px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">% unassigned</tspan></text>
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:11.72182655px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">% unassigned</tspan></text>
           <text
              x="453.42801"
              y="434.84747"
@@ -4062,7 +4062,7 @@
                x="453.42801"
                y="434.84747"
                id="tspan3836-6"
-               style="-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-family:'DejaVu Sans';font-weight:normal;font-style:normal;font-stretch:semi-condensed;font-variant:normal;font-size:11.72182662px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">% false</tspan></text>
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:11.72182655px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">% false</tspan></text>
           <text
              x="453.42087"
              y="448.81519"
@@ -4073,7 +4073,7 @@
                x="453.42087"
                y="448.81519"
                id="tspan3836-1"
-               style="-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-family:'DejaVu Sans';font-weight:normal;font-style:normal;font-stretch:semi-condensed;font-variant:normal;font-size:11.72182662px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">% true</tspan></text>
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:11.72182655px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">% true</tspan></text>
           <path
              d="m 440.66508,414.58932 -2.15,2.15 v 0.2 l 2.35,-2.35 z m 6.25,2.575 -1.125,1.125 -3.3,3.3 h 0.2 l 3.2,-3.2 1.025,-1.025 z"
              id="use21362-84"
@@ -4321,7 +4321,7 @@
          x="-568.32898"
          y="371.19653"
          id="tspan3869"
-         style="font-style:normal;-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-family:'DejaVu Sans';font-weight:normal;font-stretch:semi-condensed;font-variant:normal;font-size:12.00005427px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">CARMA3</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:12.00005436px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">CARMA3</tspan></text>
     <text
        x="-568.95007"
        y="410.03943"
@@ -4332,7 +4332,7 @@
          x="-568.95007"
          y="410.03943"
          id="tspan3869-1"
-         style="font-style:normal;-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-family:'DejaVu Sans';font-weight:normal;font-stretch:semi-condensed;font-variant:normal;font-size:12.00005427px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">MEGAN4</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:12.00005436px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">MEGAN4</tspan></text>
     <text
        x="-568.7157"
        y="448.80817"
@@ -4343,7 +4343,7 @@
          x="-568.7157"
          y="448.80817"
          id="tspan3869-8"
-         style="font-style:normal;-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-family:'DejaVu Sans';font-weight:normal;font-stretch:semi-condensed;font-variant:normal;font-size:12.00005427px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">taxator-tk</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:12.00005436px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">taxator-tk</tspan></text>
     <g
        transform="translate(9.6)"
        id="g3920">

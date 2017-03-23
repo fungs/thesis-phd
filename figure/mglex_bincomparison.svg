@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="15.5cm"
-   height="15.172492cm"
-   viewBox="0 0 439.37008 430.08639"
+   width="14.499999cm"
+   height="14.172491cm"
+   viewBox="0 0 411.0236 401.73992"
    version="1.1"
    id="svg2"
    inkscape:version="0.92.1 unknown"
@@ -29,8 +29,8 @@
      id="namedview9245"
      showgrid="false"
      inkscape:zoom="0.7071068"
-     inkscape:cx="179.32263"
-     inkscape:cy="266.44229"
+     inkscape:cx="130.0194"
+     inkscape:cy="190.97608"
      inkscape:window-x="0"
      inkscape:window-y="26"
      inkscape:window-maximized="1"
@@ -38,10 +38,10 @@
      showguides="true"
      inkscape:guide-bbox="true"
      units="cm"
-     fit-margin-top="0.5"
-     fit-margin-left="0.5"
-     fit-margin-right="0.5"
-     fit-margin-bottom="0.5"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
      inkscape:showpageshadow="true" />
   <metadata
      id="metadata9247">
@@ -9982,7 +9982,7 @@
     </g>
   </defs>
   <g
-     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-1.2999962,-162.23087)"
+     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-15.473224,-176.4041)"
      style="fill:#000000;fill-opacity:1"
      id="g3749">
     <use
@@ -10001,7 +10001,7 @@
        height="100%" />
   </g>
   <g
-     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-1.2999962,-162.23087)"
+     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-15.473224,-176.4041)"
      style="fill:#000000;fill-opacity:1"
      id="g3929">
     <use
@@ -10020,7 +10020,7 @@
        height="100%" />
   </g>
   <g
-     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-1.2999962,-162.23087)"
+     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-15.473224,-176.4041)"
      style="fill:#000000;fill-opacity:1"
      id="g4497">
     <use
@@ -10032,7 +10032,7 @@
        height="100%" />
   </g>
   <g
-     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-1.2999962,-162.23087)"
+     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-15.473224,-176.4041)"
      style="fill:#000000;fill-opacity:1"
      id="g5069">
     <use
@@ -10051,7 +10051,7 @@
        height="100%" />
   </g>
   <g
-     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-1.2999962,-162.23087)"
+     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-15.473224,-176.4041)"
      style="fill:#000000;fill-opacity:1"
      id="g5367">
     <use
@@ -10070,7 +10070,7 @@
        height="100%" />
   </g>
   <g
-     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-1.2999962,-162.23087)"
+     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-15.473224,-176.4041)"
      style="fill:#000000;fill-opacity:1"
      id="g5453">
     <use
@@ -10082,7 +10082,7 @@
        height="100%" />
   </g>
   <g
-     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-1.2999962,-162.23087)"
+     transform="matrix(0.83072254,-0.02561795,0.02561795,0.83072254,-15.473224,-176.4041)"
      style="fill:#000000;fill-opacity:1"
      id="g5767">
     <use
@@ -10102,7 +10102,7 @@
   </g>
   <g
      id="g33731"
-     transform="matrix(1.1537074,0,0,1.1537074,-34.730756,-18.393926)">
+     transform="matrix(1.1537074,0,0,1.1537074,-48.903984,-32.567154)">
     <g
        transform="matrix(0.44365206,0,0,0.44365206,55.146696,439.051)"
        id="g33627">
