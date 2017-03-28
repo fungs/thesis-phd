@@ -1,3 +1,3 @@
 \newpage
 
-## Developed methods
+## Methods in this thesis
