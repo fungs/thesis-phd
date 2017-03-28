@@ -1,6 +1,6 @@
 thesis_files = $(wildcard thesis_*.md)
 thesis_config = $(wildcard config/thesis_*.md)
-thesis_figures = $(wildcard figure/thesis_*.pdf figure/thesis_*.png)
+thesis_figures = $(wildcard figure/thesis_*.pdf figure/thesis_*.png figure/publication_*/*.pdf figure/publication_*/*.png)
 appendix_files = $(wildcard appendix_*.md)
 latex_template_files = $(wildcard template/latex/template_*.latex)
 latex_appendix_template_files = $(wildcard template/latex/appendix_*.latex)
