@@ -1,6 +1,6 @@
 \newpage
 
-### A probabilistic model for genome recovery {#sec:synopsis_mglex}
+### A probabilistic model for genome recovery (*MGLEX*) {#sec:synopsis_mglex}
 
 #### Description
 

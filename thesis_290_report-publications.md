@@ -1,8 +1,10 @@
 # Report of Publications
 
+This chapter lists the publications to which I contributed in the course of this thesis. My attribution to the individual works is reported as percentage estimates (5% ranges) and a short description of the contributions.
+
 ## Central publications
 
-The following are the publications of the developed methods on which this cumulative thesis is based.
+These are the publications of the developed methods on which this cumulative thesis is based.
 
 |  |  |
 | :-------------- | ------------------------------------------------------------ |
@@ -12,7 +14,7 @@ The following are the publications of the developed methods on which this cumula
 | **Authors** | Johannes Dröge, Ivan Gregor, Alice C. McHardy |
 | **DOI** | [10.1093/bioinformatics/btu745](https://doi.org/10.1093/bioinformatics/btu745) |
 | **Contributions** | Designed method, developed software, designed experiments, conducted experiments, wrote manuscript |
-| **Attribution** | 70% to 80% |
+| **Attribution** | 71% to 75% |
 
 |  |  |
 | :-------------- | ------------------------------------------------------------ |
@@ -22,11 +24,11 @@ The following are the publications of the developed methods on which this cumula
 | **Authors** | Johannes Dröge, Alexander Schönhuth, Alice C. McHardy |
 | **DOI** | [10.7287/peerj.preprints.2626](https://doi.org/10.7287/peerj.preprints.2626)
 | **Contributions** | Designed method, developed software, designed experiments, conducted experiments, wrote manuscript |
-| **Attribution** | 80% to 90% |
+| **Attribution** | 86% to 90% |
 
 ## Related publications
 
-This is a list of publications which relate to metagenome binning or for which the developed software was applied to analyze metagenomes.
+These publications relate to metagenome binning or for which the developed software was applied to analyze metagenomes.
 
 |  |  |
 | :-------------- | ------------------------------------------------------------ |
@@ -46,7 +48,7 @@ This is a list of publications which relate to metagenome binning or for which t
 | **Authors** | Davide Bulgarelli, Ruben Garrido-Oter, Philipp C. Münch, Aaron Weimann, Johannes Dröge, Yao Pan, Alice C. McHardy, Paul Schulze-Lefert |
 | **DOI** | [10.1016/j.chom.2015.01.011](https://doi.org/10.1016/j.chom.2015.01.011) |
 | **Contributions** | Assembled metagenome, analyzed metagenome, added to manuscript, reviewed manuscript |
-| **Attribution** | 0% to 10% |
+| **Attribution** | 1% to 5% |
 
 |  |
 | :-------------- | ------------------------------------------------------------ |
@@ -56,7 +58,7 @@ This is a list of publications which relate to metagenome binning or for which t
 | **Authors** | Ivan Gregor, Johannes Dröge, Melanie Schirmer, Christopher Quince, Alice C. McHardy |
 | **DOI** | [10.7717/peerj.1603](https://doi.org/10.7717/peerj.1603) |
 | **Contributions** | Contributed to method design, reviewed manuscript |
-| **Attribution** | 0% to 10% |
+| **Attribution** | 1% to 5% |
 
 |  |
 | :-------------- | ------------------------------------------------------------ |
@@ -66,7 +68,7 @@ This is a list of publications which relate to metagenome binning or for which t
 | **Authors** | Xiyang Dong, Johannes Dröge, Christine von Toerne, Sviatlana Marozava, Alice C. McHardy, Rainer U. Meckenstock |
 | **DOI** | [10.1093/femsec/fiw254](https://doi.org/10.1093/femsec/fiw254) |
 | **Contributions** | Annotated metagenome, created phylogenetic trees of genes, added to manuscript, reviewed manuscript |
-| **Attribution** | 10% to 20% |
+| **Attribution** | 16% to 20% |
 
 |  |
 | :-------------- | ------------------------------------------------------------ |
@@ -76,7 +78,7 @@ This is a list of publications which relate to metagenome binning or for which t
 | **Authors** | Alexander Sczyrba, Peter Hofmann, Peter Belmann, David Koslicki, Stefan Janssen, Johannes Dröge, Ivan Gregor, Stephan Majda, Jessika Fiedler, Eik Dahms, Andreas Bremges, Adrian Fritz, Ruben Garrido-Oter, Tue Sparholt Jorgensen, Nicole Shapiro, Philip D Blood, Alexey Gurevich, Yang Bai, Dmitrij Turaev, Matthew Z DeMaere, Rayan Chikhi, Niranjan Nagarajan, Christopher Quince, Lars Hestbjerg Hansen, Soren J Sorensen, Burton K H Chia, Bertrand Denis, Jeff L Froula, Zhong Wang, Robert Egan, Dongwan Don Kang, Jeffrey J Cook, Charles Deltel, Michael Beckstette, Claire Lemaitre, Pierre Peterlongo, Guillaume Rizk, Dominique Lavenier, Yu-Wei Wu, Steven W Singer, Chirag Jain, Marc Strous, Heiner Klingenberg, Peter Meinicke, Michael Barton, Thomas Lingner, Hsin-Hung Lin, Yu-Chieh Liao, Genivaldo Gueiros Z. Silva, Daniel A Cuevas, Robert A Edwards, Surya Saha, Vitor C Piro, Bernhard Y Renard, Mihai Pop, Hans-Peter Klenk, Markus Goeker, Nikos Kyrpides, Tanja Woyke, Julia A Vorholt, Paul Schulze-Lefert, Edward M Rubin, Aaron E Darling, Thomas Rattei, Alice C McHardy |
 | **DOI** | [10.1101/099127 ](https://doi.org/10.1101/099127 ) |
 | **Contributions** | Contributed to data simulation design, curated reference data, contributed to evaluation methods, contributed to framework design, added to manuscript, reviewed manuscript |
-| **Attribution** | 0% to 10% |
+| **Attribution** | 1% to 5% |
 
 ## Other publications
 
@@ -88,4 +90,4 @@ This is a list of publications which relate to metagenome binning or for which t
 | **Authors** | Peter Belmann, Johannes Dröge, Andreas Bremges, Alice C. McHardy, Alexander Sczyrba, Michael D. Barton |
 | **DOI** | [10.1186/s13742-015-0087-0](https://doi.org/10.1186/s13742-015-0087-0) |
 | **Contributions** | Contributed to design, created template containers, reviewed manuscript |
-| **Attribution** | 0% to 10% |
+| **Attribution** | 6% to 10% |
