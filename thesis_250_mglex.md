@@ -2,8 +2,6 @@
 
 ### A probabilistic model for genome recovery (*MGLEX*) {#sec:synopsis_mglex}
 
-#### Description
-
 The corresponding article in @sec:full_mglex describes a probabilistic model for use in metagenome binning. Such likelihood models are at the core of many popular algorithms, including sequence classification and clustering. While some models exist as fixed parts of contig clustering programs, we developed a new modular, stand-alone and reusable model using a large set of input features. This model is based on parameterized submodels for which maximum likelihood (ML) parameter estimates can be inferred. Besides classification and clustering, we demonstrate alternative applications such as sample size reduction and visualization. The method is available as an open-source Python library and command line program called MLGEX.
 
 #### Introduction
@@ -14,11 +12,11 @@ Shotgun sequencing of a microbial community bypasses the need to obtain pure cul
 
 A classification model is trained to distinguish data of different classes. In probabilistic modeling, training means to determine the model parameters ($\theta$) from example data for a set of different classes. Here, classes correspond to different genomes which make part of a metagenome and the data to be classified are contigs. Hence, we need to provide training sequences for each genome before we can classify unknown contigs.
 
-Let $1\le i\le N$ be an index referring to $N$ contigs resulting from a shotgun metagenomic experiment. For the $i$^th^ contig, we define a joint likelihood ([@eq:mglex_likelihood_aggregate]), which is a weighted product over $M$ independent submodels likelihoods for the different feature types. For the $k$^th^ submodel, $\bm{\mathit{\Theta_k}}$ is the corresponding parameter vector, $\bm{F_{i,k}}$ the feature vector of the $i$^th^ contig and $\alpha_k$ defines the contribution of the respective submodel or feature type. $\beta$ is a free scaling parameter to adjust the smoothness of the aggregate likelihood distribution over the genome bins (bin posterior).
+Let $1\le i\le D$ be an index referring to $D$ contigs resulting from a shotgun metagenomic experiment. For the $i$^th^ contig, we define a joint likelihood for genome bin $g$ ([@eq:mglex_likelihood_aggregate]), which is a weighted product over $M$ independent submodels likelihoods for the different feature types. For the $k$^th^ submodel, $\bm{\mathit{\Theta_k}}$ is the corresponding parameter vector, $\bm{F_{i,k}}$ the feature vector of the $i$^th^ contig and $\alpha_k$ defines the contribution of the respective submodel or feature type. $\beta$ is a free scaling parameter to adjust the smoothness of the aggregate likelihood distribution over the genome bins (bin posterior).
 
 $$
-\mathcal{L}(\mathbf{\Theta} \mid \mathbf{F_i})
-= \left( \prod_{k=1}^M \mathcal{L}(\bm{\mathit{\Theta_k}} \mid \bm{F_{i,k}})^{\alpha_k} \right)^\beta
+\mathcal{L}(\mathbf{\Theta_g} \mid \mathbf{F_i})
+= \left( \prod_{k=1}^M \mathcal{L}(\bm{\mathit{\Theta_{gk}}} \mid \bm{F_{ik}})^{\alpha_k} \right)^\beta
 $$ {#eq:mglex_likelihood_aggregate}
 
 The model assumes statistical independence of the submodel features. All model parameters are determined from training data, $\mathbf{\Theta}$ using submodel ML estimation, $\bm \alpha$ using the inverse standard deviations of the class log-likelihood distributions ([@fig:mglex_alpha_inference]) and $\beta$ by mean squared error (MSE) minimization ([@fig:mglex_beta_fitting]).
