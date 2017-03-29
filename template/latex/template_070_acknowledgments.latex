@@ -1,0 +1,17 @@
+%-------------------------------------
+%	Acknoledgements German
+%-------------------------------------
+%\cleardoublepage
+
+$if(acknowledgementsgerman)$
+{
+  \selectlanguage{ngerman}
+	\smhd{Danksagung}
+
+	\vspace*{0.5cm}
+	\frenchspacing
+	$acknowledgementsgerman$
+}
+\vspace*{0.5cm}
+\newpage
+$endif$
