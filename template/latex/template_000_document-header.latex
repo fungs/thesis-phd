@@ -59,6 +59,7 @@
 \ChTitleVar{\Huge\sf}
 \ChRuleWidth{0.5pt}
 \ChNameUpperCase
+\usepackage{emptypage}  % remove header on empty pages
 
 % line spacing
 \usepackage{setspace}
