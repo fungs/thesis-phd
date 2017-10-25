@@ -15,13 +15,13 @@
    viewBox="0 0 70 51.487677"
    version="1.1"
    id="svg5798"
-   inkscape:version="0.92.1 unknown"
+   inkscape:version="0.92.2 (unknown)"
    sodipodi:docname="assembly_binning_cycle.svg">
   <defs
      id="defs5792">
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4532"
+       xlink:href="#arrowgrad"
        id="linearGradient4534"
        x1="493.39017"
        y1="295.77023"
@@ -31,20 +31,20 @@
        gradientTransform="matrix(0.26458333,0,0,0.26458333,3.4101175e-6,28.348215)" />
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient4532">
+       id="arrowgrad">
       <stop
          style="stop-color:#dbdbdb;stop-opacity:1"
          offset="0"
          id="stop4528" />
       <stop
-         style="stop-color:#c7c7c7;stop-opacity:0"
+         style="stop-color:#ffffff;stop-opacity:1"
          offset="1"
          id="stop4530" />
     </linearGradient>
     <linearGradient
        gradientTransform="matrix(-0.26458334,0,0,-0.26458334,205.99674,276.34981)"
        inkscape:collect="always"
-       xlink:href="#linearGradient4532"
+       xlink:href="#arrowgrad"
        id="linearGradient4534-9"
        x1="493.39017"
        y1="295.77023"
@@ -57,13 +57,13 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.8101934"
-     inkscape:cx="93.417166"
+     inkscape:cx="78.225419"
      inkscape:cy="51.676137"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g5614"
      showgrid="false"
      units="cm"
      fit-margin-top="0"

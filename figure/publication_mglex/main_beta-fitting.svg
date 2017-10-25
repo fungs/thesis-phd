@@ -697,7 +697,7 @@
              y="-120.37382"
              transform="scale(1,-1)" /><g
              transform="translate(0,-32)"
-             style="opacity:0.98999999"
+             style="opacity:1"
              id="g9452"><path
                d="m 562.015,86.89715 h 23.0398 v 23.0398 H 562.015 Z"
                style="fill:none;stroke:#cccccc;stroke-width:1.06000006;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
@@ -718,7 +718,7 @@
                  id="tspan7218"
                  sodipodi:role="line">Training error (err)</tspan></text>
 </g><g
-             style="opacity:0.98999999"
+             style="opacity:1"
              id="g9415-5"
              transform="translate(0,32)"><path
                d="m 610.015,54.89715 h 23.0398 v 23.0398 H 610.015 Z"
