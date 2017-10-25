@@ -20,6 +20,18 @@ thesis.pdf: $(thesis_config) $(thesis_files) $(thesis_figures) $(bibtex_file) te
 		--latex-engine xelatex \
 		-o thesis.pdf
 
+thesis.latex: $(thesis_config) $(thesis_files) $(thesis_figures) $(bibtex_file) template.latex appendix.latex
+	@pandoc $(thesis_config) $(thesis_files) \
+		--toc --filter pandoc-shortcaption \
+		--filter pandoc-crossref \
+		--filter pandoc-citeproc \
+		--bibliography $(bibtex_file) \
+		--csl template/citationstyle.csl \
+		--include-after-body appendix.latex \
+		--template template.latex \
+		--latex-engine xelatex \
+		-o thesis.latex
+
 template.latex: $(latex_template_files)
 	@cat $(latex_template_files) > template.latex
 
