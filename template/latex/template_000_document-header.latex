@@ -125,8 +125,10 @@
 \vbadness=10000
 \vfuzz=1pt
 
-% suppress pdf inclusion warnings
-%\pdfminorversion=6
+% control pdf output settings
+%\pdfminorversion=4  # PDF 1.4 is basis for PDF/A 1b
+%\pdfobjcompresslevel=0  # not allowed in PDF/A 1b
+%\pdfcompresslevel=0  # supress LZW stream compression for PDF/A 1b
 
 \usepackage{glossaries}
 %\input{content/glossary.tex}

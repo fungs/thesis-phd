@@ -73,9 +73,10 @@ $endif$
 \ifxetex
   \usepackage[setpagesize=false, % page size defined by xetex
               unicode=false, % unicode breaks when used with xetex
-              xetex]{hyperref}
+              xetex,
+              pdfa]{hyperref}
 \else
-  \usepackage[unicode=true]{hyperref}
+  \usepackage[unicode=true,pdfa]{hyperref}
 \fi
 \hypersetup{breaklinks=true,
             bookmarks=true,

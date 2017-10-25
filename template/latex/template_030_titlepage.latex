@@ -67,5 +67,5 @@ Heinrich-Heine-Universität Düsseldorf
 Referent: & Prof. Dr. Alice C. McHardy \\
 Koreferent: & Prof. Dr. Martin J. Lercher\\
  & \\
-Tag der mündlichen Prüfung: &\\
+Tag der mündlichen Prüfung: & $if(defensedate)$ $defensedate$ $endif$\\
 \end{tabularx}
