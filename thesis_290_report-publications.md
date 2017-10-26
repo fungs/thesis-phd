@@ -20,9 +20,9 @@ These are the publications of the developed methods on which this cumulative the
 | :-------------- | ------------------------------------------------------------ |
 | **Title** |  A Probabilistic Model to Recover Genomes in Shotgun Metagenomics |
 | **Journal** |  PeerJ |
-| **Published** | 2016 (preprint), 2017 (under revision) |
+| **Published** | 17 December 2016 (preprint), 22 May 2017 |
 | **Authors** | Johannes Dröge, Alexander Schönhuth, Alice C. McHardy |
-| **DOI** | [10.7287/peerj.preprints.2626](https://doi.org/10.7287/peerj.preprints.2626)
+| **DOI** | [10.7717/peerj-cs.117](https://doi.org/10.7717/peerj-cs.117)
 | **Contributions** | Designed method, developed software, designed experiments, conducted experiments, wrote manuscript |
 | **Attribution** | 86% to 90% |
 
@@ -73,10 +73,10 @@ These publications relate to metagenome binning or for which the developed softw
 |  |
 | :-------------- | ------------------------------------------------------------ |
 | **Title** | Critical Assessment of Metagenome Interpretation − a benchmark of computational metagenomics software |
-| **Journal** | bioRxiv |
-| **Published** | 2017 (preprint) |
-| **Authors** | Alexander Sczyrba, Peter Hofmann, Peter Belmann, David Koslicki, Stefan Janssen, Johannes Dröge, Ivan Gregor, Stephan Majda, Jessika Fiedler, Eik Dahms, Andreas Bremges, Adrian Fritz, Ruben Garrido-Oter, Tue Sparholt Jorgensen, Nicole Shapiro, Philip D Blood, Alexey Gurevich, Yang Bai, Dmitrij Turaev, Matthew Z DeMaere, Rayan Chikhi, Niranjan Nagarajan, Christopher Quince, Lars Hestbjerg Hansen, Soren J Sorensen, Burton K H Chia, Bertrand Denis, Jeff L Froula, Zhong Wang, Robert Egan, Dongwan Don Kang, Jeffrey J Cook, Charles Deltel, Michael Beckstette, Claire Lemaitre, Pierre Peterlongo, Guillaume Rizk, Dominique Lavenier, Yu-Wei Wu, Steven W Singer, Chirag Jain, Marc Strous, Heiner Klingenberg, Peter Meinicke, Michael Barton, Thomas Lingner, Hsin-Hung Lin, Yu-Chieh Liao, Genivaldo Gueiros Z. Silva, Daniel A Cuevas, Robert A Edwards, Surya Saha, Vitor C Piro, Bernhard Y Renard, Mihai Pop, Hans-Peter Klenk, Markus Goeker, Nikos Kyrpides, Tanja Woyke, Julia A Vorholt, Paul Schulze-Lefert, Edward M Rubin, Aaron E Darling, Thomas Rattei, Alice C McHardy |
-| **DOI** | [10.1101/099127 ](https://doi.org/10.1101/099127 ) |
+| **Journal** | Nature Methods |
+| **Published** | 12 June 2017 (preprint), 2 October 2017 |
+| **Authors** |  Alexander Sczyrba,	Peter Hofmann,	Peter Belmann,	David Koslicki,	Stefan Janssen,	Johannes Dröge,	Ivan Gregor,	Stephan Majda,	Jessika Fiedler,	Eik Dahms,	Andreas Bremges,	Adrian Fritz,	Ruben Garrido-Oter,	Tue Sparholt Jørgensen,	Nicole Shapiro,	Philip D Blood,	Alexey Gurevich,	Yang Bai,	Dmitrij Turaev,	Matthew Z DeMaere,	Rayan Chikhi,	Niranjan Nagarajan,	Christopher Quince,	Fernando Meyer,	Monika Balvočiūtė,	Lars Hestbjerg Hansen,	Søren J Sørensen,	Burton K H Chia,	Bertrand Denis,	Jeff L Froula,	Zhong Wang,	Robert Egan,	Dongwan Don Kang,	Jeffrey J Cook,	Charles Deltel,	Michael Beckstette,	Claire Lemaitre,	Pierre Peterlongo,	Guillaume Rizk,	Dominique Lavenier,	Yu-Wei Wu,	Steven W Singer,	Chirag Jain,	Marc Strous,	Heiner Klingenberg,	Peter Meinicke,	Michael D Barton,	Thomas Lingner,	Hsin-Hung Lin,	Yu-Chieh Liao,	Genivaldo Gueiros Z Silva,	Daniel A Cuevas,	Robert A Edwards,	Surya Saha,	Vitor C Piro,	Bernhard Y Renard,	Mihai Pop,	Hans-Peter Klenk,	Markus Göker,	Nikos C Kyrpides,	Tanja Woyke,	Julia A Vorholt,	Paul Schulze-Lefert,	Edward M Rubin,	Aaron E Darling,	Thomas Rattei, Alice C McHardy|
+| **DOI** | [10.1038/nmeth.4458 ](https://doi.org/10.1038/nmeth.4458) |
 | **Contributions** | Contributed to data simulation design, curated reference data, contributed to evaluation methods, contributed to framework design, added to manuscript, reviewed manuscript |
 | **Attribution** | 1% to 5% |
 
