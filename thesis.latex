@@ -125,8 +125,10 @@
 \vbadness=10000
 \vfuzz=1pt
 
-% suppress pdf inclusion warnings
-%\pdfminorversion=6
+% control pdf output settings
+%\pdfminorversion=4  # PDF 1.4 is basis for PDF/A 1b
+%\pdfobjcompresslevel=0  # not allowed in PDF/A 1b
+%\pdfcompresslevel=0  # supress LZW stream compression for PDF/A 1b
 
 \usepackage{glossaries}
 %\input{content/glossary.tex}
@@ -178,9 +180,10 @@
 \ifxetex
   \usepackage[setpagesize=false, % page size defined by xetex
               unicode=false, % unicode breaks when used with xetex
-              xetex]{hyperref}
+              xetex,
+              pdfa]{hyperref}
 \else
-  \usepackage[unicode=true]{hyperref}
+  \usepackage[unicode=true,pdfa]{hyperref}
 \fi
 \hypersetup{breaklinks=true,
             bookmarks=true,
@@ -258,6 +261,25 @@
 % bold title used in abstract
 \newcommand{\smhd}[1]{{\Large\bf\usefont{OT1}{phv}{b}{n}\selectfont #1}}
 \begin{document}
+
+\begin{titlepage}
+\newgeometry{top=100pt,bottom=100pt,right=35pt,left=55pt}
+\thispagestyle{empty}
+\vspace*{\fill}
+\includegraphics[width=\textwidth]{cover/coverimage.pdf}
+\vspace*{\fill}
+
+\newpage
+\restoregeometry
+\thispagestyle{empty}
+%\begin{center}
+\small{
+\input{cover/description.latex}
+}
+%\end{center}
+\end{titlepage}
+\restoregeometry
+
 \frontmatter
 \setlength{\parindent}{0pt}
 \renewcommand{\baselinestretch}{1.00}\normalsize
@@ -325,7 +347,7 @@ Heinrich-Heine-Universität Düsseldorf
 Referent: & Prof. Dr. Alice C. McHardy \\
 Koreferent: & Prof. Dr. Martin J. Lercher\\
  & \\
-Tag der mündlichen Prüfung: &\\
+Tag der mündlichen Prüfung: &  2017-07-17 \\
 \end{tabularx}
 %-------------------------------------
 %	Selbstaendigkeitserklaerung
@@ -433,7 +455,7 @@ methods, like the ones presented in this thesis.
 {
   \selectlanguage{ngerman}
 	\smhd{Zusammenfassung}
-
+	
 	\vspace*{0.5cm}
 	\frenchspacing
 	Mikrobielle Gemeinschaften existieren praktisch überall, in
@@ -736,7 +758,7 @@ this sequence heterogeneity is that longer genome sequences often fail
 to assemble due to the natural and artificial nucleotide variations in
 the reads (Melsted \& Pritchard,
 \protect\hyperlink{ref-MelstedEfficient2011}{2011}; Pell et al.,
-\protect\hyperlink{ref-PellScaling2012}{2012}). Typical metagenome data
+\protect\hyperlink{ref-PellScaling2012a}{2012}). Typical metagenome data
 therefore contain many incomplete genes whose origin and functional role
 needs to be determined.
 
@@ -1725,7 +1747,7 @@ Section~\ref{sec:full_taxator-tk}, (Dröge, Gregor \& McHardy,
 \emph{taxator-tk}, which enables precise taxonomic annotation of entire
 metagenomes by fast calculation of phylogenetic neighborhoods. The
 second method article in Section~\ref{sec:full_mglex}, (Dröge, Schönhuth
-\& McHardy, \protect\hyperlink{ref-DrogeProbabilistic2016}{2016})
+\& McHardy, \protect\hyperlink{ref-DrogeProbabilistic2017}{2017})
 proposed a statistical classification framework to recover genomes from
 shotgun-sequenced metagenomes. Applied studies used \emph{taxator-tk}
 and demonstrated its utility to inform about taxonomic composition
@@ -1871,7 +1893,7 @@ PeerJ\strut
 \begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
 \textbf{Published}\strut
 \end{minipage} & \begin{minipage}[t]{0.75\columnwidth}\raggedright\strut
-2016 (preprint), 2017 (under revision)\strut
+17 December 2016 (preprint), 22 May 2017\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
 \textbf{Authors}\strut
@@ -1881,7 +1903,7 @@ Johannes Dröge, Alexander Schönhuth, Alice C. McHardy\strut
 \begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
 \textbf{DOI}\strut
 \end{minipage} & \begin{minipage}[t]{0.75\columnwidth}\raggedright\strut
-\href{https://doi.org/10.7287/peerj.preprints.2626}{10.7287/peerj.preprints.2626}\strut
+\href{https://doi.org/10.7717/peerj-cs.117}{10.7717/peerj-cs.117}\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
 \textbf{Contributions}\strut
@@ -2083,12 +2105,12 @@ computational metagenomics software\strut
 \begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
 \textbf{Journal}\strut
 \end{minipage} & \begin{minipage}[t]{0.75\columnwidth}\raggedright\strut
-bioRxiv\strut
+Nature Methods\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
 \textbf{Published}\strut
 \end{minipage} & \begin{minipage}[t]{0.75\columnwidth}\raggedright\strut
-2017 (preprint)\strut
+12 June 2017 (preprint), 2 October 2017\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
 \textbf{Authors}\strut
@@ -2096,24 +2118,25 @@ bioRxiv\strut
 Alexander Sczyrba, Peter Hofmann, Peter Belmann, David Koslicki, Stefan
 Janssen, Johannes Dröge, Ivan Gregor, Stephan Majda, Jessika Fiedler,
 Eik Dahms, Andreas Bremges, Adrian Fritz, Ruben Garrido-Oter, Tue
-Sparholt Jorgensen, Nicole Shapiro, Philip D Blood, Alexey Gurevich,
+Sparholt Jørgensen, Nicole Shapiro, Philip D Blood, Alexey Gurevich,
 Yang Bai, Dmitrij Turaev, Matthew Z DeMaere, Rayan Chikhi, Niranjan
-Nagarajan, Christopher Quince, Lars Hestbjerg Hansen, Soren J Sorensen,
-Burton K H Chia, Bertrand Denis, Jeff L Froula, Zhong Wang, Robert Egan,
-Dongwan Don Kang, Jeffrey J Cook, Charles Deltel, Michael Beckstette,
-Claire Lemaitre, Pierre Peterlongo, Guillaume Rizk, Dominique Lavenier,
-Yu-Wei Wu, Steven W Singer, Chirag Jain, Marc Strous, Heiner
-Klingenberg, Peter Meinicke, Michael Barton, Thomas Lingner, Hsin-Hung
-Lin, Yu-Chieh Liao, Genivaldo Gueiros Z. Silva, Daniel A Cuevas, Robert
-A Edwards, Surya Saha, Vitor C Piro, Bernhard Y Renard, Mihai Pop,
-Hans-Peter Klenk, Markus Goeker, Nikos Kyrpides, Tanja Woyke, Julia A
-Vorholt, Paul Schulze-Lefert, Edward M Rubin, Aaron E Darling, Thomas
-Rattei, Alice C McHardy\strut
+Nagarajan, Christopher Quince, Fernando Meyer, Monika Balvočiūtė, Lars
+Hestbjerg Hansen, Søren J Sørensen, Burton K H Chia, Bertrand Denis,
+Jeff L Froula, Zhong Wang, Robert Egan, Dongwan Don Kang, Jeffrey J
+Cook, Charles Deltel, Michael Beckstette, Claire Lemaitre, Pierre
+Peterlongo, Guillaume Rizk, Dominique Lavenier, Yu-Wei Wu, Steven W
+Singer, Chirag Jain, Marc Strous, Heiner Klingenberg, Peter Meinicke,
+Michael D Barton, Thomas Lingner, Hsin-Hung Lin, Yu-Chieh Liao,
+Genivaldo Gueiros Z Silva, Daniel A Cuevas, Robert A Edwards, Surya
+Saha, Vitor C Piro, Bernhard Y Renard, Mihai Pop, Hans-Peter Klenk,
+Markus Göker, Nikos C Kyrpides, Tanja Woyke, Julia A Vorholt, Paul
+Schulze-Lefert, Edward M Rubin, Aaron E Darling, Thomas Rattei, Alice C
+McHardy\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
 \textbf{DOI}\strut
 \end{minipage} & \begin{minipage}[t]{0.75\columnwidth}\raggedright\strut
-\href{https://doi.org/10.1101/099127}{10.1101/099127}\strut
+\href{https://doi.org/10.1038/nmeth.4458}{10.1038/nmeth.4458}\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
 \textbf{Contributions}\strut
@@ -4225,11 +4248,11 @@ evolutionary neighborhoods. \emph{Bioinformatics (Oxford,
 England)}:1--8. DOI:
 \href{https://doi.org/10.1093/bioinformatics/btu745}{10.1093/bioinformatics/btu745}.
 
-\hypertarget{ref-DrogeProbabilistic2016}{}
-\textbf{Dröge J., Schönhuth A., McHardy AC.} \textbf{2016}. A
+\hypertarget{ref-DrogeProbabilistic2017}{}
+\textbf{Dröge J., Schönhuth A., McHardy AC.} \textbf{2017}. A
 probabilistic model to recover individual genomes from metagenomes.
-\emph{PeerJ Preprint}. DOI:
-\href{https://doi.org/10.7287/peerj.preprints.2626v3}{10.7287/peerj.preprints.2626v3}.
+\emph{PeerJ Computer Science} 3:e117. DOI:
+\href{https://doi.org/10.7717/peerj-cs.117}{10.7717/peerj-cs.117}.
 
 \hypertarget{ref-EloefadroshMetagenomics2016}{}
 \textbf{Eloe-Fadrosh EA., Ivanova NN., Woyke T., Kyrpides NC.}
@@ -4554,7 +4577,7 @@ assignment with structured output models. \emph{Nature Methods}
 8:191--192. DOI:
 \href{https://doi.org/10.1038/nmeth0311-191}{10.1038/nmeth0311-191}.
 
-\hypertarget{ref-PellScaling2012}{}
+\hypertarget{ref-PellScaling2012a}{}
 \textbf{Pell J., Hintze A., Canino-Koning R., Howe A., Tiedje JM., Brown
 CT.} \textbf{2012}. Scaling metagenome sequence assembly with
 probabilistic de Bruijn graphs. \emph{Proceedings of the National
@@ -5921,7 +5944,7 @@ assignment with structured output models. \emph{Nature Methods}
 8:191--192. DOI:
 \href{https://doi.org/10.1038/nmeth0311-191}{10.1038/nmeth0311-191}.
 
-\hypertarget{ref-PellScaling2012a}{}
+\hypertarget{ref-PellScaling2012}{}
 \textbf{Pell J., Hintze A., Canino-Koning R., Howe A., Tiedje J., Brown
 C.} \textbf{2012}. Scaling metagenome sequence assembly with
 probabilistic de Bruijn graphs. \emph{Arxiv preprint arXiv:1112.4193}
