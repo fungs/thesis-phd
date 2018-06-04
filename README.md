@@ -2,7 +2,7 @@
 
 This thesis is written entirely in Markdown using a Pandoc build system. This repository contains the source text and vector graphics which where used to compile the thesis.
 
-The published thesis is available on the GitHub release page, via the [Library Publication Server https://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:hbz:061-20171122-114012-5] and on Zenodo accessible via [DOI:10.5281/zenodo.1263099 https://doi.org/10.5281/zenodo.1263099].
+The published thesis is available on the GitHub release page, via the [Library Publication Server](http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:hbz:061-20171122-114012-5) and on Zenodo accessible via [DOI:10.5281/zenodo.1263099](https://doi.org/10.5281/zenodo.1263099).
 
 [![DOI:10.5281/zenodo.1263099](https://zenodo.org/badge/DOI/10.5281/zenodo.1263099.svg)](https://doi.org/10.5281/zenodo.1263099)
 
