@@ -3,7 +3,7 @@
 This thesis is written entirely in Markdown using a Pandoc build system. This repository contains the source text and vector graphics which where used to compile the thesis. The published thesis is available on the GitHub release page, via the [Library Publication Server](http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:hbz:061-20171122-114012-5) and on Zenodo accessible via [DOI:10.5281/zenodo.1263099](https://doi.org/10.5281/zenodo.1263099). Text and graphics of the main thesis are released under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) but article reproductions in the appendix are subject to the rights of the corresponding publishers (most are open-access). Auxiliary scripts and files might be under different open source licenses as mentioned in their corresponding headers.
 
 [![DOI:10.5281/zenodo.1263099](https://zenodo.org/badge/DOI/10.5281/zenodo.1263099.svg)](https://doi.org/10.5281/zenodo.1263099)
-[![Creative Commons Attribution-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Creative Commons Attribution-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## Title
 
